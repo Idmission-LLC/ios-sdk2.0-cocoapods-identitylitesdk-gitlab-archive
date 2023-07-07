@@ -6,39 +6,39 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		blVJd2ORRaVuawsKH9khjxv261Q=
+		FeK5jZKiuPpCNWyAuje6sgBZKfM=
 		</data>
 		<key>Headers/SelfieCaptureLite-Swift.h</key>
 		<data>
-		b3WPmdouvDWTEf66vDRqIzuH3ns=
+		tzpgfTnROe1jvi9X/ajMs6YUWhE=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		0VJSAcxy9CAXVo7b93qKUk4Sbe4=
+		wHPoF83h4Efu62CHL4vnAJQkj2s=
 		</data>
 		<key>Modules/SelfieCaptureLite.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		5q3B4AB76BminFKcfWVT/dIivDo=
+		HU80Z7t7naZLPULmJOezoBwjG74=
 		</data>
 		<key>Modules/SelfieCaptureLite.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		8WXTIVxQfCGPw3c8oqshrVmSgI0=
+		gFg9z18P5TAamFz8g2AycJpDs4k=
 		</data>
 		<key>Modules/SelfieCaptureLite.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		RAXjLCgcO/q/IWCG/BYzbsChrEs=
+		YmwjkkuSAnKjmIlCG06avZ8xZhs=
 		</data>
 		<key>Modules/SelfieCaptureLite.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		RjRuPThttANQC+lXeidweJDlXFE=
+		GvjeAe5wW5qzmmcLGyhvkis39k4=
 		</data>
 		<key>Modules/SelfieCaptureLite.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		RAXjLCgcO/q/IWCG/BYzbsChrEs=
+		YmwjkkuSAnKjmIlCG06avZ8xZhs=
 		</data>
 		<key>Modules/SelfieCaptureLite.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		qg648fTa2VjsBZXti6/7yCA68FQ=
+		dakxda3Xus63u/URCssht1qR5Io=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -82,11 +82,11 @@
 		</data>
 		<key>SelfieCapture.storyboardc/etj-lQ-qHg-view-K5c-kA-PpU.nib/objects-14.0+.nib</key>
 		<data>
-		Gmlhg0x3zKv/IFCbhzEba4X3s8s=
+		nW/65n6CjBGIbV+GTmPCzcxk7XQ=
 		</data>
 		<key>SelfieCapture.storyboardc/etj-lQ-qHg-view-K5c-kA-PpU.nib/runtime.nib</key>
 		<data>
-		Gmlhg0x3zKv/IFCbhzEba4X3s8s=
+		nW/65n6CjBGIbV+GTmPCzcxk7XQ=
 		</data>
 		<key>SelfieCapture.storyboardc/hWk-eV-qnL-view-KES-jY-WvT.nib/objects-14.0+.nib</key>
 		<data>
@@ -103,56 +103,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pBS+sxMnNGGXbih9b8vBWgUT2uganZG0Jv9naYqW5fA=
+			J3JvtkVcONt3L6pMp/G/9JWjDtVBk3zbAK6ny9q6Aac=
 			</data>
 		</dict>
 		<key>Headers/SelfieCaptureLite-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ehZ8TVh45Auh65kEMyfulS9rTogrt+pf8ELsIFFb9iU=
+			GxEcKzJuta8y4cknjYzEtUtYvioTBctxCY+Zy8Y+8F4=
 			</data>
 		</dict>
 		<key>Modules/SelfieCaptureLite.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Yw2TC7O7CJnlcRQFadEozx/b50O4mSuqE3kWriJUWL0=
+			g3aga30H2g1CqrzpQBKN1PS1i6vWMEscA8mjuaXLYRc=
 			</data>
 		</dict>
 		<key>Modules/SelfieCaptureLite.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			flRHk43Vi7VtlpcXBcUFAaz9cKVQx3rtI0UdVefZg+I=
+			5JTWNAxMw/NkzgYFN5Ep4kuFz+FB4/O3o53gYXH0EFc=
 			</data>
 		</dict>
 		<key>Modules/SelfieCaptureLite.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			inTphPUXv8UXm2UZWgg4GVkDgUAUWOpEDzhhdrSNE5M=
+			1+S5nQI75JBLihmxUnb5mOIo5Yxwak0KUWFLi5UW7Yk=
 			</data>
 		</dict>
 		<key>Modules/SelfieCaptureLite.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			d2Thxsn8Clo4LldyByKGuiUjNbb90zKY9s2mrR6e3UE=
+			OCt/I00M1wJTSmrBItQoBI9zmYkzODyQgtk0rB0sOYQ=
 			</data>
 		</dict>
 		<key>Modules/SelfieCaptureLite.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			inTphPUXv8UXm2UZWgg4GVkDgUAUWOpEDzhhdrSNE5M=
+			1+S5nQI75JBLihmxUnb5mOIo5Yxwak0KUWFLi5UW7Yk=
 			</data>
 		</dict>
 		<key>Modules/SelfieCaptureLite.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MJXmgcjTM8wUcCtqgfiVbuugFvuv8VwNR2DgZ/1rfPo=
+			GKQDwEY05X93hb7PwlnaLQCcySeD38zyrmplec//Po4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -229,14 +229,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			t7OiJaBKEGX7Gq11k2s+m8GGI9f3dV8QmpI36BDkZ6Q=
+			2s67RioOMe06JSX293Ncuq+fGdPTG2aX8v8b6l0ocxE=
 			</data>
 		</dict>
 		<key>SelfieCapture.storyboardc/etj-lQ-qHg-view-K5c-kA-PpU.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			t7OiJaBKEGX7Gq11k2s+m8GGI9f3dV8QmpI36BDkZ6Q=
+			2s67RioOMe06JSX293Ncuq+fGdPTG2aX8v8b6l0ocxE=
 			</data>
 		</dict>
 		<key>SelfieCapture.storyboardc/hWk-eV-qnL-view-KES-jY-WvT.nib/objects-14.0+.nib</key>
