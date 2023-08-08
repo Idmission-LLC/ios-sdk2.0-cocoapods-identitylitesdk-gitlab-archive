@@ -150,7 +150,7 @@ public struct AdditionalCustomerEnrollBiometricRequestData : Swift.Encodable {
   public var needImmediateResponse: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.NeedImmediateResponse?
   public var deDuplicationRequired: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.DeDuplicationRequired?
   public var metadata: IDentityLiteSDK.Metadata?
-  public var ocrMetadata: IDentityLiteSDK.OcrMetadata?
+  public var ocrMetadata: Swift.String?
   public init(uniqueRequestId: Swift.String = UUID().uuidString, needImmediateResponse: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.NeedImmediateResponse? = nil, deDuplicationRequired: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.DeDuplicationRequired? = nil)
   public func encode(to encoder: Swift.Encoder) throws
 }
@@ -299,8 +299,7 @@ public struct AdditionalCustomerWFlagCommonData : Swift.Encodable {
   public var idBackImageRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.IdBackImageRequired?
   public var stripSpecialCharacters: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.StripSpecialCharacters?
   public var metadata: IDentityLiteSDK.Metadata?
-  public var ocrMetadata: IDentityLiteSDK.OcrMetadata?
-  public var chipData: [Swift.String : Swift.String]?
+  public var ocrMetadata: Swift.String?
   public init(uniqueRequestId: Swift.String = UUID().uuidString, manualReviewRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.ManualReviewRequired? = .no, bypassAgeValidation: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.BypassAgeValidation? = .no, deDuplicationRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DeDuplicationRequired? = .no, bypassNameMatching: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.BypassNameMatching? = .yes, postDataAPIRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.PostDataAPIRequired? = .no, sendInputImagesInPost: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendInputImagesInPost? = .no, sendProcessedImagesInPost: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendProcessedImagesInPost? = .no, needImmediateResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.NeedImmediateResponse? = .no, deduplicationSynchronous: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DeduplicationSynchronous? = .no, verifyDataWithHost: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.VerifyDataWithHost? = .no, idBackImageRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.IdBackImageRequired? = .yes, stripSpecialCharacters: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.StripSpecialCharacters? = .yes)
   public func encode(to encoder: Swift.Encoder) throws
 }
@@ -559,7 +558,7 @@ public struct Entry : Swift.Equatable {
 public struct AdditionalCustomerCommonData : Swift.Encodable {
   public var uniqueRequestId: Swift.String
   public var metadata: IDentityLiteSDK.Metadata?
-  public var ocrMetadata: IDentityLiteSDK.OcrMetadata?
+  public var ocrMetadata: Swift.String?
   public init(uniqueRequestId: Swift.String)
   public func encode(to encoder: Swift.Encoder) throws
 }
@@ -1724,7 +1723,7 @@ extension IDentityLiteSDK.SignatureCapture {
 public struct AdditionalCustomerLiveCheckData : Swift.Encodable {
   public var uniqueRequestId: Swift.String
   public var metadata: IDentityLiteSDK.Metadata?
-  public var ocrMetadata: IDentityLiteSDK.OcrMetadata?
+  public var ocrMetadata: Swift.String?
   public init(uniqueRequestId: Swift.String)
   public func encode(to encoder: Swift.Encoder) throws
 }
@@ -2069,11 +2068,6 @@ extension Foundation.Data {
   public func crc32(checksum: IDentityLiteSDK.CRC32) -> IDentityLiteSDK.CRC32
   public static func compress(size: Swift.Int64, bufferSize: Swift.Int, provider: (_ position: Swift.Int64, _ size: Swift.Int) throws -> Foundation.Data, consumer: (_ data: Foundation.Data) throws -> Swift.Void) throws -> IDentityLiteSDK.CRC32
   public static func decompress(size: Swift.Int64, bufferSize: Swift.Int, skipCRC32: Swift.Bool, provider: (_ position: Swift.Int64, _ size: Swift.Int) throws -> Foundation.Data, consumer: (_ data: Foundation.Data) throws -> Swift.Void) throws -> IDentityLiteSDK.CRC32
-}
-public struct OcrMetadata : Swift.Encodable {
-  public var idData: [Swift.String : Swift.String]
-  public init(idData: [Swift.String : Swift.String])
-  public func encode(to encoder: Swift.Encoder) throws
 }
 public struct CustomerLiveCheckRequest : Swift.Encodable {
   public var securityData: IDentityLiteSDK.SecurityData

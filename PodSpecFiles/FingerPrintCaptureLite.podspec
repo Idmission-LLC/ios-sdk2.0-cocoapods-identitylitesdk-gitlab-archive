@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = "FingerPrintCaptureLite"
-  spec.version      = "9.5.7.2.5"
+  spec.version      = "9.5.9.2.4"
   spec.summary      = "FingerPrintCaptureLite lets user add FingerPrintCaptureLiteSDK in their project"
   spec.description  = <<-DESC 
                     FingerPrintCaptureLite helps user to add FingerPrintCaptureLiteSDK in their project.
@@ -13,7 +13,7 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://github.com/Idmission-LLC/IDentityLiteSDK2.0"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author             = { "Idmission LLC" => "amol.deshmukh@idmission.com" }
-  spec.source       = { :git => "https://oauth2:SCpM3XAZq-sWQ8CYFwUc@gitlab.idmission.com/apps/sdk2.0/ios/cocoapods/identitylitesdk2.0.git", 
+  spec.source       = { :git => "https://sdk2:SCpM3XAZq-sWQ8CYFwUc@gitlab.idmission.com/apps/sdk2.0/ios/cocoapods/identitylitesdk2.0.git", 
                         :tag => "#{spec.version}"}
 
   spec.platform     = :ios
