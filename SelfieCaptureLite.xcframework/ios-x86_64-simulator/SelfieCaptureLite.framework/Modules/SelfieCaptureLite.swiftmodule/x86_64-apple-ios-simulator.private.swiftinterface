@@ -1,15 +1,18 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SelfieCaptureLite
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AudioToolbox
+import DeveloperToolsSupport
 import Foundation
 import IDCaptureLite
 import IDentityLiteSDK
 import Swift
+import SwiftUI
 import UIKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 public struct LiveFaceCheckResult {
   public var selfie: IDentityLiteSDK.Selfie
   public var isFakeFace: Swift.Bool
@@ -39,27 +42,27 @@ public struct CustomerEnrollResult {
   public var back: IDentityLiteSDK.DetectedData?
   public func submit(additionalDocuments: [IDentityLiteSDK.AdditionalDocumentsRequest]? = nil, cardToken: Swift.String? = nil, cardLast4: Swift.String? = nil, completion: @escaping IDentityLiteSDK.ValidateIdCustomerEnrollAPICompletion)
 }
-public typealias LiveFaceCheckCompletion = (_ result: Swift.Result<SelfieCaptureLite.LiveFaceCheckResult, Swift.Error>) -> Swift.Void
-public typealias CustomerEnrollBiometricsCompletion = (_ result: Swift.Result<SelfieCaptureLite.CustomerEnrollBiometricsResult, Swift.Error>) -> Swift.Void
-public typealias CustomerVerificationCompletion = (_ result: Swift.Result<SelfieCaptureLite.CustomerVerificationResult, Swift.Error>) -> Swift.Void
-public typealias CustomerIdentifyCompletion = (_ result: Swift.Result<SelfieCaptureLite.CustomerIdentifyResult, Swift.Error>) -> Swift.Void
-public typealias ValidateIdMatchFaceCompletion = (_ result: Swift.Result<SelfieCaptureLite.ValidateIdMatchFaceResult, Swift.Error>) -> Swift.Void
-public typealias ValidateIdCustomerEnrollCompletion = (_ result: Swift.Result<SelfieCaptureLite.CustomerEnrollResult, Swift.Error>) -> Swift.Void
+public typealias LiveFaceCheckCompletion = (_ result: Swift.Result<SelfieCaptureLite.LiveFaceCheckResult, any Swift.Error>) -> Swift.Void
+public typealias CustomerEnrollBiometricsCompletion = (_ result: Swift.Result<SelfieCaptureLite.CustomerEnrollBiometricsResult, any Swift.Error>) -> Swift.Void
+public typealias CustomerVerificationCompletion = (_ result: Swift.Result<SelfieCaptureLite.CustomerVerificationResult, any Swift.Error>) -> Swift.Void
+public typealias CustomerIdentifyCompletion = (_ result: Swift.Result<SelfieCaptureLite.CustomerIdentifyResult, any Swift.Error>) -> Swift.Void
+public typealias ValidateIdMatchFaceCompletion = (_ result: Swift.Result<SelfieCaptureLite.ValidateIdMatchFaceResult, any Swift.Error>) -> Swift.Void
+public typealias ValidateIdCustomerEnrollCompletion = (_ result: Swift.Result<SelfieCaptureLite.CustomerEnrollResult, any Swift.Error>) -> Swift.Void
 extension IDentityLiteSDK.IDentitySDK {
-  public static var customerLiveCheckRequest: IDentityLiteSDK.CustomerLiveCheckRequest?
+  public static var customerLiveCheckRequest: IDentityLiteSDK.CustomerLiveCheckRequestV3?
   public class func liveFaceCheck(from presenter: UIKit.UIViewController, completion: @escaping SelfieCaptureLite.LiveFaceCheckCompletion)
-  public static var customerEnrollBiometricsRequest: IDentityLiteSDK.CustomerEnrollBiometricsRequest?
-  public class func customerEnrollBiometrics(from presenter: UIKit.UIViewController, personalData: IDentityLiteSDK.PersonalCustomerCommonRequestData, options: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData, completion: @escaping SelfieCaptureLite.CustomerEnrollBiometricsCompletion)
-  public static var customerVerifyRequest: IDentityLiteSDK.CustomerVerifyRequest?
+  public static var customerEnrollBiometricsRequest: IDentityLiteSDK.CustomerEnrollBiometricsRequestV3?
+  public class func customerEnrollBiometrics(from presenter: UIKit.UIViewController, personalData: IDentityLiteSDK.PersonalCustomerCommonRequestDataV3, options: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestDataV3, completion: @escaping SelfieCaptureLite.CustomerEnrollBiometricsCompletion)
+  public static var customerVerifyRequest: IDentityLiteSDK.CustomerVerifyRequestV3?
   public class func customerVerification(from presenter: UIKit.UIViewController, personalData: IDentityLiteSDK.PersonalCustomerVerifyData, completion: @escaping SelfieCaptureLite.CustomerVerificationCompletion)
-  public static var customerIdentifyRequest: IDentityLiteSDK.CustomerIdentifyRequest?
+  public static var customerIdentifyRequest: IDentityLiteSDK.CustomerIdentifyRequestV3?
   public class func identifyCustomer(from presenter: UIKit.UIViewController, completion: @escaping SelfieCaptureLite.CustomerIdentifyCompletion)
 }
 extension IDentityLiteSDK.IDentitySDK {
-  public static var customerValidateIdFaceMatchRequest: IDentityLiteSDK.CustomerValidateIdFaceMatchRequest?
-  public class func idValidationAndMatchFace(from presenter: UIKit.UIViewController, options: IDentityLiteSDK.AdditionalCustomerWFlagCommonData, captureBack: Swift.Bool = true, completion: @escaping SelfieCaptureLite.ValidateIdMatchFaceCompletion)
-  public class func idValidationAndMatchFace(from presenter: UIKit.UIViewController, options: IDentityLiteSDK.AdditionalCustomerWFlagCommonData, idType: Swift.String, idCountry: Swift.String, idState: Swift.String?, completion: @escaping SelfieCaptureLite.ValidateIdMatchFaceCompletion)
-  public static var customerEnrollRequest: IDentityLiteSDK.CustomerEnrollRequest?
-  public class func idValidationAndCustomerEnroll(from presenter: UIKit.UIViewController, personalData: IDentityLiteSDK.PersonalCustomerCommonRequestData, options: IDentityLiteSDK.AdditionalCustomerWFlagCommonData, captureBack: Swift.Bool = true, completion: @escaping SelfieCaptureLite.ValidateIdCustomerEnrollCompletion)
-  public class func idValidationAndCustomerEnroll(from presenter: UIKit.UIViewController, personalData: IDentityLiteSDK.PersonalCustomerCommonRequestData, options: IDentityLiteSDK.AdditionalCustomerWFlagCommonData, idType: Swift.String, idCountry: Swift.String, idState: Swift.String?, completion: @escaping SelfieCaptureLite.ValidateIdCustomerEnrollCompletion)
+  public static var customerValidateIdFaceMatchRequest: IDentityLiteSDK.CustomerValidateIdFaceMatchRequestV3?
+  public class func idValidationAndMatchFace(from presenter: UIKit.UIViewController, options: IDentityLiteSDK.AdditionalCustomerWFlagCommonDataV3, captureBack: Swift.Bool = true, completion: @escaping SelfieCaptureLite.ValidateIdMatchFaceCompletion)
+  public class func idValidationAndMatchFace(from presenter: UIKit.UIViewController, options: IDentityLiteSDK.AdditionalCustomerWFlagCommonDataV3, idType: Swift.String, idCountry: Swift.String, idState: Swift.String?, completion: @escaping SelfieCaptureLite.ValidateIdMatchFaceCompletion)
+  public static var customerEnrollRequest: IDentityLiteSDK.CustomerEnrollRequestV3?
+  public class func idValidationAndCustomerEnroll(from presenter: UIKit.UIViewController, personalData: IDentityLiteSDK.PersonalCustomerCommonRequestEnrollDataV3, options: IDentityLiteSDK.AdditionalCustomerWFlagCommonDataV3, captureBack: Swift.Bool = true, completion: @escaping SelfieCaptureLite.ValidateIdCustomerEnrollCompletion)
+  public class func idValidationAndCustomerEnroll(from presenter: UIKit.UIViewController, personalData: IDentityLiteSDK.PersonalCustomerCommonRequestEnrollDataV3, options: IDentityLiteSDK.AdditionalCustomerWFlagCommonDataV3, idType: Swift.String, idCountry: Swift.String, idState: Swift.String?, completion: @escaping SelfieCaptureLite.ValidateIdCustomerEnrollCompletion)
 }

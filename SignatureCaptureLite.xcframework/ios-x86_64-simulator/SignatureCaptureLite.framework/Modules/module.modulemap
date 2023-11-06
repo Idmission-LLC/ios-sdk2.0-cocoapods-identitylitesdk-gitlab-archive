@@ -1,7 +1,7 @@
 framework module SignatureCaptureLite {
   umbrella header "SignatureCaptureLite.h"
-
   export *
+
   module * { export * }
 }
 

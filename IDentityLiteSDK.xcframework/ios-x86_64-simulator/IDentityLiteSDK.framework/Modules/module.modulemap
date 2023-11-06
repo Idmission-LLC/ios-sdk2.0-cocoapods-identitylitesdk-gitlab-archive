@@ -1,7 +1,7 @@
 framework module IDentityLiteSDK {
   umbrella header "IDentityLiteSDK.h"
-
   export *
+
   module * { export * }
 }
 
