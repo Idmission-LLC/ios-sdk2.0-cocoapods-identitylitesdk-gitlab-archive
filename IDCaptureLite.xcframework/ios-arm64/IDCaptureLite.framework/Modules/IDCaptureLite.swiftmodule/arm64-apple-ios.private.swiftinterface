@@ -21,7 +21,7 @@ public struct ValidateIdResult {
 public typealias ValidateIdCompletion = (_ result: Swift.Result<IDCaptureLite.ValidateIdResult, any Swift.Error>) -> Swift.Void
 extension IDentityLiteSDK.IDentitySDK {
   public static var customerValidateIdRequest: IDentityLiteSDK.CustomerValidateIdRequestV3?
-  public class func idValidation(from presenter: UIKit.UIViewController, options: IDentityLiteSDK.AdditionalCustomerWFlagCommonDataV3, captureBack: Swift.Bool = true, completion: @escaping IDCaptureLite.ValidateIdCompletion)
+  public class func idValidation(from presenter: UIKit.UIViewController, options: IDentityLiteSDK.AdditionalCustomerWFlagCommonDataV3, captureBack: IDentityLiteSDK.CaptureBack = .auto, completion: @escaping IDCaptureLite.ValidateIdCompletion)
   public class func idValidation(from presenter: UIKit.UIViewController, options: IDentityLiteSDK.AdditionalCustomerWFlagCommonDataV3, idType: Swift.String, idCountry: Swift.String, idState: Swift.String?, completion: @escaping IDCaptureLite.ValidateIdCompletion)
 }
 extension IDentityLiteSDK.StateMasterVO : Swift.Equatable {
