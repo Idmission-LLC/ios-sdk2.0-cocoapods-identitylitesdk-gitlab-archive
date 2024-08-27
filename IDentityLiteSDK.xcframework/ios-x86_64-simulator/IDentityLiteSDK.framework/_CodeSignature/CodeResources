@@ -164,25 +164,17 @@
 		<data>
 		XbJUe8PtIFXmArkvhIp46V5BAD4=
 		</data>
-		<key>Headers/FWEncryptorAES.h</key>
-		<data>
-		1y7mrxQl8GnMyvrgj4V9k4pByV8=
-		</data>
 		<key>Headers/IDentityLiteSDK-Swift.h</key>
 		<data>
 		uiC75+ffpjFNUDWlfQF+zQ4uGCA=
 		</data>
 		<key>Headers/IDentityLiteSDK.h</key>
 		<data>
-		UJRFkZ3Xk0HJUar11cYY9QFp5TA=
+		WNEwL988E74jiELmbRUkhdzunuc=
 		</data>
 		<key>Headers/IDentityXSLT.h</key>
 		<data>
 		Kw5kU13Uro49wJDcrtNx0+l5TsY=
-		</data>
-		<key>Headers/RSA.h</key>
-		<data>
-		ZD1I72sCxB85uR+lEMJ6m6VTKZo=
 		</data>
 		<key>Headers/UIImage+Glare.h</key>
 		<data>
@@ -314,11 +306,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		cAPKfl7aEbN2+ndAQABHIQPEibY=
+		Ln1v1yJmxmrJy+nu44NcoA6k0LM=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		Cwo1wovxrr00YusVmGvfPEBYF64=
+		jS6wQPoxpkJ6MEzGIbf/+cC+lqA=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -635,13 +627,6 @@
 			EWsQce8i5TcHZAJ0bmbcwQCS1UgF2tUFqEaC1xAX1Ds=
 			</data>
 		</dict>
-		<key>Headers/FWEncryptorAES.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Il2cSyCVLgtkD9aZ1hFA7z6lhnO2L3k9IGUS94LkJ+Q=
-			</data>
-		</dict>
 		<key>Headers/IDentityLiteSDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
@@ -653,7 +638,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			afnNMrxA9QfTG3hkt3Eq2qa4gi/VuSo5Z/lY1C0d6WM=
+			dQWeVUJBZysgPk6Vb80/jsG2dBJ8q8y7qBT15AWPYG0=
 			</data>
 		</dict>
 		<key>Headers/IDentityXSLT.h</key>
@@ -661,13 +646,6 @@
 			<key>hash2</key>
 			<data>
 			U/aNEdTvONPMBD9bsPi1CjDtOPX8RD9X/RlBcRVnIR4=
-			</data>
-		</dict>
-		<key>Headers/RSA.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			pv2+/ViGBTj1pqQbpdfaaQE9iD/RZhmH1utXFnv50FY=
 			</data>
 		</dict>
 		<key>Headers/UIImage+Glare.h</key>
@@ -898,7 +876,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RJI9OHWUuUVFmzA6gs3Fe+yfTgXeXdCRgV/3C/sXH1k=
+			tmS1VYHFexYrhZOktzmuO00xsKVUwQCc9CINtNtZ0Ls=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
