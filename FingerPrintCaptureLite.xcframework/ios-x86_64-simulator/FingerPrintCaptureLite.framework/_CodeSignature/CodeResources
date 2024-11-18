@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		l3KlsD110sFJNgMLNFC/xX7fwW4=
+		PsAnWCdr196wAL5QwLeYh6CwuKg=
 		</data>
 		<key>FingerPrintCapture.storyboardc/6FJ-Vp-rmr-view-zev-N2-Iwe.nib</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/FingerPrintCaptureLite-Swift.h</key>
 		<data>
-		mBsFUhTfHbFK4rJUxtvjraO814U=
+		1ehe0bSH8ldTR+3oxWJQv9rOhno=
 		</data>
 		<key>Headers/FingerPrintCaptureLite.h</key>
 		<data>
@@ -58,31 +58,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		jQ44gNSrfji53A4wRHk/0+KRRlk=
+		f7/htTcmzzokmz+wFUj/xyYy47E=
 		</data>
 		<key>Modules/FingerPrintCaptureLite.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		XLkBFtt7BoE5wrtWALHDed0AGhE=
+		4fl2OLWL6+Y4/uCi7vpad74YiLE=
 		</data>
 		<key>Modules/FingerPrintCaptureLite.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		JmKVedk2y96969A3SUQaYsQAItg=
+		t3v92qsFaoL1BsvUkl0M7ShAYsU=
 		</data>
 		<key>Modules/FingerPrintCaptureLite.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		vJvX4x7SewUy90IHPMffjsyZFn8=
+		MQkM4EIYPDNxxbAk7mwVaWJ5Mpg=
 		</data>
 		<key>Modules/FingerPrintCaptureLite.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		0+kZ60d+lI62WdIW8Ts/jDtteQs=
+		hCv035pI0ugIsrWYGlQLzYqzWVo=
 		</data>
 		<key>Modules/FingerPrintCaptureLite.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		vJvX4x7SewUy90IHPMffjsyZFn8=
+		MQkM4EIYPDNxxbAk7mwVaWJ5Mpg=
 		</data>
 		<key>Modules/FingerPrintCaptureLite.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		p5Muf6g0v3fLlzU5ASTVPyLHCG8=
+		bMBJmr9I2lH/7epmJTz77U4/H5s=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -95,7 +95,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iymJKOStaoo0rgguLe8Yf9eDiHUu328KyP5ft1qcuvg=
+			9pDzmC0fB7k862B0k1bkLCxMKCPdcZ4xR9EUyF5sdhY=
 			</data>
 		</dict>
 		<key>FingerPrintCapture.storyboardc/6FJ-Vp-rmr-view-zev-N2-Iwe.nib</key>
@@ -151,7 +151,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jBcKr0IntztoOlkw6MvlX6PftTo9TL1EbSnKXP0almc=
+			pM7CH+Yu50qfBz7FiwuyFz88XEjdPieF5hVfjhhzlDI=
 			</data>
 		</dict>
 		<key>Headers/FingerPrintCaptureLite.h</key>
@@ -186,42 +186,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XJUa21jHqlkt6vd0CWGVWZZhTzCTW0LUW3fEfRkX/go=
+			IPVUpRl2d7M86Er6iUt8idYZDmRSOB6vSV41fcbB6s8=
 			</data>
 		</dict>
 		<key>Modules/FingerPrintCaptureLite.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uPAy5aD1vKegA54pC1a3nKQ5Td4U1Ae6IgyiA6aMtMY=
+			V5F8J+jfMwPe4iYyBd2WZR7bay55+Rx7cn4Ga4UBxyI=
 			</data>
 		</dict>
 		<key>Modules/FingerPrintCaptureLite.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6fv5mR+ZUJ5+qocaQcZk5NjGHZTftloaN9eLahk7nns=
+			R1dv5bkFIRVIIxWP4Zgzo7RgzuzNCAdkv26ZqQiIIT0=
 			</data>
 		</dict>
 		<key>Modules/FingerPrintCaptureLite.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s8SPXioy254pkIUIJvjHTmLEfyCvMS/h82hm+uQeeDA=
+			prbVspBXC6Q8pxz7wrDxueq7Gqw4VwCFxQbgePNunGk=
 			</data>
 		</dict>
 		<key>Modules/FingerPrintCaptureLite.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6fv5mR+ZUJ5+qocaQcZk5NjGHZTftloaN9eLahk7nns=
+			R1dv5bkFIRVIIxWP4Zgzo7RgzuzNCAdkv26ZqQiIIT0=
 			</data>
 		</dict>
 		<key>Modules/FingerPrintCaptureLite.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dNXy+T6l9iLBKbpB5egFgRxvQU/iCZP5TfKZfcVED6U=
+			52EwCalZ4t5U2vI5YKIBJXyDsZJAb00o3owQ80cBcl0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

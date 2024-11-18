@@ -1,0 +1,4 @@
+framework module VideoCaptureLite {
+  header "VideoCaptureLite-Swift.h"
+  requires objc
+}
