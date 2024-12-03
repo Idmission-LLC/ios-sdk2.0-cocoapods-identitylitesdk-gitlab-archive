@@ -14,19 +14,19 @@
 		</data>
 		<key>IDCapture.storyboardc/0MQ-BS-jP5-view-1qV-G3-ufb.nib/objects-14.0+.nib</key>
 		<data>
-		LA0ZYoMKc10rvgaCVaeqPVPFk/w=
+		wpUKYbqVCKEPaouLKyQ9riLb94Y=
 		</data>
 		<key>IDCapture.storyboardc/0MQ-BS-jP5-view-1qV-G3-ufb.nib/runtime.nib</key>
 		<data>
-		LA0ZYoMKc10rvgaCVaeqPVPFk/w=
+		wpUKYbqVCKEPaouLKyQ9riLb94Y=
 		</data>
 		<key>IDCapture.storyboardc/82V-S7-3fK-view-rnQ-zC-kEZ.nib/objects-14.0+.nib</key>
 		<data>
-		PExEi99zk/PBwWRvb3lDMZByFc8=
+		Ns1osL2p5jqspfJzYKwTBSzO7N8=
 		</data>
 		<key>IDCapture.storyboardc/82V-S7-3fK-view-rnQ-zC-kEZ.nib/runtime.nib</key>
 		<data>
-		sNL3Ozy8NMWoeDv34ImeKezX6Hw=
+		vtIbYM7Gp67yL73qUzTzevX35UI=
 		</data>
 		<key>IDCapture.storyboardc/Ff5-cc-gUl-view-big-ZQ-W6Q.nib/objects-14.0+.nib</key>
 		<data>
@@ -98,11 +98,11 @@
 		</data>
 		<key>IDCapture.storyboardc/T4m-RV-e8I-view-2Da-Et-BYa.nib/objects-14.0+.nib</key>
 		<data>
-		ZNE3Mn6xL+9YjWoXGQceuno0w+k=
+		D5vnTjtpuWsns5ctE6y2orAgBMo=
 		</data>
 		<key>IDCapture.storyboardc/T4m-RV-e8I-view-2Da-Et-BYa.nib/runtime.nib</key>
 		<data>
-		ZNE3Mn6xL+9YjWoXGQceuno0w+k=
+		D5vnTjtpuWsns5ctE6y2orAgBMo=
 		</data>
 		<key>IDCapture.storyboardc/mkj-2R-7XC-view-Woh-ia-fDF.nib/objects-14.0+.nib</key>
 		<data>
@@ -114,15 +114,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		JkgJWt2dmzfLhxWbzIBdqHQuJ0Y=
+		Dv8zeTAdKCutz5foYHH0WHu1oYw=
 		</data>
 		<key>Modules/IDCaptureLite.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		d6YbFcYKTuaTvRfJu4ppPc/VEPo=
+		sLg6o+KXdQ4MPWg1OsyJpQbCV34=
 		</data>
 		<key>Modules/IDCaptureLite.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		3mTIJnkUaXZAI0GgTsIxWHDzocQ=
+		1D9B29jpTO8fCuGUoieZup8n9Co=
 		</data>
 		<key>Modules/IDCaptureLite.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -138,7 +138,7 @@
 		</data>
 		<key>Modules/IDCaptureLite.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		pLVB6vtQxoUfgSFZGUpII06GiZQ=
+		u+0rIYekk0qjZVae1+70rJC6F2U=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -165,28 +165,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EfDzMdz+W+D02Z4lnSVTygi94inVVS2dnlvh3HY0pQI=
+			mYrKx1HPtXynsX/1BvukNPGf/WDQ5IcwJJq6wy6Bsgw=
 			</data>
 		</dict>
 		<key>IDCapture.storyboardc/0MQ-BS-jP5-view-1qV-G3-ufb.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EfDzMdz+W+D02Z4lnSVTygi94inVVS2dnlvh3HY0pQI=
+			mYrKx1HPtXynsX/1BvukNPGf/WDQ5IcwJJq6wy6Bsgw=
 			</data>
 		</dict>
 		<key>IDCapture.storyboardc/82V-S7-3fK-view-rnQ-zC-kEZ.nib/objects-14.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			825akRv4FeBjyxBSjJHvIU2JsJi/bKGn4KcSvB2clNQ=
+			K+ec3UAJZtKa+GytdudNCQk6uU4H6JL5WLnYHUd2s/A=
 			</data>
 		</dict>
 		<key>IDCapture.storyboardc/82V-S7-3fK-view-rnQ-zC-kEZ.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BsPiFTgn8WPNnXKODEZmpxNKAcC057W9da2LTUYhdzk=
+			dND3F+XdLFyhv5eoStvtrbUVCuqxWBd1zM6wscDKSeQ=
 			</data>
 		</dict>
 		<key>IDCapture.storyboardc/Ff5-cc-gUl-view-big-ZQ-W6Q.nib/objects-14.0+.nib</key>
@@ -312,14 +312,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vCjTX97WfW60ivbxWIY48uHetI7RxDhaW6M27B3L/m0=
+			avhpCrwS1cZL/+e/wLX2UK/pgwOsYInVXqp3azhx664=
 			</data>
 		</dict>
 		<key>IDCapture.storyboardc/T4m-RV-e8I-view-2Da-Et-BYa.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vCjTX97WfW60ivbxWIY48uHetI7RxDhaW6M27B3L/m0=
+			avhpCrwS1cZL/+e/wLX2UK/pgwOsYInVXqp3azhx664=
 			</data>
 		</dict>
 		<key>IDCapture.storyboardc/mkj-2R-7XC-view-Woh-ia-fDF.nib/objects-14.0+.nib</key>
@@ -340,14 +340,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			McrpytoJS8UMmS1j11YgTZpJwI9Cya1IVURGLGMq7qg=
+			iZB2YLhb0GO3KcnlWEeS9g650Xe65ADy9j5Sei2c8Co=
 			</data>
 		</dict>
 		<key>Modules/IDCaptureLite.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+Dzz1jAIgIyKnG9t9qPtdCMZ+5shc79jthUAFZrgSBs=
+			mlXg1mPfvJJI9/GQ9Uxp0MadJPHkPxh+xUNh1lZbPts=
 			</data>
 		</dict>
 		<key>Modules/IDCaptureLite.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -375,7 +375,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XI48azQnINJPhRqK+MdlFhOgGd9l2aFlIJigv9rSd2M=
+			RHuJY271owYG5Z1zvzFAOApQl1EkK0MeRIoL6TEGAe4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
