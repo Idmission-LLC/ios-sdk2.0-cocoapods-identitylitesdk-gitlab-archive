@@ -21,7 +21,6 @@ import MLKitFaceDetection
 import MLKitVision
 import MetalPerformanceShaders
 import MobileCoreServices
-import Speech
 import Swift
 import SwiftUI
 import TensorFlowLite
@@ -876,42 +875,6 @@ public struct IdDataVerifyRequest : Swift.Encodable {
   public init(idNumber: Swift.String? = nil, idNumber2: Swift.String? = nil, issueDate: Swift.String? = nil, expDate: Swift.String? = nil)
   public func encode(to encoder: any Swift.Encoder) throws
 }
-public typealias URLResultCompletion = (Swift.Result<Foundation.URL, any Swift.Error>) -> Swift.Void
-public protocol VideoCaptureDelegate : IDentityLiteSDK.IDCaptureDelegate, IDentityLiteSDK.SelfieCaptureDelegate {
-  func foundLiveFace(frame: CoreFoundation.CGRect?, fullSize: CoreFoundation.CGSize, mode: IDentityLiteSDK.VideoCaptureMode)
-}
-public enum VideoCaptureMode {
-  case selfieCapture, idCapture, readingText, liveFaceLost
-  public static func == (a: IDentityLiteSDK.VideoCaptureMode, b: IDentityLiteSDK.VideoCaptureMode) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public class VideoCapture {
-  public var videoWriter: IDentityLiteSDK.VideoWriter
-  final public let speechRecognizer: IDentityLiteSDK.SpeechRecognizer?
-  public static var options: IDentityLiteSDK.VideoCapture.Options
-  public static var strings: IDentityLiteSDK.VideoCapture.Strings
-  public static var colors: IDentityLiteSDK.VideoCapture.Colors
-  weak public var delegate: (any IDentityLiteSDK.VideoCaptureDelegate)?
-  public var mode: IDentityLiteSDK.VideoCaptureMode
-  public init?(selfieOverlayFrame: CoreFoundation.CGRect, idOverlayFrame: CoreFoundation.CGRect, videoSettings: [Swift.String : Any]?, audioSettings: [Swift.String : Any]?)
-  public func stopVideoWriter(completion: IDentityLiteSDK.URLResultCompletion? = nil)
-  public func retry()
-  public func typeMismatch()
-  @objc deinit
-}
-extension IDentityLiteSDK.VideoCapture : IDentityLiteSDK.CaptureSessionDelegate {
-  public func captured(image: UIKit.UIImage, captureMode: IDentityLiteSDK.CaptureMode, lensPosition: Swift.Float)
-  public func captured(sampleBuffer: CoreMedia.CMSampleBuffer)
-}
-extension IDentityLiteSDK.VideoCapture : IDentityLiteSDK.SelfieCaptureDelegate {
-  public func updated(state: IDentityLiteSDK.SelfieCaptureState)
-}
-extension IDentityLiteSDK.VideoCapture : IDentityLiteSDK.IDCaptureDelegate {
-  public func updated(state: IDentityLiteSDK.IDCaptureState)
-}
 public struct TrainingModelDownloadDetails : Swift.Encodable {
   public var previousUniqueKeyId: Swift.String?
   public var algorithm: Swift.String?
@@ -1356,6 +1319,7 @@ extension IDentityLiteSDK.IDCapture {
     public var enableRealId: Swift.Bool
     public var enableInstructionScreen: Swift.Bool
     public var enablePassportNFC: Swift.Bool
+    public var performIdCaptureBeforeSelfie: Swift.Bool
     public var passportNFCPhotoMatchThreshold: Swift.Float
   }
 }
@@ -1977,13 +1941,6 @@ extension IDentityLiteSDK.VoiceCapture {
     public var saveButtonImage: UIKit.UIImage?
   }
 }
-extension IDentityLiteSDK.VideoCapture {
-  public struct Colors {
-    public var readingTextColor: UIKit.UIColor?
-    public var readingTextSpokenWordColor: UIKit.UIColor?
-    public var readingTextBackgroundColor: UIKit.UIColor?
-  }
-}
 public struct BiometricEnrollData : Swift.Encodable {
   public var selfie: Swift.String
   public var fingerPrintData: IDentityLiteSDK.FingerPrintData?
@@ -2011,8 +1968,8 @@ public struct SecurityData : Swift.Encodable {
 @_inheritsConvenienceInitializers @objc public class FingerPrintDetector : ObjectiveC.NSObject {
   public var interpreter: TensorFlowLite.Interpreter?
   @objc override dynamic public init()
-  @objc public func detectFingerPrint(image: UIKit.UIImage?) -> IDentityLiteSDK.DetectedFingerPrintData?
   @objc deinit
+  @objc public func detectFingerPrint(image: UIKit.UIImage?) -> IDentityLiteSDK.DetectedFingerPrintData?
 }
 @available(*, deprecated, renamed: "CustomerValidateIdFaceMatchDataResponse", message: "This struct will no longer supported in future release please use the updated 'CustomerValidateIdFaceMatchDataResponse' struct")
 public struct CustomerValidateIdFaceMatchDataResponseV3 : Swift.Codable {
@@ -2045,21 +2002,6 @@ public struct FormDetailIdentifyResponseDataV3 : Swift.Codable {
   public var predicatedGender: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
-}
-extension IDentityLiteSDK.VideoCapture {
-  public struct Options {
-    public var idToSelfieMatchThreshold: Swift.Float
-    public var idToIdPhotoMatchThreshold: Swift.Float
-    public var frontLevenshteinThreshold: Swift.Float
-    public var backLevenshteinThreshold: Swift.Float
-    public var passportLevenshteinThreshold: Swift.Float
-    public var readTextCountdownSeconds: Swift.Int
-    public var readTextWordMatchThreshold: Swift.Float
-    public var isDebugMode: Swift.Bool
-    public var frontRealnessThreshold: Swift.Float
-    public var backRealnessThreshold: Swift.Float
-    public var enableRealId: Swift.Bool
-  }
 }
 public struct CustomerValidateIdResponse : Swift.Codable {
   public var status: IDentityLiteSDK.StatusData?
@@ -2781,16 +2723,6 @@ extension IDentityLiteSDK.FingerPrintCapture {
     public mutating func reset()
   }
 }
-extension IDentityLiteSDK.VideoCapture {
-  public struct Strings {
-    public var faceDoesNotMatch: Swift.String
-    public var voiceDoesNotMatch: Swift.String
-    public var liveFaceLost: Swift.String
-    public var idDoesNotMatch: Swift.String
-    public var doneButton: Swift.String
-    public mutating func reset()
-  }
-}
 extension IDentityLiteSDK.DocumentCapture {
   public struct Images {
     public var instructionScreenImage: UIKit.UIImage?
@@ -3344,11 +3276,6 @@ extension IDentityLiteSDK.DocumentCapture {
     public var labelPosition: IDentityLiteSDK.DocumentCapture.LabelPosition
   }
 }
-@_hasMissingDesignatedInitializers public class VideoWriter {
-  public static let fileType: AVFoundation.AVFileType
-  @objc deinit
-  public func write(audio: CoreMedia.CMSampleBuffer)
-}
 public struct TrainingModelResponse : Swift.Codable {
   public var modelType: Swift.String
   public var preSignedURL: Swift.String?
@@ -3380,21 +3307,6 @@ public struct FormDetailResultResponseData : Swift.Codable {
   public var videoIDData: IDentityLiteSDK.VideoIDDataResponse?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
-}
-public protocol SpeechRecognizerDelegate : AnyObject {
-  func speechRecognition(result: Speech.SFSpeechRecognitionResult)
-  func speechRecognition(error: any Swift.Error)
-}
-@_hasMissingDesignatedInitializers public class SpeechRecognizer {
-  weak public var delegate: (any IDentityLiteSDK.SpeechRecognizerDelegate)?
-  public var isAvailable: Swift.Bool {
-    get
-  }
-  public func start()
-  public func append(sampleBuffer: CoreMedia.CMSampleBuffer)
-  public func stop()
-  public func retry()
-  @objc deinit
 }
 extension IDentityLiteSDK.SignatureCapture {
   public struct Strings {
@@ -3875,8 +3787,6 @@ extension IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DetectLiveness : Swi
 extension IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DetectLabel : Swift.Equatable {}
 extension IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DetectLabel : Swift.Hashable {}
 extension IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DetectLabel : Swift.RawRepresentable {}
-extension IDentityLiteSDK.VideoCaptureMode : Swift.Equatable {}
-extension IDentityLiteSDK.VideoCaptureMode : Swift.Hashable {}
 extension IDentityLiteSDK.DetectedData.DocumentSide : Swift.Equatable {}
 extension IDentityLiteSDK.DetectedData.DocumentSide : Swift.Hashable {}
 extension IDentityLiteSDK.CaptureBack : Swift.Equatable {}

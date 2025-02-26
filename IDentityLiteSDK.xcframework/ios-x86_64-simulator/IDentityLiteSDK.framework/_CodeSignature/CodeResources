@@ -8,10 +8,6 @@
 		<data>
 		RlheyDfsbIP8zowiTEr5ETkCuj4=
 		</data>
-		<key>DocDetectionTrainingModel_UNIQUE_KEY_ID_4388_20241126014000.tflite</key>
-		<data>
-		GWFr4bpQ/xwFGY1dmZ7MdYZfXiw=
-		</data>
 		<key>DocumentCapture.storyboardc/1Pk-oV-bqy-view-n8U-9k-eXr.nib/objects-14.0+.nib</key>
 		<data>
 		0WO/6frETtm4KgzKbjqsh8g9TSE=
@@ -96,18 +92,6 @@
 		<data>
 		TngDxKsLJjUH/4AdtyBGgnpZZAU=
 		</data>
-		<key>FPDetectionTrainingModel_UNIQUE_KEY_ID_4388_20241126014000.tflite</key>
-		<data>
-		69wDdc1O3nE28EwAhIslx+g07JI=
-		</data>
-		<key>FocusFaceTrainingModel_UNIQUE_KEY_ID_4388_20241126014000.tflite</key>
-		<data>
-		bRGw3iFIyLoAynD7u9vxlUTiQlA=
-		</data>
-		<key>FocusTrainingModel_UNIQUE_KEY_ID_4388_20241126014000.tflite</key>
-		<data>
-		iSaOb//AZON4O1oTpUZ5/A5vxQg=
-		</data>
 		<key>GET_XSLT_DATA.json</key>
 		<data>
 		r4pT4tYjepBLh4NXSpKs3Pp+qDM=
@@ -130,7 +114,7 @@
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/Info.plist</key>
 		<data>
-		6y9L9OF+HBNabUuOcwLIjxc4JtE=
+		XbL7t4UIl0GrT/4m60gpgUk3ef8=
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
 		<data>
@@ -312,45 +296,37 @@
 		<data>
 		kaJR25wXLG/fzOUUQZTZ4TIeR+k=
 		</data>
-		<key>IdTrainingModel_UNIQUE_KEY_ID_4388_20241126014000.tflite</key>
-		<data>
-		VJtyd6pUglWLQcBmHLFYStHmZ1E=
-		</data>
 		<key>Info.plist</key>
 		<data>
-		p1lxNVsVbSTSX6cWnbx4cxSlwI8=
+		aM3PhmT2pmlS8AoYqDEQbFieUeg=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		xh3ljqnt1ZxTKIH+FHeDzPz/bpw=
+		nRZ5pUFslOf+CHRZYx9K+DUFft8=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		kJGb8/wEuBOlsfK5rP5XBya7+XA=
+		1zxlxslkgj4IB1o+aUaFUUvyCOE=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		U1OJK4MHu83z/4LzgUQyF9gJYzg=
+		iOynOKq9I1GAPCpmqlSXtm04iqw=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		PDYfC+kCNwrEeAuk7TUe81tHmkM=
+		/a34OABgajrhHi9yqac/ye1tl5c=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		U1OJK4MHu83z/4LzgUQyF9gJYzg=
+		iOynOKq9I1GAPCpmqlSXtm04iqw=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		eDNS6XippC1XGJ6oKISHGejqut0=
+		b/jyvPPRpyvAmLJBxnHjZKQsydk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		XkLv7OD6e+mYE8NPuzwSdyihZj8=
-		</data>
-		<key>PassiveFaceTrainingModel_UNIQUE_KEY_ID_4388_20241126014000.tflite</key>
-		<data>
-		fpfpnhS0dSup2gQypFiSTRUVmWI=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
@@ -372,13 +348,6 @@
 			<key>hash2</key>
 			<data>
 			Qm7TXhZ8cxV+HJ7Xdd1JwMlG2rYJSS3Ul4su5VEY7gI=
-			</data>
-		</dict>
-		<key>DocDetectionTrainingModel_UNIQUE_KEY_ID_4388_20241126014000.tflite</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			fZ4Vs84ZAIowRdcF7J9e+dFvXgLuMnMnmT+nLQN8v94=
 			</data>
 		</dict>
 		<key>DocumentCapture.storyboardc/1Pk-oV-bqy-view-n8U-9k-eXr.nib/objects-14.0+.nib</key>
@@ -528,27 +497,6 @@
 			/b15oVnJjm6ej6gpuprlR4yXlrmjVZSilJluNV1ZLYc=
 			</data>
 		</dict>
-		<key>FPDetectionTrainingModel_UNIQUE_KEY_ID_4388_20241126014000.tflite</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			0gSeTRWQBLFywwDBka+RyfZcVsq7lvwF1VzV2I+Jc3M=
-			</data>
-		</dict>
-		<key>FocusFaceTrainingModel_UNIQUE_KEY_ID_4388_20241126014000.tflite</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			z/P1sO5MkGjt65UIPeFa5t3oI1axSj5g600dpgeH6IQ=
-			</data>
-		</dict>
-		<key>FocusTrainingModel_UNIQUE_KEY_ID_4388_20241126014000.tflite</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			DE1XFyuTx7eAjpA3Vnl3ZtT7HuHes7S88LrthILOO2c=
-			</data>
-		</dict>
 		<key>GET_XSLT_DATA.json</key>
 		<dict>
 			<key>hash2</key>
@@ -588,7 +536,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			F24RklSrNROQiaszfWi/iF2jJD8230mw/iDyeowYPXE=
+			iRFzZEjpGJUqPEVTP3fFYe1IDMBJDw22qNyHZIOlNtM=
 			</data>
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
@@ -906,53 +854,46 @@
 			aYNprLbIgDX45Q7oHJ1IwMY9px2AfQV2tO0IZF2Ssfc=
 			</data>
 		</dict>
-		<key>IdTrainingModel_UNIQUE_KEY_ID_4388_20241126014000.tflite</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			7tqKC+9Vhnkzg1OF5q8RRvE2oY3jQWHOwgsX62alvtw=
-			</data>
-		</dict>
 		<key>Modules/IDentityLiteSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tuv8qm2r5jT2BpAUh4LzslPHf3bDs28MlJ1PazEyvO8=
+			DhS075D3Wq8pFhGGuaKkNsoATbBnNPLN/6zcQbxzeLg=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EIgjU+7LbKCjXDjcIBv94EK3oWKPlhYtsC6CUbcs1Uk=
+			6ujtrQCZgbv+0B9HZhMx9slEKr5WssCtDrzzffWlU3o=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6OdLflXHKE8vF6V3IZisKzQld9+QUXK5wRGM0clbyI4=
+			uKH/SvAcKg5R4BuzKXAiNx6hWcZAUTbD0hDhlt6vxRE=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3P2C/eBbWehsbm1VJ+GQOg4FZU4ubB1WEcFffDzta04=
+			uJ7iuB1QR96dysPSWLC+1sj1aowPMU9MxyxgkizcP+s=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6OdLflXHKE8vF6V3IZisKzQld9+QUXK5wRGM0clbyI4=
+			uKH/SvAcKg5R4BuzKXAiNx6hWcZAUTbD0hDhlt6vxRE=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9qAw7BRQuEesyYPD06YoltJDgf/Y8yxeo+51MPmoeR0=
+			ZAYXAG5LWsZ5Ijqt0mzM1ABHxuU+6KR1J1PqeSN3FmI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -960,13 +901,6 @@
 			<key>hash2</key>
 			<data>
 			SOwMzaDinPMIt0P2F+vhg+Dpz8vz82bGvd99bNBNBMU=
-			</data>
-		</dict>
-		<key>PassiveFaceTrainingModel_UNIQUE_KEY_ID_4388_20241126014000.tflite</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			RH6P6s16wnVne1PC1W6S8qn+pZwIX3po4chlbjtMw+M=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>

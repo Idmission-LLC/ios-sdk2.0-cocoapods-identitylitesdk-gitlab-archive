@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		c6ZDWeJWKmVzIgrObGFWg6YT4Zk=
+		40nGGCPkcmo/JUDFsIXIUhVmg44=
 		</data>
 		<key>Modules/VoiceCaptureLite.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		LgvMlmt8NDeZbhs0ypLZU7iaIDY=
+		TZvcrGNSWXdeYLgpC21ewCt+Qwc=
 		</data>
 		<key>Modules/VoiceCaptureLite.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		2PyeVTEm6gqey/Qec4jXuHVn99Y=
+		510l1U8zfj1iOZMJ8h3yKKgb46Q=
 		</data>
 		<key>Modules/VoiceCaptureLite.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/VoiceCaptureLite.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		9nEnbDY5FAnRQYhrMBSlZNOPJMc=
+		hy0S20cVDLpfMvALt42GbxMBRUE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -85,14 +85,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7Q/uWjKgnOTLj8Cdcshj16LzKP6fc0ABtHW+VdW9L4I=
+			Ezt+B2EBYqvPu1YTuP9f2GstqezgD2BB3qMTmoABKl0=
 			</data>
 		</dict>
 		<key>Modules/VoiceCaptureLite.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NF+cKnPLO26FbHMBCVmNFVry4VIMmAZc/BQdDyNJTMo=
+			1BVPK0MM483p7NhPuwbTGJqrIri6UHGkZOVoXHunz18=
 			</data>
 		</dict>
 		<key>Modules/VoiceCaptureLite.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -120,7 +120,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			m2uEY9KCTAYP9/6Ous0ljW83nZm398eXkjox5nAFba4=
+			mhN2/2wlK9iwtOOYrwXAQcPQOxEizFGSyYg1ycezeu8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
