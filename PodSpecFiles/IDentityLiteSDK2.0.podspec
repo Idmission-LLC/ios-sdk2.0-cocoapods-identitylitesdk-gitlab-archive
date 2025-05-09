@@ -22,7 +22,7 @@ Pod::Spec.new do |spec|
   spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   spec.ios.vendored_frameworks = 'IDentityLiteSDK.xcframework'  
-  spec.dependency "SelfieCaptureLite", "10.1.4.2.5"
-  spec.dependency "IDCaptureLite", "10.1.4.2.5"
+  spec.dependency 'SelfieCaptureLite', '10.1.4.2.5'
+  spec.dependency 'IDCaptureLite', '10.1.4.2.5'
 
 end
