@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = "IDCaptureLite"
-  spec.version      = "10.1.4.2.4"
+  spec.version      = "10.1.4.2.5"
   spec.summary      = "IDCaptureLite lets user add IDCaptureLiteSDK in their project"
   spec.description  = <<-DESC 
                     IDCaptureLite helps user to add IDCaptureLiteSDK in their project.
@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
                     Also able to use various service ID mentioned in Documentation.
                    DESC
   
-  spec.homepage     = "https://github.com/Idmission-LLC/IDentityLiteSDK2.0"
+  spec.homepage     = "https://sdk2:SCpM3XAZq-sWQ8CYFwUc@gitlab.idmission.com/apps/sdk2.0/ios/cocoapods/identitylitesdk2.0.git"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author             = { "Idmission LLC" => "amol.deshmukh@idmission.com" }
   spec.source       = { :git => "https://sdk2:SCpM3XAZq-sWQ8CYFwUc@gitlab.idmission.com/apps/sdk2.0/ios/cocoapods/identitylitesdk2.0.git", 
