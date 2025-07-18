@@ -58,11 +58,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		dgzH7moOXYMUzGniuItube0srPU=
+		Tgf5tEd1cwDSbrnO7uOIG/4TGAM=
 		</data>
 		<key>Modules/FingerPrintCaptureLite.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		+mKge9zIa6d4LNezaud3l2WOnlQ=
+		aMHIf/kDJDOSUBUcwxpB8TI2kMU=
 		</data>
 		<key>Modules/FingerPrintCaptureLite.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>Modules/FingerPrintCaptureLite.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		UtgB6C9UIX3/PFKmidCuWpAeBnA=
+		+g9EE4TwQQ/1sErYIlNj2quWYv8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -186,7 +186,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BngIpwUnUTQqlNwWiQeV+rpTI0NAIjlmB1Hhpx1LvC0=
+			NZeB50/2LBHPjYg5LtDgDjbnmQw5yXbI9ZhFJiX9Eo4=
 			</data>
 		</dict>
 		<key>Modules/FingerPrintCaptureLite.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -221,7 +221,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pVZgeQnu3FpI2KO0D6RObLWWGX14lsAM/kVzV+fI/5c=
+			at/iJTr18VYonHp3gBFtakEnovjGnChp8awh9RRFfOU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
