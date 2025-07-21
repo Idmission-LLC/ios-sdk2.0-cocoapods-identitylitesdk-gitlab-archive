@@ -57,13 +57,3 @@ git tag "${SDK_VERSION}"
 git push origin "${SDK_VERSION}"
 
 echo "✅ Done! LiteSDK updated and tagged as '${SDK_VERSION}'."
-
-# #Push All PodSpec file to CocoapodsTrunk
-# echo "⬆️ LiteSDK: Pushing to Cocoapod Trunk"
-# pod trunk push FingerPrintCaptureLite.podspec
-# pod trunk push IDCaptureLite.podspec
-# pod trunk push SelfieCaptureLite.podspec
-# pod trunk push IDentityLiteModels.podspec
-# pod trunk push SignatureCaptureLite.podspec
-# pod trunk push VoiceCaptureLite.podspec
-# pod trunk push IDentityLiteSDK2.0.podspec
