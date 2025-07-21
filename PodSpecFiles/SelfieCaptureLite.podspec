@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name                   = "SelfieCaptureLite"
-  spec.version                = "10.1.12.2.1"
+  spec.version                = "10.1.11.2.1"
   spec.summary                = "SelfieCaptureLite lets user add SelfieCaptureLiteSDK in their project"
   spec.description            = <<-DESC 
                                 SelfieCaptureLite helps user to add SelfieCaptureLiteSDK in their project.
@@ -13,7 +13,7 @@ Pod::Spec.new do |spec|
   spec.homepage                = "https://www.idmission.com/en/home"
   spec.license                 = { :type => "MIT", :file => "LICENSE" }
   spec.author                  = { "Idmission LLC" => "amol.deshmukh@idmission.com" }
-  spec.source                  = { :git => "https://sdk2:SCpM3XAZq-sWQ8CYFwUc@gitlab.idmission.com/apps/sdk2.0/ios/cocoapods/identitylitesdk2.0.git", :tag => "#{spec.version}"}
+  spec.source                  = { :git => "https://cocoapods:EG8mv3fKkV4F-_CvVPTJ@gitlab.idmission.com/apps/sdk2.0/ios/cocoapods/identitylitesdk2.0.git", :tag => "#{spec.version}"}
   spec.platform                = :ios
   spec.ios.deployment_target   = '13.0'
   spec.swift_version           = "5"
