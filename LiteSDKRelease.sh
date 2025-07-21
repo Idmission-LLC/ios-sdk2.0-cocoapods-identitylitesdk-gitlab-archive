@@ -23,7 +23,18 @@ cd "$(dirname "$0")"   # go to identitylitesdk2.0/
 
 # Update .podspec file version
 echo "🚀 LiteSDK: Updating All .podspec file vesions"
-./PodSpecFiles/update_podspec_version.sh "${SDK_VERSION}"
+for file in FingerPrintCaptureLite.podspec \
+            IDCaptureLite.podspec \
+            IDentityLiteModels.podspec \
+            IDentityLiteSDK2.0.podspec \
+            SelfieCaptureLite.podspec \
+            SignatureCaptureLite.podspec \
+            VideoCaptureLite.podspec \
+            VoiceCaptureLite.podspec
+do
+  echo "Updating ${file} …"
+  sed -i '' -E "s/(spec\.version[[:space:]]*=[[:space:]]*\")[^\"]*(\")/\1${SDK_VERSION}\2/" "${file}"
+done
 
 # Check if tag already exists
 if git rev-parse "$SDK_VERSION" >/dev/null 2>&1; then

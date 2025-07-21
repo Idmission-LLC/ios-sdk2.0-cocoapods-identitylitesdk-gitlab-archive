@@ -1,13 +1,13 @@
 Pod::Spec.new do |spec|
 
 
-  spec.name                   = "VideoCaptureLite"
-  spec.version                = "10.1.11.2.1"
-  spec.summary                = "VideoCaptureLite lets user add VideoCaptureLiteSDK in their project"
+  spec.name                   = "IDentityLiteModels"
+  spec.version                = "10.1.11.2.2"
+  spec.summary                = "IDentityLiteModels lets user add IDentityLiteModels in their project"
   spec.description            = <<-DESC 
-                                VideoCaptureLite helps user to add VideoCaptureLiteSDK in their project.
-                                On integrating VideoCaptureLiteSDK user will be able to Capture VideoCapture.
-                                Also able to use verious service ID mentined in Documentation.
+                                IDentityLiteModels helps user to add IDentityLiteModels in their project.
+                                On integrating IDentityLiteModels user will be able to use existing embedded models.
+                                Also able to use various service ID mentioned in Documentation.
                                DESC
   
   spec.homepage                = "https://www.idmission.com/en/home"
@@ -19,6 +19,6 @@ Pod::Spec.new do |spec|
   spec.swift_version           = "5"
   spec.pod_target_xcconfig     = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   spec.user_target_xcconfig    = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  spec.ios.vendored_frameworks = 'VideoCaptureLite.xcframework'
+  spec.ios.vendored_frameworks = 'IDentityLiteModels.xcframework'  
 
 end

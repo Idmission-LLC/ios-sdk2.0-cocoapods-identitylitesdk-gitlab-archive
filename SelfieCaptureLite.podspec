@@ -1,12 +1,12 @@
 Pod::Spec.new do |spec|
 
 
-  spec.name                   = "VoiceCaptureLite"
-  spec.version                = "10.1.11.2.1"
-  spec.summary                = "VoiceCaptureLite lets user add VoiceCaptureLiteSDK in their project"
+  spec.name                   = "SelfieCaptureLite"
+  spec.version                = "10.1.11.2.2"
+  spec.summary                = "SelfieCaptureLite lets user add SelfieCaptureLiteSDK in their project"
   spec.description            = <<-DESC 
-                                VoiceCaptureLite helps user to add VoiceCaptureLiteSDK in their project.
-                                On integrating VoiceCaptureLiteSDK user will be able to Capture Voice.
+                                SelfieCaptureLite helps user to add SelfieCaptureLiteSDK in their project.
+                                On integrating SelfieCaptureLiteSDK user will be able to Capture Face.
                                 Also able to use verious service ID mentined in Documentation.
                                DESC
   
@@ -19,6 +19,6 @@ Pod::Spec.new do |spec|
   spec.swift_version           = "5"
   spec.pod_target_xcconfig     = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   spec.user_target_xcconfig    = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  spec.ios.vendored_frameworks = 'VoiceCaptureLite.xcframework'
+  spec.ios.vendored_frameworks = 'SelfieCaptureLite.xcframework'
 
 end

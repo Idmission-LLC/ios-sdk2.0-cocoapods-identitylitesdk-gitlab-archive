@@ -1,13 +1,13 @@
 Pod::Spec.new do |spec|
 
 
-  spec.name                   = "IDentityLiteSDK2.0"
-  spec.version                = "10.1.11.2.1"
-  spec.summary                = "IDentityLiteSDK lets user add IDentityLiteSDK in their project"
+  spec.name                   = "VoiceCaptureLite"
+  spec.version                = "10.1.11.2.2"
+  spec.summary                = "VoiceCaptureLite lets user add VoiceCaptureLiteSDK in their project"
   spec.description            = <<-DESC 
-                                IDentityLiteSDK helps user to add IDentityLiteSDK in their project.
-                                On integrating IDentityLiteSDK user will be able to Capture Face & ID.
-                                Also able to use various service ID mentioned in Documentation.
+                                VoiceCaptureLite helps user to add VoiceCaptureLiteSDK in their project.
+                                On integrating VoiceCaptureLiteSDK user will be able to Capture Voice.
+                                Also able to use verious service ID mentined in Documentation.
                                DESC
   
   spec.homepage                = "https://www.idmission.com/en/home"
@@ -19,8 +19,6 @@ Pod::Spec.new do |spec|
   spec.swift_version           = "5"
   spec.pod_target_xcconfig     = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   spec.user_target_xcconfig    = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  spec.ios.vendored_frameworks = [ 'IDentityLiteSDK.xcframework', 'SelfieCaptureLite.xcframework', 'IDCaptureLite.xcframework']
-  # spec.dependency 'SelfieCaptureLite', "'#{spec.version}'"
-  # spec.dependency 'IDCaptureLite', "'#{spec.version}'"
+  spec.ios.vendored_frameworks = 'VoiceCaptureLite.xcframework'
 
 end

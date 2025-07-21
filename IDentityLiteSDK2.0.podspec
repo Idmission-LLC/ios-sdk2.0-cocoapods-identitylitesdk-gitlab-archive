@@ -1,12 +1,12 @@
 Pod::Spec.new do |spec|
 
 
-  spec.name                   = "IDentityLiteModels"
-  spec.version                = "10.1.11.2.1"
-  spec.summary                = "IDentityLiteModels lets user add IDentityLiteModels in their project"
+  spec.name                   = "IDentityLiteSDK2.0"
+  spec.version                = "10.1.11.2.2"
+  spec.summary                = "IDentityLiteSDK lets user add IDentityLiteSDK in their project"
   spec.description            = <<-DESC 
-                                IDentityLiteModels helps user to add IDentityLiteModels in their project.
-                                On integrating IDentityLiteModels user will be able to use existing embedded models.
+                                IDentityLiteSDK helps user to add IDentityLiteSDK in their project.
+                                On integrating IDentityLiteSDK user will be able to Capture Face & ID.
                                 Also able to use various service ID mentioned in Documentation.
                                DESC
   
@@ -19,6 +19,8 @@ Pod::Spec.new do |spec|
   spec.swift_version           = "5"
   spec.pod_target_xcconfig     = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   spec.user_target_xcconfig    = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  spec.ios.vendored_frameworks = 'IDentityLiteModels.xcframework'  
+  spec.ios.vendored_frameworks = [ 'IDentityLiteSDK.xcframework', 'SelfieCaptureLite.xcframework', 'IDCaptureLite.xcframework']
+  # spec.dependency 'SelfieCaptureLite', "'#{spec.version}'"
+  # spec.dependency 'IDCaptureLite', "'#{spec.version}'"
 
 end
