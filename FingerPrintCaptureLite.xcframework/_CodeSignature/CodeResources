@@ -30,7 +30,7 @@
 		</data>
 		<key>ios-arm64/FingerPrintCaptureLite.framework/FingerPrintCaptureLite</key>
 		<data>
-		VqhRAgVYPjWvSAYarcV8jTvea7o=
+		iA29l91lSQ2E0d8unnEnzEg5MIU=
 		</data>
 		<key>ios-arm64/FingerPrintCaptureLite.framework/Headers/FingerDetectionLayerView.h</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>ios-arm64/FingerPrintCaptureLite.framework/Info.plist</key>
 		<data>
-		Tgf5tEd1cwDSbrnO7uOIG/4TGAM=
+		SC3PyzXXLNgb/8sGaBMg+R/KKxs=
 		</data>
 		<key>ios-arm64/FingerPrintCaptureLite.framework/Modules/FingerPrintCaptureLite.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		aMHIf/kDJDOSUBUcwxpB8TI2kMU=
+		6HXh8eMMz25akzl4qBtpCg6KtVI=
 		</data>
 		<key>ios-arm64/FingerPrintCaptureLite.framework/Modules/FingerPrintCaptureLite.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -90,19 +90,19 @@
 		</data>
 		<key>ios-arm64/FingerPrintCaptureLite.framework/_CodeSignature/CodeResources</key>
 		<data>
-		HkhkNwfbeRvfk7d8fnxgfcTMc+k=
+		xO+ZIMVztN28CbZTuIA9ET7n5JA=
 		</data>
 		<key>ios-arm64/dSYMs/FingerPrintCaptureLite.framework.dSYM/Contents/Info.plist</key>
 		<data>
-		2a+6XxMjzLiGEgc3PVLC5ZJ2zqo=
+		26rJl6O0MTJkV3JKoFQMB0XjeNw=
 		</data>
 		<key>ios-arm64/dSYMs/FingerPrintCaptureLite.framework.dSYM/Contents/Resources/DWARF/FingerPrintCaptureLite</key>
 		<data>
-		J4DTXE5agML1Y570hWENf1iopqY=
+		Nq5ratnMDKVlND+eQ3FEAG9vGVs=
 		</data>
 		<key>ios-arm64/dSYMs/FingerPrintCaptureLite.framework.dSYM/Contents/Resources/Relocations/aarch64/FingerPrintCaptureLite.yml</key>
 		<data>
-		CkAVp/w3vKxEUYcluBwzd6iRj5U=
+		5EGy1ofGqNMABtQ/LQCV5kwucos=
 		</data>
 		<key>ios-x86_64-simulator/FingerPrintCaptureLite.framework/Assets.car</key>
 		<data>
@@ -130,7 +130,7 @@
 		</data>
 		<key>ios-x86_64-simulator/FingerPrintCaptureLite.framework/FingerPrintCaptureLite</key>
 		<data>
-		SSh28+P8keLwmm5o2Ve/EcVmzyQ=
+		E0j8Fjpj1vMj95lrVujBLMxLBKc=
 		</data>
 		<key>ios-x86_64-simulator/FingerPrintCaptureLite.framework/Headers/FingerDetectionLayerView.h</key>
 		<data>
@@ -162,11 +162,11 @@
 		</data>
 		<key>ios-x86_64-simulator/FingerPrintCaptureLite.framework/Info.plist</key>
 		<data>
-		mN+M2w8q+NfjyN1uKuZ1Zj2F2jI=
+		iVe3iqB7nc/vgJixL3ilYEvkf+Y=
 		</data>
 		<key>ios-x86_64-simulator/FingerPrintCaptureLite.framework/Modules/FingerPrintCaptureLite.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		yLlzSQT7C/54WvgDaRh5gEPbL2s=
+		L8rBVDwBAkDqea+ux0rmGwxO5jY=
 		</data>
 		<key>ios-x86_64-simulator/FingerPrintCaptureLite.framework/Modules/FingerPrintCaptureLite.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -190,15 +190,15 @@
 		</data>
 		<key>ios-x86_64-simulator/FingerPrintCaptureLite.framework/_CodeSignature/CodeResources</key>
 		<data>
-		PAFfoEryRFs9RJnrygAP39vU+C8=
+		fjzRVPdXKBvuk/LPpaC26NQoO3Q=
 		</data>
 		<key>ios-x86_64-simulator/dSYMs/FingerPrintCaptureLite.framework.dSYM/Contents/Info.plist</key>
 		<data>
-		2a+6XxMjzLiGEgc3PVLC5ZJ2zqo=
+		26rJl6O0MTJkV3JKoFQMB0XjeNw=
 		</data>
 		<key>ios-x86_64-simulator/dSYMs/FingerPrintCaptureLite.framework.dSYM/Contents/Resources/DWARF/FingerPrintCaptureLite</key>
 		<data>
-		j9zF9UY0jOwiHRQDJhlENQcLqTc=
+		dntk/MyIsg9v8757cdS4I0kXJ4U=
 		</data>
 		<key>ios-x86_64-simulator/dSYMs/FingerPrintCaptureLite.framework.dSYM/Contents/Resources/Relocations/x86_64/FingerPrintCaptureLite.yml</key>
 		<data>
@@ -277,11 +277,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VqhRAgVYPjWvSAYarcV8jTvea7o=
+			iA29l91lSQ2E0d8unnEnzEg5MIU=
 			</data>
 			<key>hash2</key>
 			<data>
-			G9/lhAV9egmQc9ncO4TayZQ9S2/u8A4Ahpr369Uy85Q=
+			NPMrlBB4lPZa6XWxh6E72/vcmwVMWrQXX4t+fu+ZVS4=
 			</data>
 		</dict>
 		<key>ios-arm64/FingerPrintCaptureLite.framework/Headers/FingerDetectionLayerView.h</key>
@@ -365,22 +365,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Tgf5tEd1cwDSbrnO7uOIG/4TGAM=
+			SC3PyzXXLNgb/8sGaBMg+R/KKxs=
 			</data>
 			<key>hash2</key>
 			<data>
-			1kFuIpNiTJKU8sbzdXXuAVFawNzBO493aRmMW2W1ki4=
+			FDzm/5ZY/XI8AWpHAuv/lJuboVPQ46qfxl9QYxX9f3A=
 			</data>
 		</dict>
 		<key>ios-arm64/FingerPrintCaptureLite.framework/Modules/FingerPrintCaptureLite.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			aMHIf/kDJDOSUBUcwxpB8TI2kMU=
+			6HXh8eMMz25akzl4qBtpCg6KtVI=
 			</data>
 			<key>hash2</key>
 			<data>
-			NZeB50/2LBHPjYg5LtDgDjbnmQw5yXbI9ZhFJiX9Eo4=
+			Vszwt7TZr3kt0c2jzIaeKUH2ajniuYotzw+VvyO2HII=
 			</data>
 		</dict>
 		<key>ios-arm64/FingerPrintCaptureLite.framework/Modules/FingerPrintCaptureLite.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -442,44 +442,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HkhkNwfbeRvfk7d8fnxgfcTMc+k=
+			xO+ZIMVztN28CbZTuIA9ET7n5JA=
 			</data>
 			<key>hash2</key>
 			<data>
-			l/+GaWoxE0I07W8OD0OwBO6DGZR2x0y+hTrrFN900tw=
+			vWBylV5Skz2pJx3B2dyBHLonsUSXcVCYOvxNZhs8Cyg=
 			</data>
 		</dict>
 		<key>ios-arm64/dSYMs/FingerPrintCaptureLite.framework.dSYM/Contents/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2a+6XxMjzLiGEgc3PVLC5ZJ2zqo=
+			26rJl6O0MTJkV3JKoFQMB0XjeNw=
 			</data>
 			<key>hash2</key>
 			<data>
-			SCEUTQLmAZnE5Yp8jP0eBhCr7m9FRBs+7Q9bMf/Ydpw=
+			t6V+Po2Z+f7GhrUbVotsertR7d7kfyKa2Nr6ZEdiLZQ=
 			</data>
 		</dict>
 		<key>ios-arm64/dSYMs/FingerPrintCaptureLite.framework.dSYM/Contents/Resources/DWARF/FingerPrintCaptureLite</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			J4DTXE5agML1Y570hWENf1iopqY=
+			Nq5ratnMDKVlND+eQ3FEAG9vGVs=
 			</data>
 			<key>hash2</key>
 			<data>
-			7Chiie/vvg3AnAXUEREZgX2TiTK268dBaGsKgOUVHVE=
+			TU6FNej6CrUutOLqm6JlF2tY/SW/2FxvNHA31yA/MBc=
 			</data>
 		</dict>
 		<key>ios-arm64/dSYMs/FingerPrintCaptureLite.framework.dSYM/Contents/Resources/Relocations/aarch64/FingerPrintCaptureLite.yml</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CkAVp/w3vKxEUYcluBwzd6iRj5U=
+			5EGy1ofGqNMABtQ/LQCV5kwucos=
 			</data>
 			<key>hash2</key>
 			<data>
-			6LtnvU9QRlSXDwAENZ1kMHuCzRAPwMuXxR/+IUQI/SY=
+			rKUjY/Hl80ARI2e6XmMGKrDjSaz9evlqexPIWgePqa0=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/FingerPrintCaptureLite.framework/Assets.car</key>
@@ -552,11 +552,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SSh28+P8keLwmm5o2Ve/EcVmzyQ=
+			E0j8Fjpj1vMj95lrVujBLMxLBKc=
 			</data>
 			<key>hash2</key>
 			<data>
-			DgKkSztFiBW/lIGGlPCPJuPmEV28ZhD8zh8QvAWiLiA=
+			VZ4t296Vos8i8BjcQ4XgOUv2OLnln7A9tFN6gyC1mvQ=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/FingerPrintCaptureLite.framework/Headers/FingerDetectionLayerView.h</key>
@@ -640,22 +640,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mN+M2w8q+NfjyN1uKuZ1Zj2F2jI=
+			iVe3iqB7nc/vgJixL3ilYEvkf+Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			UmlSlK9glcOtjJtCZQHyIaEDnb/O/GbVT4qpTathT6c=
+			H0Z9D5vOMJfykmOpMEh/tPIcKz8wE7ky3+wrm1cWNP0=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/FingerPrintCaptureLite.framework/Modules/FingerPrintCaptureLite.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yLlzSQT7C/54WvgDaRh5gEPbL2s=
+			L8rBVDwBAkDqea+ux0rmGwxO5jY=
 			</data>
 			<key>hash2</key>
 			<data>
-			Y76+IDrZmsnipIivoK2hDEfTWw1PyhpBHYX/XEo4zZg=
+			+Qr2M02i6PAee8WX0PXONXa8x3Mvf2o2mfuhOeMf9Po=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/FingerPrintCaptureLite.framework/Modules/FingerPrintCaptureLite.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -717,33 +717,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PAFfoEryRFs9RJnrygAP39vU+C8=
+			fjzRVPdXKBvuk/LPpaC26NQoO3Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			2/XcnFG2h12uh8MkrHHAHvXAhgvikVoUHqrnYlvMweU=
+			Q77eN8vPsOGSjX9eLGkFLwGKyxybt/40BTq4wdo/uHE=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/dSYMs/FingerPrintCaptureLite.framework.dSYM/Contents/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2a+6XxMjzLiGEgc3PVLC5ZJ2zqo=
+			26rJl6O0MTJkV3JKoFQMB0XjeNw=
 			</data>
 			<key>hash2</key>
 			<data>
-			SCEUTQLmAZnE5Yp8jP0eBhCr7m9FRBs+7Q9bMf/Ydpw=
+			t6V+Po2Z+f7GhrUbVotsertR7d7kfyKa2Nr6ZEdiLZQ=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/dSYMs/FingerPrintCaptureLite.framework.dSYM/Contents/Resources/DWARF/FingerPrintCaptureLite</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			j9zF9UY0jOwiHRQDJhlENQcLqTc=
+			dntk/MyIsg9v8757cdS4I0kXJ4U=
 			</data>
 			<key>hash2</key>
 			<data>
-			OgkzNDod6wAROqhRoy8mZHPCWauegNgrrfezWq1FgxA=
+			8o7yiizRwB2ti4kkE8XZkJieNa0/R6fZRqfe7Z9B33E=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/dSYMs/FingerPrintCaptureLite.framework.dSYM/Contents/Resources/Relocations/x86_64/FingerPrintCaptureLite.yml</key>
