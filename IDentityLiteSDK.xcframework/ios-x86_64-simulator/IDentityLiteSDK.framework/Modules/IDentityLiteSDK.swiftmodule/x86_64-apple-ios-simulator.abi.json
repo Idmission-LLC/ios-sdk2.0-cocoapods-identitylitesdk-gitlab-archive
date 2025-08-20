@@ -28844,6 +28844,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "IDentityLiteSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "BiometricVerifyRequestData",
         "printedName": "BiometricVerifyRequestData",
@@ -250982,7 +250992,7 @@
     {
       "filePath": "\/Users\/amold\/Documents\/SDK-2.0\/idmissioniossdk\/IDentitySDK\/IDentitySDK\/API Manager\/Downloaders\/Model Downloader\/ModelDownloader.swift",
       "kind": "BooleanLiteral",
-      "offset": 1506,
+      "offset": 1285,
       "length": 5,
       "value": "false"
     },

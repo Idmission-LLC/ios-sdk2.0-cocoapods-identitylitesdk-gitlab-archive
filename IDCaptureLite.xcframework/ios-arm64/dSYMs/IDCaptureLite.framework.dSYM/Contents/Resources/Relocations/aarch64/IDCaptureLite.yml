@@ -2,8 +2,8 @@
 triple:          'arm64-apple-darwin'
 binary-path:     '/Users/amold/Library/Developer/Xcode/DerivedData/idmissioniossdk-lite/Build/Products/Release-iphoneos/IDCaptureLite.framework/IDCaptureLite'
 relocations:
-  - { offset: 0x7D5F3, size: 0x8, addend: 0x0, symName: _IDCaptureLiteVersionString, symObjAddr: 0x0, symBinAddr: 0x25A70, symSize: 0x0 }
-  - { offset: 0x7D628, size: 0x8, addend: 0x0, symName: _IDCaptureLiteVersionNumber, symObjAddr: 0x38, symBinAddr: 0x25AA8, symSize: 0x0 }
+  - { offset: 0x7D5F3, size: 0x8, addend: 0x0, symName: _IDCaptureLiteVersionString, symObjAddr: 0x0, symBinAddr: 0x25A30, symSize: 0x0 }
+  - { offset: 0x7D628, size: 0x8, addend: 0x0, symName: _IDCaptureLiteVersionNumber, symObjAddr: 0x38, symBinAddr: 0x25A68, symSize: 0x0 }
   - { offset: 0x7D681, size: 0x8, addend: 0x0, symName: '_$s13IDCaptureLite0A14ViewControllerCMa', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0x3C }
   - { offset: 0x7D695, size: 0x8, addend: 0x0, symName: '_$s13IDCaptureLite0A14ViewControllerCMr', symObjAddr: 0x3C, symBinAddr: 0x403C, symSize: 0x1D8 }
   - { offset: 0x7E5E1, size: 0x8, addend: 0x0, symName: '_$sIeg_IeyB_TR', symObjAddr: 0x25B8, symBinAddr: 0x65B8, symSize: 0x2C }
