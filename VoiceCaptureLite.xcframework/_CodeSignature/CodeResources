@@ -54,7 +54,7 @@
 		</data>
 		<key>ios-arm64/VoiceCaptureLite.framework/VoiceCaptureLite</key>
 		<data>
-		W1ynRiszU5fFuoIndpEuOLzU7cc=
+		Ff7HMlryvwO4Z+SSVwwkeUD3pyc=
 		</data>
 		<key>ios-arm64/VoiceCaptureLite.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>ios-arm64/dSYMs/VoiceCaptureLite.framework.dSYM/Contents/Resources/DWARF/VoiceCaptureLite</key>
 		<data>
-		TatV1hgjRIjVV0bZN9hS71FU/q0=
+		CDvt3OYVtJir1GOcMOqOWQgOdgs=
 		</data>
 		<key>ios-arm64/dSYMs/VoiceCaptureLite.framework.dSYM/Contents/Resources/Relocations/aarch64/VoiceCaptureLite.yml</key>
 		<data>
@@ -134,7 +134,7 @@
 		</data>
 		<key>ios-x86_64-simulator/dSYMs/VoiceCaptureLite.framework.dSYM/Contents/Resources/DWARF/VoiceCaptureLite</key>
 		<data>
-		6XLgL+1/Wpt8pj5++dPxMBvR6ik=
+		l3v92hLyGhn8XX+VhdfvcPjnvnI=
 		</data>
 		<key>ios-x86_64-simulator/dSYMs/VoiceCaptureLite.framework.dSYM/Contents/Resources/Relocations/x86_64/VoiceCaptureLite.yml</key>
 		<data>
@@ -279,11 +279,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			W1ynRiszU5fFuoIndpEuOLzU7cc=
+			Ff7HMlryvwO4Z+SSVwwkeUD3pyc=
 			</data>
 			<key>hash2</key>
 			<data>
-			mFrBoCJ5MQ3kCtEd4CDLd4bFQefKFvCFlH6kZbgrflo=
+			5DFw0IMrrveJNqZH0Ue44bfMYWPjsvCzi6otanzVpOs=
 			</data>
 		</dict>
 		<key>ios-arm64/VoiceCaptureLite.framework/_CodeSignature/CodeResources</key>
@@ -312,11 +312,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TatV1hgjRIjVV0bZN9hS71FU/q0=
+			CDvt3OYVtJir1GOcMOqOWQgOdgs=
 			</data>
 			<key>hash2</key>
 			<data>
-			LmPQ+RMbc96D0d1XCt6WoucCv/PwWWkmaROIABs1xfo=
+			u38dp7TjOB7cBoHiWeOqVr3DPFWl+3CmoMuN25P5vg4=
 			</data>
 		</dict>
 		<key>ios-arm64/dSYMs/VoiceCaptureLite.framework.dSYM/Contents/Resources/Relocations/aarch64/VoiceCaptureLite.yml</key>
@@ -499,11 +499,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6XLgL+1/Wpt8pj5++dPxMBvR6ik=
+			l3v92hLyGhn8XX+VhdfvcPjnvnI=
 			</data>
 			<key>hash2</key>
 			<data>
-			qFbdHGx/DD6vZq1OA0Edyob8jttt0ZS6DGl+c2P8y+I=
+			6s/uzS/xVQ99N1ofN5ni3dy9PlaXgzzFt6I4X4bzXKc=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/dSYMs/VoiceCaptureLite.framework.dSYM/Contents/Resources/Relocations/x86_64/VoiceCaptureLite.yml</key>

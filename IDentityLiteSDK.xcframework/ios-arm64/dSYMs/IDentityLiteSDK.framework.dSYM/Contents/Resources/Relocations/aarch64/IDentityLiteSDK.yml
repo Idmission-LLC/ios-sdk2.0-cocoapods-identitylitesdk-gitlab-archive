@@ -101,7 +101,7 @@ relocations:
   - { offset: 0x194B85, size: 0x8, addend: 0x0, symName: '-[UIImage(Rotation) rotatingWithImageOrientation:]', symObjAddr: 0x0, symBinAddr: 0xE8E4, symSize: 0x37C }
   - { offset: 0x194B94, size: 0x8, addend: 0x0, symName: '-[UIImage(Rotation) rotatingWithImageOrientation:]', symObjAddr: 0x0, symBinAddr: 0xE8E4, symSize: 0x37C }
   - { offset: 0x1950F9, size: 0x8, addend: 0x0, symName: _xsltNewSecurityPrefs, symObjAddr: 0x0, symBinAddr: 0xEC60, symSize: 0x60 }
-  - { offset: 0x195121, size: 0x8, addend: 0x0, symName: _xsltDefaultSecurityPrefs, symObjAddr: 0x61B0, symBinAddr: 0x1AA3618, symSize: 0x0 }
+  - { offset: 0x195121, size: 0x8, addend: 0x0, symName: _xsltDefaultSecurityPrefs, symObjAddr: 0x61A8, symBinAddr: 0x1AA3618, symSize: 0x0 }
   - { offset: 0x1961BC, size: 0x8, addend: 0x0, symName: _xsltNewSecurityPrefs, symObjAddr: 0x0, symBinAddr: 0xEC60, symSize: 0x60 }
   - { offset: 0x19624A, size: 0x8, addend: 0x0, symName: _xsltFreeSecurityPrefs, symObjAddr: 0x60, symBinAddr: 0xECC0, symSize: 0x18 }
   - { offset: 0x19627B, size: 0x8, addend: 0x0, symName: _xsltSetSecurityPrefs, symObjAddr: 0x78, symBinAddr: 0xECD8, symSize: 0x84 }

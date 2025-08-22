@@ -29,7 +29,6 @@ for file in FingerPrintCaptureLite.podspec \
             IDentityLiteSDK2.0.podspec \
             SelfieCaptureLite.podspec \
             SignatureCaptureLite.podspec \
-            VideoCaptureLite.podspec \
             VoiceCaptureLite.podspec
 do
   echo "Updating ${file} …"
