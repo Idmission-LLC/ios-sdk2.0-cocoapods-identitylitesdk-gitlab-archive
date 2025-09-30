@@ -66,15 +66,15 @@
 		</data>
 		<key>ios-arm64/IDCaptureLite.framework/IDCaptureLite</key>
 		<data>
-		Bb4TvT03T6fhwDlBzzQxnGDoXx4=
+		Nb8ECINbZ1cjLC8zMtMa5vE99uY=
 		</data>
 		<key>ios-arm64/IDCaptureLite.framework/Info.plist</key>
 		<data>
-		Vs3Y3UDIn46dNckE0Wt4194tdG8=
+		3TcIFDK2p2PeNMNsT7kLz4lhyCg=
 		</data>
 		<key>ios-arm64/IDCaptureLite.framework/Modules/IDCaptureLite.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		Chl1bMuldVgFTS2skY+O7yMYiX4=
+		YU3HHIDk8wrg8586OVD1zq6blTs=
 		</data>
 		<key>ios-arm64/IDCaptureLite.framework/Modules/IDCaptureLite.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -98,15 +98,15 @@
 		</data>
 		<key>ios-arm64/IDCaptureLite.framework/_CodeSignature/CodeResources</key>
 		<data>
-		8irsNSlk/O1abTRMcBIkDt/mlhs=
+		Bwut43wpawVSMGlzGN/wD876wtg=
 		</data>
 		<key>ios-arm64/dSYMs/IDCaptureLite.framework.dSYM/Contents/Info.plist</key>
 		<data>
-		el8potIu6mQMp7vsBu8pLOJN53U=
+		s3KZ+YfFqTeqjWMmAKlRr6rbyuc=
 		</data>
 		<key>ios-arm64/dSYMs/IDCaptureLite.framework.dSYM/Contents/Resources/DWARF/IDCaptureLite</key>
 		<data>
-		mdjbwwyL3PckWrDYH5fko26Nf6M=
+		a1fM82OUKAEQx210+3FdBP4+4aI=
 		</data>
 		<key>ios-arm64/dSYMs/IDCaptureLite.framework.dSYM/Contents/Resources/Relocations/aarch64/IDCaptureLite.yml</key>
 		<data>
@@ -174,15 +174,15 @@
 		</data>
 		<key>ios-x86_64-simulator/IDCaptureLite.framework/IDCaptureLite</key>
 		<data>
-		fhMfAkoV3YJf1JTXIs+plqV/XRs=
+		/Cu5mgVePu0pY0/gwDwjFKX7eFg=
 		</data>
 		<key>ios-x86_64-simulator/IDCaptureLite.framework/Info.plist</key>
 		<data>
-		0HyckNMz0vR1b1tPG6OYIxmhxuI=
+		xhCtskkvDrEWytjNlPct5FFGRug=
 		</data>
 		<key>ios-x86_64-simulator/IDCaptureLite.framework/Modules/IDCaptureLite.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		sAulZBP5tjVpagSq9/0thWku7yY=
+		W2if480Eymp9Zycwx22dOD+3cto=
 		</data>
 		<key>ios-x86_64-simulator/IDCaptureLite.framework/Modules/IDCaptureLite.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -206,15 +206,15 @@
 		</data>
 		<key>ios-x86_64-simulator/IDCaptureLite.framework/_CodeSignature/CodeResources</key>
 		<data>
-		CYbZlrol61ZvNJElqU78c507hHE=
+		Td3OOf2nho54voeQ4GY7YJsSsbU=
 		</data>
 		<key>ios-x86_64-simulator/dSYMs/IDCaptureLite.framework.dSYM/Contents/Info.plist</key>
 		<data>
-		el8potIu6mQMp7vsBu8pLOJN53U=
+		s3KZ+YfFqTeqjWMmAKlRr6rbyuc=
 		</data>
 		<key>ios-x86_64-simulator/dSYMs/IDCaptureLite.framework.dSYM/Contents/Resources/DWARF/IDCaptureLite</key>
 		<data>
-		xDfc+5KVnmynLP2lILsQ9QSSLa8=
+		wkRbVLQ0mlJsBMr9PtkVYQQ+YQk=
 		</data>
 		<key>ios-x86_64-simulator/dSYMs/IDCaptureLite.framework.dSYM/Contents/Resources/Relocations/x86_64/IDCaptureLite.yml</key>
 		<data>
@@ -392,33 +392,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Bb4TvT03T6fhwDlBzzQxnGDoXx4=
+			Nb8ECINbZ1cjLC8zMtMa5vE99uY=
 			</data>
 			<key>hash2</key>
 			<data>
-			+/K+fr23vLZi0Q+DTFBqzTcAWtrYZ/5N5gj56ON4+As=
+			+/RPky5tJFYQ1m3whUvhCB77VSNdw9Wks+FJ1QsrCOQ=
 			</data>
 		</dict>
 		<key>ios-arm64/IDCaptureLite.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Vs3Y3UDIn46dNckE0Wt4194tdG8=
+			3TcIFDK2p2PeNMNsT7kLz4lhyCg=
 			</data>
 			<key>hash2</key>
 			<data>
-			uuKjKlCq0dqTJ8pJFl98kaAedUik5dtG28uc+9ZZn1g=
+			xNq5D5c1ydaXXZzxXoE36MdohZfOMCpr+4jbIRCCL+o=
 			</data>
 		</dict>
 		<key>ios-arm64/IDCaptureLite.framework/Modules/IDCaptureLite.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Chl1bMuldVgFTS2skY+O7yMYiX4=
+			YU3HHIDk8wrg8586OVD1zq6blTs=
 			</data>
 			<key>hash2</key>
 			<data>
-			aPRqjdmwmi1E+UxHyIwyisE78hMt3qmLI18hTtB3yik=
+			g3lNR817x+sUDU20Hy8kA2Ot0gQ8d4MQXcnk94hHWic=
 			</data>
 		</dict>
 		<key>ios-arm64/IDCaptureLite.framework/Modules/IDCaptureLite.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -480,33 +480,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8irsNSlk/O1abTRMcBIkDt/mlhs=
+			Bwut43wpawVSMGlzGN/wD876wtg=
 			</data>
 			<key>hash2</key>
 			<data>
-			vPeUaidx0MKfdJgpl+WqwVHyRctFCqj7fzGbnlcObb4=
+			Rlx4JwFNbIeHvB8sf1aemZfQ4WR4TP7lC522kBXGYSQ=
 			</data>
 		</dict>
 		<key>ios-arm64/dSYMs/IDCaptureLite.framework.dSYM/Contents/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			el8potIu6mQMp7vsBu8pLOJN53U=
+			s3KZ+YfFqTeqjWMmAKlRr6rbyuc=
 			</data>
 			<key>hash2</key>
 			<data>
-			wj/aYaYTuGFzeDv/v4XNZsf9AUR5NSMeCLlkS9vmkcI=
+			iN+HbSJQ34rHJbD6FrmMvtl6QcvAEjyKV/TpZnEeusI=
 			</data>
 		</dict>
 		<key>ios-arm64/dSYMs/IDCaptureLite.framework.dSYM/Contents/Resources/DWARF/IDCaptureLite</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mdjbwwyL3PckWrDYH5fko26Nf6M=
+			a1fM82OUKAEQx210+3FdBP4+4aI=
 			</data>
 			<key>hash2</key>
 			<data>
-			LxctugLYwqIyP0zfKn7pZZfhBcfcdtfFWRM69zz6dOY=
+			0C/w19GevaH3cuQW+3KVSD85PgyGebOGKy2rGTDlN6U=
 			</data>
 		</dict>
 		<key>ios-arm64/dSYMs/IDCaptureLite.framework.dSYM/Contents/Resources/Relocations/aarch64/IDCaptureLite.yml</key>
@@ -689,33 +689,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fhMfAkoV3YJf1JTXIs+plqV/XRs=
+			/Cu5mgVePu0pY0/gwDwjFKX7eFg=
 			</data>
 			<key>hash2</key>
 			<data>
-			OYLQz4bf2qmS6I7eBBZuCicNVNCUpxArbHpi6GE/Stk=
+			9WJl71fmn/z46xvp7ttlVKDElzmxtFO0JHqcCtGgreI=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/IDCaptureLite.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0HyckNMz0vR1b1tPG6OYIxmhxuI=
+			xhCtskkvDrEWytjNlPct5FFGRug=
 			</data>
 			<key>hash2</key>
 			<data>
-			rmDutXScZpoTjTtcUSms2CTqJFdis1KdJELMp84KHZg=
+			tEoJMIFS9uPmzDL8kHUF9r+k+BaCFN+IwaeJnlOzvAk=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/IDCaptureLite.framework/Modules/IDCaptureLite.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sAulZBP5tjVpagSq9/0thWku7yY=
+			W2if480Eymp9Zycwx22dOD+3cto=
 			</data>
 			<key>hash2</key>
 			<data>
-			MXDEYzJQYSt3Pxd9wQmEpma17UQLKa9uqw3bLhR7vm8=
+			SzFoa6FLOBRcJhZmL11902Tz5Hx9E3b/6LC15OFs2xE=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/IDCaptureLite.framework/Modules/IDCaptureLite.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -777,33 +777,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CYbZlrol61ZvNJElqU78c507hHE=
+			Td3OOf2nho54voeQ4GY7YJsSsbU=
 			</data>
 			<key>hash2</key>
 			<data>
-			qARWQixn/mYFgcjVFfMar4hbQOiyUeY2AwwUbSedjBE=
+			g5K3kWZ0doclu/uv1yfhPdqXZEd1Lw3CkK0Cp+cqRa4=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/dSYMs/IDCaptureLite.framework.dSYM/Contents/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			el8potIu6mQMp7vsBu8pLOJN53U=
+			s3KZ+YfFqTeqjWMmAKlRr6rbyuc=
 			</data>
 			<key>hash2</key>
 			<data>
-			wj/aYaYTuGFzeDv/v4XNZsf9AUR5NSMeCLlkS9vmkcI=
+			iN+HbSJQ34rHJbD6FrmMvtl6QcvAEjyKV/TpZnEeusI=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/dSYMs/IDCaptureLite.framework.dSYM/Contents/Resources/DWARF/IDCaptureLite</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xDfc+5KVnmynLP2lILsQ9QSSLa8=
+			wkRbVLQ0mlJsBMr9PtkVYQQ+YQk=
 			</data>
 			<key>hash2</key>
 			<data>
-			BZSWDBtbLUVQEqjK0jb7ZUe2oA7tzxVWm5sLiMnku5k=
+			ARMa1KYFAGPQnpnb11MkWSsbkqZV4yCiiM+J7ZcGlUo=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/dSYMs/IDCaptureLite.framework.dSYM/Contents/Resources/Relocations/x86_64/IDCaptureLite.yml</key>

@@ -14,19 +14,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		acrvuAQw4euDVJwGNkCARjmSmhg=
+		jW1EtzqJ6XELL6TOnw1RzxWPJ7g=
 		</data>
 		<key>Modules/SelfieCaptureLite.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		vmaQntjO23Xl5YLj5iJizawdOZk=
+		McsA4wNQClLXQXAgSe1XwMduK5Q=
 		</data>
 		<key>Modules/SelfieCaptureLite.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		ciHE/gZA3566O+0d0WvILIJP2Z4=
+		fzTqMp8iy9+lfKTdrOKrgZ6OaBM=
 		</data>
 		<key>Modules/SelfieCaptureLite.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		P2+jGsuaDY/Euyf+Q4nwUw7ko8w=
+		TEB/R+u3enpGg+EE33tnRnoWXdc=
 		</data>
 		<key>Modules/SelfieCaptureLite.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/SelfieCaptureLite.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		P2+jGsuaDY/Euyf+Q4nwUw7ko8w=
+		TEB/R+u3enpGg+EE33tnRnoWXdc=
 		</data>
 		<key>Modules/SelfieCaptureLite.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		bO3SUteqyY/LIi/Q4D3kOdfUsC0=
+		Y6s0kdDNGHTfEyt0+eTFV3cm+0U=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -93,21 +93,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jqtkzveNya9ImiPm4z5ebGpU2J8npKWku6CHzmPsNhI=
+			7ujslKm/ADYXkzM/TPbjul/J5I624T2odulbCsJYtoo=
 			</data>
 		</dict>
 		<key>Modules/SelfieCaptureLite.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vfiSGteX0ExHyCxu73mDR91tT3YOtmCA4sb6kLjjTt4=
+			+hKkMFtStpt/FjHMqeqzYIwgjPmkKbHaSYin9qQNUTo=
 			</data>
 		</dict>
 		<key>Modules/SelfieCaptureLite.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			a27y8SYgzHumb4dqBrXmFk2D2p1E8FapMHgkiR6XUUo=
+			j2vS1+fpMNpOqPKp1R3D0B8+ZiXNdbxdK8D1SeA6wJQ=
 			</data>
 		</dict>
 		<key>Modules/SelfieCaptureLite.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -121,14 +121,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			a27y8SYgzHumb4dqBrXmFk2D2p1E8FapMHgkiR6XUUo=
+			j2vS1+fpMNpOqPKp1R3D0B8+ZiXNdbxdK8D1SeA6wJQ=
 			</data>
 		</dict>
 		<key>Modules/SelfieCaptureLite.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			O5MLH/poVPezrflxxIQb3HaLnWFO2n4Zs79EfOCb24k=
+			kyJ9ORWctX5ZLN3fc5TOXFXITzsXpuhsWfu3UIQU+ig=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

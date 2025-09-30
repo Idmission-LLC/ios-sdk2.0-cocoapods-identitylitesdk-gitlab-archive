@@ -258,15 +258,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		bxkY6ZaqjUwZnHW3wLHzwUABjHQ=
+		faMSpAthOVf4FL+7FrWYfc8PVVo=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		uXyYAjlea9OoNQbl4LpGE51xY5Q=
+		iIjhIa/7p84HqSs4BPlidGV+Dy4=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		0sAWXwZYZLZqH9GtJClIgYTNu9k=
+		Wtln2vcpT1ebbt2I7D0j6kntV/M=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -274,7 +274,7 @@
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		nQ5TFinDcFew6y+n98h1Zz1aFI0=
+		+EDWeq1Kznjx6a3IcpEfvgJ81qI=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
@@ -282,7 +282,7 @@
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		57PLhDbZ6LnEKdosau6fIL4h8b8=
+		bsgT22yu0i9kT6xsTe6cy2e3SeY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -748,14 +748,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NkUnki3Wk5vt2NB3OUHNEn2Cy1r5bkM0JoHNrTW/uTo=
+			u4oRXay7eI3NVXlHFSpLeUAgUV+iJVCeg7HmkjiuMsY=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			G3GVBniUdcGiyW43LyGCkPSZAr8uCbCEuZRj2oteptg=
+			VdCAL6MX1soTHMxQfiQtp5ocuIaP05tc8FtSxfwo/0A=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -769,7 +769,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UEjOyXAIlx/+TkLLQPCQo+UstzoFiMl4ceINfbC3WZA=
+			jO2hoIB5/BClJQbjsODm+vQ3L9yintpwGw5bcyEqKM4=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
@@ -783,7 +783,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ABLK7m8rTQv2ChNQNFVAh3ISBPvvxYTOw+m05i52NxY=
+			N06QW/GuuUwFEO+p1YZByLdufjl2EMA+tZ5sOQW+HaQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

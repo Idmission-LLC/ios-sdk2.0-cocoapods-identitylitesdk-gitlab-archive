@@ -84,5 +84,7 @@ extension IDentityLiteSDK.IDentitySDK {
   public class func idValidationAndCustomerEnroll(from presenter: UIKit.UIViewController, personalData: IDentityLiteSDK.PersonalCustomerCommonRequestEnrollDataV3, options: IDentityLiteSDK.AdditionalCustomerWFlagCommonDataV3, idType: Swift.String, idCountry: Swift.String, idState: Swift.String?, completion: @escaping SelfieCaptureLite.ValidateIdCustomerEnrollCompletion)
 }
 extension IDentityLiteSDK.IDentitySDK {
+  public static var genericBiometricData: IDentityLiteSDK.GenericBiometricData
+  public static var genericSignatureDataRequest: IDentityLiteSDK.SignatureDataRequest?
   public class func genericApiCall(genericDataDictionary: [Swift.String : Any], completion: @escaping IDentityLiteSDK.GenericAPICompletion)
 }
