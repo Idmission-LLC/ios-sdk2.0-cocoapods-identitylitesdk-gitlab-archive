@@ -6,19 +6,19 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		yy5l2oEs4zFCy/AoVkQlVpw9Apo=
+		HJBieWULrwjohTJZbJ8p1TcCmwU=
 		</data>
 		<key>Headers/SelfieCaptureLite-Swift.h</key>
 		<data>
-		H2lp/19l1AeKKcuBRYMCRoItGM0=
+		5GhD8jgLZkbpmU1ZEZv+7FSvztk=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ZNaYa/3OlCbFZ9YsgPl6Uk6DTv4=
+		V7EB70Xwue/+mQ/VsEZSjJmGLEk=
 		</data>
 		<key>Modules/SelfieCaptureLite.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		O9YzC8LAKj7UlOKlWTDMszICGGU=
+		5r/oSU64D5aQTvQ6lt23+HdzbAE=
 		</data>
 		<key>Modules/SelfieCaptureLite.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/SelfieCaptureLite.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		R7UvtE+6T5SZEUSPSWQjkePrdBA=
+		BI65mqdxLe/kAE/sfpjKTGmjjOg=
 		</data>
 		<key>Modules/SelfieCaptureLite.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		q8KZFGxXS+4cNd6uDBSkePiTdFo=
+		0H3YdEEu7B18H+pILMIRrbnGl24=
 		</data>
 		<key>Modules/SelfieCaptureLite.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		R7UvtE+6T5SZEUSPSWQjkePrdBA=
+		BI65mqdxLe/kAE/sfpjKTGmjjOg=
 		</data>
 		<key>Modules/SelfieCaptureLite.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		zvDMIEYfwbm7NAjPGHtfu9YlOC8=
+		k7RssJdl5SgKakGTp3qYMsZm9Bg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -79,21 +79,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JJcIEjsD3FpFiuys5CXsb3Bo7Yh9u/jCWLgtJaNJt30=
+			0IlDl/YNrwW7EkTRBDf3dZvl4+nW2EqT/3oeb07qzSQ=
 			</data>
 		</dict>
 		<key>Headers/SelfieCaptureLite-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YWUYfFAxm3IbBRzkWZqra/ngiduN+vISnAwJBGJ4t54=
+			6XLF6g/vvlsb9xCVGkvV4BY8T/3zvAdEsxHh7L5+2EA=
 			</data>
 		</dict>
 		<key>Modules/SelfieCaptureLite.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8WuETEQJggHfqWaU3Zf87Z0qItUpAAd+m0Twu1W01Gw=
+			weY3n8k3iHi+sL/AVp6CF2C4gqFhsb82cKomuzmalkk=
 			</data>
 		</dict>
 		<key>Modules/SelfieCaptureLite.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -107,28 +107,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DLqf22JIQ/IRK96azpZSgZNLn/aqHhZ1g9Rp1P76mzg=
+			E+bxuL3ml04fX12vyFWYD2DNcM1etjeP7EY3x9Rg5Z8=
 			</data>
 		</dict>
 		<key>Modules/SelfieCaptureLite.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XaPMPuPQ6m1EGWCCLenVBqJKtIb+plH8fSVji0NdO4E=
+			wi58d3/SwD9KLdL4SmBYiC545lXrWkONnKfU91x8OgQ=
 			</data>
 		</dict>
 		<key>Modules/SelfieCaptureLite.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DLqf22JIQ/IRK96azpZSgZNLn/aqHhZ1g9Rp1P76mzg=
+			E+bxuL3ml04fX12vyFWYD2DNcM1etjeP7EY3x9Rg5Z8=
 			</data>
 		</dict>
 		<key>Modules/SelfieCaptureLite.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4FKvpWllEuBX81V6AaRuZlUYSAb2TVE0ppBDxMAYQi4=
+			5QjVPTNoOBQvSHlkJKC7451FxmN6SxeGyxSlxnA41Bg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

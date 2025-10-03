@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name                   = "IDentityLiteSDK2.0"
-  spec.version                = "10.1.16.2.3"
+  spec.version                = "10.1.16.2.4"
   spec.summary                = "IDentityLiteSDK lets user add IDentityLiteSDK in their project"
   spec.description            = <<-DESC 
                                 IDentityLiteSDK helps user to add IDentityLiteSDK in their project.

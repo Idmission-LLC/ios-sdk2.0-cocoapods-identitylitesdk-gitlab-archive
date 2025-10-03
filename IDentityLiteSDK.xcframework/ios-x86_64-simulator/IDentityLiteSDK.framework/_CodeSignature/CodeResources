@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		uTYRpiIPc1D6GUEsxnZT44nMOlM=
+		fnRmQMDMvFB1uRa9ymTA79hlJL0=
 		</data>
 		<key>DocumentCapture.storyboardc/1Pk-oV-bqy-view-n8U-9k-eXr.nib</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/Info.plist</key>
 		<data>
-		RyN/CMXzys/K0uSHuqht7d7YtmM=
+		c6Mp0YfDkpBWETan9lGm+DLNlx0=
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>Headers/IDentityLiteSDK-Swift.h</key>
 		<data>
-		9EWX7FLcY7a1oBHKgQRFSuOFZGs=
+		nu9wPi+lpiO7k6piDqXGgBp9Qok=
 		</data>
 		<key>Headers/IDentityLiteSDK.h</key>
 		<data>
@@ -258,31 +258,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		faMSpAthOVf4FL+7FrWYfc8PVVo=
+		u4iI9qvbiVUyb77V3Xf+dyrjm9s=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		iIjhIa/7p84HqSs4BPlidGV+Dy4=
+		mCiKYFzjmz7qC4cSszJ4YeC+dC0=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Wtln2vcpT1ebbt2I7D0j6kntV/M=
+		cTTMgt7TM3YquGO9BmtIWH4dztY=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		p7UQqeqoDRsiIqEb4XF728QKt4w=
+		yGGWaQ2kg86T0GT1kfICjaPkOrM=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		+EDWeq1Kznjx6a3IcpEfvgJ81qI=
+		OhClCvNfS5HYwJWrJOW1oIsCpVI=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		p7UQqeqoDRsiIqEb4XF728QKt4w=
+		yGGWaQ2kg86T0GT1kfICjaPkOrM=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		bsgT22yu0i9kT6xsTe6cy2e3SeY=
+		Q4dv8ka/KAkwuVavZFJPMnduKvA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -307,7 +307,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/ArXVHKuM4Z9xSNuygBE+/d5wooxgsL8OY2An6E+aLM=
+			avMJi89nGGeF6JCb4HUy5TcYd9OJNLDLflxoa7/si3k=
 			</data>
 		</dict>
 		<key>DocumentCapture.storyboardc/1Pk-oV-bqy-view-n8U-9k-eXr.nib</key>
@@ -426,7 +426,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/VfAJQq8Ei23+HfRcYyyQRLGp5TQm4OFKCjtTdZl5KE=
+			SAd2MnPsmQ376qKx81LoWc3C7KWXLgVsDRKjkpK6Z9U=
 			</data>
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
@@ -503,7 +503,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QEq35AUX/00BJ2dM2ZcQrzfIkHfT/ytoFv+XAO3x9j8=
+			OUYX5ihyhNkwsQbuuiAfrOKOziBqkQItLqLkeZ4kOHw=
 			</data>
 		</dict>
 		<key>Headers/IDentityLiteSDK.h</key>
@@ -748,42 +748,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			u4oRXay7eI3NVXlHFSpLeUAgUV+iJVCeg7HmkjiuMsY=
+			/km8GMhK54peN5squGZg4ttfm8KQhSTfIcFPCzwwe8g=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VdCAL6MX1soTHMxQfiQtp5ocuIaP05tc8FtSxfwo/0A=
+			y4Pc/5hhSznH8yaQ1TYVg+/w/awqL7Ff1wxEso3zvcw=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wsrmsGPmOaFRuEbqqUyoJOVRdAwkgliY0QzTR+oyfL0=
+			3E2iZHXES8nnfeASvcfRWmQA/BxhHSmo7HCK4WXYLoE=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jO2hoIB5/BClJQbjsODm+vQ3L9yintpwGw5bcyEqKM4=
+			yplt0LjU7XNKYFh11RaPSSmdG676rsLuG6FatZ4a9K8=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wsrmsGPmOaFRuEbqqUyoJOVRdAwkgliY0QzTR+oyfL0=
+			3E2iZHXES8nnfeASvcfRWmQA/BxhHSmo7HCK4WXYLoE=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			N06QW/GuuUwFEO+p1YZByLdufjl2EMA+tZ5sOQW+HaQ=
+			eshf3lR6/jqzJCgiH3EWfSXkj5wd5VSN0aIxia/Z4iQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

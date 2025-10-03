@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		uTYRpiIPc1D6GUEsxnZT44nMOlM=
+		fnRmQMDMvFB1uRa9ymTA79hlJL0=
 		</data>
 		<key>DocumentCapture.storyboardc/1Pk-oV-bqy-view-n8U-9k-eXr.nib</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/Info.plist</key>
 		<data>
-		K0VArfQ5TgXTUtLCM6CxizMMmhg=
+		loP/tvgT64SyKP6+FhDijHkhLtM=
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>Headers/IDentityLiteSDK-Swift.h</key>
 		<data>
-		bLPIS5KSrnlz7z3mj04MU1YAVrU=
+		qajp7dqd1yficO4b//n544jzZjU=
 		</data>
 		<key>Headers/IDentityLiteSDK.h</key>
 		<data>
@@ -258,31 +258,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		e/FXypyOGV/Qv/aD6F/Bo+UXTSE=
+		uArjwncc04A0J/WZyM5fLUcS8Uo=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		+1ahEsXHJUMvEHJSLDYomC2j3ik=
+		Hv2nPMFeQ9ypjgzLDByHgbOg0u4=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		LCp+GOALGsH2A/AXttsjQHeRN1w=
+		g9V+ZjtaC5y27yE5uiaIhkOn0BM=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		Y6kAD0v1VVkuMD3ZI0o2OFhAgM8=
+		47h8fPISuaawxoNv+iFF5hmvBhU=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		0gu7aZ1+6dBNF1sMhKk5pMb8vW4=
+		CBt1NkUjkIlwjTyD5BqbjCwwMYc=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		Y6kAD0v1VVkuMD3ZI0o2OFhAgM8=
+		47h8fPISuaawxoNv+iFF5hmvBhU=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		50vU+SmsFtPJBNvw+IrF5d4zTmU=
+		IFLzLrWyO0XtLJeIeMUjDpGcnbA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -307,7 +307,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/ArXVHKuM4Z9xSNuygBE+/d5wooxgsL8OY2An6E+aLM=
+			avMJi89nGGeF6JCb4HUy5TcYd9OJNLDLflxoa7/si3k=
 			</data>
 		</dict>
 		<key>DocumentCapture.storyboardc/1Pk-oV-bqy-view-n8U-9k-eXr.nib</key>
@@ -426,7 +426,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3w7kDkN0AFGfzI6i1ZWhuUAcpmNlD7AdONH3K+ar7MM=
+			K508DM9trg8tdrDsQ39LjAtYBCqs2H1RYeNeDlnJygw=
 			</data>
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
@@ -503,7 +503,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aRoQh8ZyTOaTIzOxxtaNq5b3gn5/tf7eggDB3Ta2dh8=
+			CamKsAlanql7EMdRUk4w4DBnvgrp0iS4IkBmWInTus8=
 			</data>
 		</dict>
 		<key>Headers/IDentityLiteSDK.h</key>
@@ -748,42 +748,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			f3+nHdbWXO1mejx1GtRpFG+a3AWHetLu1ehujTVDq88=
+			ls3p6FMhsU2DUBsVMZNXBraU5u7sBl0fTchv1vgo/jU=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oPihnUPIyftb0ojONyD382RUa/XxvkcaxdZnw0fQTpY=
+			xYcmu4u+jUkCNxbNjThgbiLL9roZoUB+5lQ3e66svIg=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XZalNVILMPcj1YXGxB6fnsCoFVZq7XDA7Y6cRIsVvqg=
+			kfy2aBD9liG7gw66+qwVWaCU74TI3VgbSO4drYi1Nm8=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IxRP0qb+hvZ2Fu/NRrmyHr7jAzVjlw7yG4gVHKRctC8=
+			+Pjv4jG0DExexdN+Bd4zA9zj5ltR8x0pVra/LBu5yA4=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XZalNVILMPcj1YXGxB6fnsCoFVZq7XDA7Y6cRIsVvqg=
+			kfy2aBD9liG7gw66+qwVWaCU74TI3VgbSO4drYi1Nm8=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BgWAek9MprjomMqUCF8qBjOR25oFl/mLNN6Vss8S1Fk=
+			N9K9wyuBFgVpXAV48oWjqG562CAXT9/ISDx15XPmBHw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
