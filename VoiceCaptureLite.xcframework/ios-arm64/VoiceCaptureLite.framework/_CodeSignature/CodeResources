@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/g9ZGfmwIWmluWDKO/uff+vwHtY=
+		tHIheuLkycgWLZaToKQZn1boySo=
 		</data>
 		<key>Modules/VoiceCaptureLite.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		8UXz6TDvbO9P/Mffko57aJVJhdU=
+		Q7ITGfs1DXsqDuT9h/h+IDQKsnE=
 		</data>
 		<key>Modules/VoiceCaptureLite.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/VoiceCaptureLite.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		ZHlGneSjY1fCYwPy2k7XJO6ZX8c=
+		T5N9LL8IxRVoBMGw0bCNHg3kgcw=
 		</data>
 		<key>Modules/VoiceCaptureLite.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		iQcM5A2t+VeFHrT25WRtq4vO0Ks=
+		it2fSdMvoa+v5egNKxq1ZTHrdS0=
 		</data>
 		<key>Modules/VoiceCaptureLite.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		ZHlGneSjY1fCYwPy2k7XJO6ZX8c=
+		T5N9LL8IxRVoBMGw0bCNHg3kgcw=
 		</data>
 		<key>Modules/VoiceCaptureLite.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		E348uqCDuedeT0y85CtNcCTF9IQ=
+		DhFBica5nM5PrHZqpP6mOG5UpEE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -48,21 +48,13 @@
 		<data>
 		jgQkod60MTowySSGsZwaJbcSTlQ=
 		</data>
-		<key>VoiceCapture.storyboardc/VoiceCaptureViewController.nib/objects-14.0+.nib</key>
+		<key>VoiceCapture.storyboardc/VoiceCaptureViewController.nib</key>
 		<data>
 		xjkdCKKM7VzDBtReptY86y3zoB4=
 		</data>
-		<key>VoiceCapture.storyboardc/VoiceCaptureViewController.nib/runtime.nib</key>
-		<data>
-		xjkdCKKM7VzDBtReptY86y3zoB4=
-		</data>
-		<key>VoiceCapture.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib/objects-14.0+.nib</key>
+		<key>VoiceCapture.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
 		<data>
 		9mbpPyYpE6H4m3O9xrHKq8dFvrw=
-		</data>
-		<key>VoiceCapture.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib/runtime.nib</key>
-		<data>
-		1D1tabnn4KcBhFyhHLd8CPprcUc=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -85,7 +77,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zmfFrdWVfG6DkviQoeaUBnmBiYfqD6ji+2gYX+Fr6Bc=
+			VHsE1TVgqQfXIPnNwh4lNbYhcG42M4qaaZI6lLP0cpk=
 			</data>
 		</dict>
 		<key>Modules/VoiceCaptureLite.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -99,28 +91,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fSumwwUWjBVx+Azl4qtqrpBPXp0TT/AdwRzxOLkTOI4=
+			4ACNroTw6EwDGgGxANlBOHlqjYojZSvcge32uaSNlq4=
 			</data>
 		</dict>
 		<key>Modules/VoiceCaptureLite.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			85Z9B6cszp+MuK6dQ71Z3RXyWIi5xPPKotfjRNJdkZI=
+			m9b+6b73QsdyGOaGpqFnR6px53S1U6P9MKGrzKSYMQw=
 			</data>
 		</dict>
 		<key>Modules/VoiceCaptureLite.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fSumwwUWjBVx+Azl4qtqrpBPXp0TT/AdwRzxOLkTOI4=
+			4ACNroTw6EwDGgGxANlBOHlqjYojZSvcge32uaSNlq4=
 			</data>
 		</dict>
 		<key>Modules/VoiceCaptureLite.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TMrl8dmg4GAN9FCJwgx/qevR1Dn1tVX5IQSRtiORuL0=
+			3kGCDY2tvKDcjKV39ykp3uwE3OaIGgdC6Ok9D6IzgQs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -137,32 +129,18 @@
 			j+W3SX6GUIy3ajno+XATUIYmC8rqBo3sMmJiDR4duuc=
 			</data>
 		</dict>
-		<key>VoiceCapture.storyboardc/VoiceCaptureViewController.nib/objects-14.0+.nib</key>
+		<key>VoiceCapture.storyboardc/VoiceCaptureViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			R9l+zkUcw38fFVxLSK9zIb1VoqFcVfU0Xq7ydjwWu5w=
 			</data>
 		</dict>
-		<key>VoiceCapture.storyboardc/VoiceCaptureViewController.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			R9l+zkUcw38fFVxLSK9zIb1VoqFcVfU0Xq7ydjwWu5w=
-			</data>
-		</dict>
-		<key>VoiceCapture.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib/objects-14.0+.nib</key>
+		<key>VoiceCapture.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			pPV2bDoL/SEydsWB0dWT2MMo3/qCipkHXoIkta6xIDQ=
-			</data>
-		</dict>
-		<key>VoiceCapture.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			VNWy3czSUblLYZTmsoLgwrYCqEtGstXx6E4MQ3rgpvY=
 			</data>
 		</dict>
 	</dict>

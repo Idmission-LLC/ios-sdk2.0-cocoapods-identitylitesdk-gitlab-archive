@@ -30,11 +30,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		gFUK/7EDCHn9ohTHIEuK+xi1zfI=
+		n7JDswE1sEyW3++/0nuL77pQmkA=
 		</data>
 		<key>Modules/IDentityLiteModels.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		sMrAMLa1BuzyBjBjl/czFnSwAXc=
+		ggq7DtXXOcjI0dCeT+zy2+/+PZo=
 		</data>
 		<key>Modules/IDentityLiteModels.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -42,19 +42,19 @@
 		</data>
 		<key>Modules/IDentityLiteModels.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		/+d4YG1k1wJv3EubCxdwSWZwVPc=
+		54l8HKTXilu2mHy6ZN2H5Nx83/o=
 		</data>
 		<key>Modules/IDentityLiteModels.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		HO6dFCblrTqHwjGiubAG1UORfXQ=
+		K06xTDF7UcrxMk6eRMu/zbCo0Rg=
 		</data>
 		<key>Modules/IDentityLiteModels.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		/+d4YG1k1wJv3EubCxdwSWZwVPc=
+		54l8HKTXilu2mHy6ZN2H5Nx83/o=
 		</data>
 		<key>Modules/IDentityLiteModels.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		6Ib6TAkExjPMcDiLOTB4aeggbOg=
+		bP8D+1Pmuc4TJ7sUt5F4JsF5mNo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -113,7 +113,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dZESbk9CwlrlCL5/Pe29l+KKigf4qt3ygSkgR2uz8EM=
+			Jg+TBvk/AVE1NmyIMLxWQ8Lox3W445/XtkPj+wr0QCg=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteModels.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -127,28 +127,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iL9ZBJDTT83xgDpG3Xf4wm6aMJ1JJMRJDowoRhi+ydc=
+			7NI7Ipo3oODH70Zb97L3WuOV8u7LJQMF6SI4kdpX6x0=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteModels.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pssp+lH40IYU7zAYTgrx/u9lXABLsp1/wYOSHtjsZxs=
+			zC/YMgThyJom6wQ5xVFrJL9mreMNh+yCMoq2Y+ZMUYw=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteModels.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iL9ZBJDTT83xgDpG3Xf4wm6aMJ1JJMRJDowoRhi+ydc=
+			7NI7Ipo3oODH70Zb97L3WuOV8u7LJQMF6SI4kdpX6x0=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteModels.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9TCnClYdKhfNDu8rgy9b6P6EFdSSlonYubzBdBKrokk=
+			0iOKKzKpoh4qVf8lLeGI4sd+5mEVX51JPRMp2tn+XuE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
