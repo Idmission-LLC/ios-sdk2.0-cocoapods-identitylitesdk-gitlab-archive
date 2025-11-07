@@ -20,3 +20,4 @@ FOUNDATION_EXPORT const unsigned char IDentityLiteSDKVersionString[];
 #import "UIImage+VisionDetection.h"
 #import "CommonClass.h"
 #import "UIImage+Glare.h"
+#import "SSZipArchive.h"

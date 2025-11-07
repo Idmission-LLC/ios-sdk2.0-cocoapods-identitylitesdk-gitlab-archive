@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/VoiceCaptureLite-Swift.h</key>
 		<data>
-		rGBpEXATyU3rBQSy7eITHc88I7U=
+		XRrkcOFxsaSNJYhVE/CLIfmfcwo=
 		</data>
 		<key>Headers/VoiceCaptureLite.h</key>
 		<data>
@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		i+xo5weR5W32nUX7QcwudZcN+ak=
+		/g9ZGfmwIWmluWDKO/uff+vwHtY=
 		</data>
 		<key>Modules/VoiceCaptureLite.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		2bpzB7KOfn+cM0Z3w8qd0X8dPcg=
+		8UXz6TDvbO9P/Mffko57aJVJhdU=
 		</data>
 		<key>Modules/VoiceCaptureLite.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/VoiceCaptureLite.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		tO0dt9xPuNjL4xcLtB6WLusEBRk=
+		ZHlGneSjY1fCYwPy2k7XJO6ZX8c=
 		</data>
 		<key>Modules/VoiceCaptureLite.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		xowfx+sBSynrpRF0rVK0QITiJxI=
+		iQcM5A2t+VeFHrT25WRtq4vO0Ks=
 		</data>
 		<key>Modules/VoiceCaptureLite.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		tO0dt9xPuNjL4xcLtB6WLusEBRk=
+		ZHlGneSjY1fCYwPy2k7XJO6ZX8c=
 		</data>
 		<key>Modules/VoiceCaptureLite.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		qge4eRt0jjWs8VnYVC8jlGLxIlI=
+		E348uqCDuedeT0y85CtNcCTF9IQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -48,13 +48,21 @@
 		<data>
 		jgQkod60MTowySSGsZwaJbcSTlQ=
 		</data>
-		<key>VoiceCapture.storyboardc/VoiceCaptureViewController.nib</key>
+		<key>VoiceCapture.storyboardc/VoiceCaptureViewController.nib/objects-14.0+.nib</key>
 		<data>
 		xjkdCKKM7VzDBtReptY86y3zoB4=
 		</data>
-		<key>VoiceCapture.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
+		<key>VoiceCapture.storyboardc/VoiceCaptureViewController.nib/runtime.nib</key>
 		<data>
-		+yyvguJ3m0nMyFPzHxG0RESeRe0=
+		xjkdCKKM7VzDBtReptY86y3zoB4=
+		</data>
+		<key>VoiceCapture.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib/objects-14.0+.nib</key>
+		<data>
+		9mbpPyYpE6H4m3O9xrHKq8dFvrw=
+		</data>
+		<key>VoiceCapture.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib/runtime.nib</key>
+		<data>
+		1D1tabnn4KcBhFyhHLd8CPprcUc=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -63,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Jl+BHSsoIqrG8k8/JJwDZsxtw2Ai+mUDdl+90937SXM=
+			VCB1qaxyKApCOoS+zLtdD41Ox1YtYyHhyjjv6WYh97c=
 			</data>
 		</dict>
 		<key>Headers/VoiceCaptureLite.h</key>
@@ -77,7 +85,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/+R3h5vY/RRaCuO4kkm5IVuNrm8tGK/wdHVXfB9BZxs=
+			zmfFrdWVfG6DkviQoeaUBnmBiYfqD6ji+2gYX+Fr6Bc=
 			</data>
 		</dict>
 		<key>Modules/VoiceCaptureLite.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -91,28 +99,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			G7Mp3JzD+2cXgpMwoNuO8gWdHAZMKwqpIP7HDgz63rI=
+			fSumwwUWjBVx+Azl4qtqrpBPXp0TT/AdwRzxOLkTOI4=
 			</data>
 		</dict>
 		<key>Modules/VoiceCaptureLite.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oYvMVD04gGOcIrEXQLZ/9zQLtbtzyMOkVagaN/lma0U=
+			85Z9B6cszp+MuK6dQ71Z3RXyWIi5xPPKotfjRNJdkZI=
 			</data>
 		</dict>
 		<key>Modules/VoiceCaptureLite.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			G7Mp3JzD+2cXgpMwoNuO8gWdHAZMKwqpIP7HDgz63rI=
+			fSumwwUWjBVx+Azl4qtqrpBPXp0TT/AdwRzxOLkTOI4=
 			</data>
 		</dict>
 		<key>Modules/VoiceCaptureLite.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			B9SgGfk2Y+MI74pZyS+BPid99P+0cvhDj/q3vXL5gzg=
+			TMrl8dmg4GAN9FCJwgx/qevR1Dn1tVX5IQSRtiORuL0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -129,18 +137,32 @@
 			j+W3SX6GUIy3ajno+XATUIYmC8rqBo3sMmJiDR4duuc=
 			</data>
 		</dict>
-		<key>VoiceCapture.storyboardc/VoiceCaptureViewController.nib</key>
+		<key>VoiceCapture.storyboardc/VoiceCaptureViewController.nib/objects-14.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			R9l+zkUcw38fFVxLSK9zIb1VoqFcVfU0Xq7ydjwWu5w=
 			</data>
 		</dict>
-		<key>VoiceCapture.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
+		<key>VoiceCapture.storyboardc/VoiceCaptureViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bFVHFmMdCq9tRAeKAwNVnmUtlOPVuWYX5A+ZYwoeUnQ=
+			R9l+zkUcw38fFVxLSK9zIb1VoqFcVfU0Xq7ydjwWu5w=
+			</data>
+		</dict>
+		<key>VoiceCapture.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib/objects-14.0+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pPV2bDoL/SEydsWB0dWT2MMo3/qCipkHXoIkta6xIDQ=
+			</data>
+		</dict>
+		<key>VoiceCapture.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VNWy3czSUblLYZTmsoLgwrYCqEtGstXx6E4MQ3rgpvY=
 			</data>
 		</dict>
 	</dict>
