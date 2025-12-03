@@ -4,37 +4,37 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>DocDetectionTrainingModel_UNIQUE_KEY_ID_4005_20250806080627.tflite</key>
+		<key>DocDetectionTrainingModel_UNIQUE_KEY_ID_6063_20251127022450.tflite</key>
 		<data>
-		AhlVm4sFft9QWc9Q6vY4xH0hyy0=
+		UuiLRSP+GCrgD/vRWb8PIwEqGh4=
 		</data>
-		<key>FPDetectionTrainingModel_UNIQUE_KEY_ID_4005_20250806080627.tflite</key>
+		<key>FPDetectionTrainingModel_UNIQUE_KEY_ID_6063_20251127022450.tflite</key>
 		<data>
-		qStFqlBij1Bn+tlbj8h7hhqhO4g=
+		mU7+J6RiWmPmzCZ02p6YC4zvM7g=
 		</data>
-		<key>FocusFaceTrainingModel_UNIQUE_KEY_ID_4005_20250806080627.tflite</key>
+		<key>FocusFaceTrainingModel_UNIQUE_KEY_ID_6063_20251127022450.tflite</key>
 		<data>
-		nUuLEWJon6BjxE75DfKGOxufa3s=
+		Zjxj7gGf8jslSygIHRvb8d+E29o=
 		</data>
-		<key>FocusTrainingModel_UNIQUE_KEY_ID_4005_20250806080627.tflite</key>
+		<key>FocusTrainingModel_UNIQUE_KEY_ID_6063_20251127022450.tflite</key>
 		<data>
-		uSYtvt2X+qDB5ziUkN+9djXrCmo=
+		cVnovqlOzLkClSnPApu0pPY1nT4=
 		</data>
 		<key>Headers/IDentityLiteModels.h</key>
 		<data>
 		8kWOZ1DgTWQMsMbZfbHid4LBrFY=
 		</data>
-		<key>IdTrainingModel_UNIQUE_KEY_ID_4005_20250806080627.tflite</key>
+		<key>IdTrainingModel_UNIQUE_KEY_ID_6063_20251127022450.tflite</key>
 		<data>
-		TBDXrw141/oNFcyveneLyca/cEs=
+		X2MDADJKEjwElU+fqrj8NMNKw0U=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		n7JDswE1sEyW3++/0nuL77pQmkA=
+		Heu5vIk1q/1pNHqdbK0DIr6lCAk=
 		</data>
 		<key>Modules/IDentityLiteModels.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		ggq7DtXXOcjI0dCeT+zy2+/+PZo=
+		fc+UyY8aliOyvqjzoxQoIPh1nD4=
 		</data>
 		<key>Modules/IDentityLiteModels.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -60,39 +60,39 @@
 		<data>
 		WI3GYbwa3uuEpp3uivYGk9GaulI=
 		</data>
-		<key>PassiveFaceTrainingModel_UNIQUE_KEY_ID_4005_20250806080627.tflite</key>
+		<key>PassiveFaceTrainingModel_UNIQUE_KEY_ID_6063_20251127022450.tflite</key>
 		<data>
-		1stA/w9js+h0n1q2yVGxNianjiM=
+		NQiIm7Ee2fWJMK3GgXFMHjdv1qQ=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>DocDetectionTrainingModel_UNIQUE_KEY_ID_4005_20250806080627.tflite</key>
+		<key>DocDetectionTrainingModel_UNIQUE_KEY_ID_6063_20251127022450.tflite</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			r56m4FwgtEDfsBiolq00zXw/a+ojKLAUDYVFvJOEiGA=
+			c4mMAcV6834wYxtBZbxgUj3Jlp6qDSI1AkWI60PMzWQ=
 			</data>
 		</dict>
-		<key>FPDetectionTrainingModel_UNIQUE_KEY_ID_4005_20250806080627.tflite</key>
+		<key>FPDetectionTrainingModel_UNIQUE_KEY_ID_6063_20251127022450.tflite</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WokcBwn37Vwc8nFWJs0Z+jXtqOIyeRSjNSXDhhg/kGI=
+			caZzsCSQk8UPZ6s6cHsZhRASPwjPhbTnO8m1CthymT8=
 			</data>
 		</dict>
-		<key>FocusFaceTrainingModel_UNIQUE_KEY_ID_4005_20250806080627.tflite</key>
+		<key>FocusFaceTrainingModel_UNIQUE_KEY_ID_6063_20251127022450.tflite</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RbS7EcJ6Hy8PDRuwJqExi6727VvwCu7Q6Pe+LW4FnSE=
+			YQh2PnG0w5vi6exKAhPwKFqNtl+pNIYQ9+tvVqEwkYE=
 			</data>
 		</dict>
-		<key>FocusTrainingModel_UNIQUE_KEY_ID_4005_20250806080627.tflite</key>
+		<key>FocusTrainingModel_UNIQUE_KEY_ID_6063_20251127022450.tflite</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			h9vroCxBUekj7pcsuBeDTGnsFPQ3kJL/lo3WZ53Lfc4=
+			FvVaTLax+5ojAM9u1+fnANuevgrE9XCvQiyy6s7L4Os=
 			</data>
 		</dict>
 		<key>Headers/IDentityLiteModels.h</key>
@@ -102,18 +102,18 @@
 			grKm4WqwF95b6DJz2GDGLEOj7mVCT4vP8KDfbIS15Kg=
 			</data>
 		</dict>
-		<key>IdTrainingModel_UNIQUE_KEY_ID_4005_20250806080627.tflite</key>
+		<key>IdTrainingModel_UNIQUE_KEY_ID_6063_20251127022450.tflite</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Vr7luJjJZkSEZhdkrAiC7H3NANtbZDh6rrUOq5Fm96I=
+			MwsM+ZHzKOaqxPHlgfR6fmhoulSpVPBTsPcDIsiXtqY=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteModels.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Jg+TBvk/AVE1NmyIMLxWQ8Lox3W445/XtkPj+wr0QCg=
+			PI9CZZwSfj4Pl+18msrkfA85nMZJykCuseos26S53H0=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteModels.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -158,11 +158,11 @@
 			dUB3BYtK/phVwJESe+aplsu5hwgk52qhqW0p1ea1s3U=
 			</data>
 		</dict>
-		<key>PassiveFaceTrainingModel_UNIQUE_KEY_ID_4005_20250806080627.tflite</key>
+		<key>PassiveFaceTrainingModel_UNIQUE_KEY_ID_6063_20251127022450.tflite</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nY1eH3/57eUk+g96v08ovmcq/oXWL7w22dnT1t7l7Lw=
+			pl3MMvKHkjsEiCH8NUyN4xUHVI2HVaxJsAWM5O1l/v4=
 			</data>
 		</dict>
 	</dict>

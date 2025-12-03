@@ -19,6 +19,8 @@ import MLKitFaceDetection
 import MLKitVision
 import MetalPerformanceShaders
 import MobileCoreServices
+import Network
+import SQLite3
 import Security
 import Swift
 import SwiftUI
@@ -78,7 +80,6 @@ public struct PersonalCustomerCommonRequestEnrollData : Swift.Encodable {
   public var postalCode: Swift.String?
   public var country: Swift.String?
   public init(uniqueNumber: Swift.String, name: Swift.String? = nil, firstName: Swift.String? = nil, middleName: Swift.String? = nil, lastName: Swift.String? = nil, phone: Swift.String? = nil, phoneCountryCode: Swift.String? = nil, email: Swift.String? = nil, dob: Swift.String? = nil, gender: IDentityLiteSDK.PersonalCustomerCommonRequestEnrollData.Gender? = nil, addressLine1: Swift.String? = nil, addressLine2: Swift.String? = nil, city: Swift.String? = nil, district: Swift.String? = nil, postalCode: Swift.String? = nil, country: Swift.String? = nil)
-  public init(from oldObject: IDentityLiteSDK.PersonalCustomerCommonRequestEnrollDataV3)
   public func encode(to encoder: any Swift.Encoder) throws
 }
 public struct CustomerVerifyDataResponse : Swift.Codable {
@@ -134,34 +135,6 @@ extension IDentityLiteSDK.SignatureCapture {
   }
   public struct Layout {
   }
-}
-@available(*, deprecated, renamed: "AdditionalCustomerEnrollBiometricRequestData", message: "This struct will no longer supported in future release please use the updated 'AdditionalCustomerEnrollBiometricRequestData' struct")
-public struct AdditionalCustomerEnrollBiometricRequestDataV3 : Swift.Encodable {
-  public var uniqueRequestId: Swift.String
-  public var verificationApprovalCode: Swift.String?
-  public var clientRequestID: Swift.String?
-  public var stripSpecialCharacters: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.StripSpecialCharacters?
-  public var postDataAPIRequired: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.PostDataAPIRequired?
-  public var gpsCoordinates: Swift.String?
-  public var piiExclusion: Swift.String?
-  public var needImmediateResponse: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.NeedImmediateResponse?
-  public var deDuplicationRequired: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.DeDuplicationRequired?
-  public var deDupDataRequiredInResponse: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.DeDupDataRequiredInResponse?
-  public var deDupManualReviewRequired: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.DeDupManualReviewRequired?
-  public var detectLiveness: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.DetectLiveness?
-  public var metadata: IDentityLiteSDK.Metadata?
-  public var ocrMetadata: Swift.String?
-  public init(uniqueRequestId: Swift.String = IDentitySDK.requestID, verificationApprovalCode: Swift.String? = nil, clientRequestID: Swift.String? = nil, stripSpecialCharacters: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.StripSpecialCharacters? = .yes, postDataAPIRequired: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.PostDataAPIRequired? = .no, gpsCoordinates: Swift.String? = nil, piiExclusion: Swift.String? = nil, needImmediateResponse: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.NeedImmediateResponse? = nil, deDuplicationRequired: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.DeDuplicationRequired? = nil, deDupDataRequiredInResponse: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.DeDupDataRequiredInResponse? = .yes, deDupManualReviewRequired: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.DeDupManualReviewRequired? = .yes, detectLiveness: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.DetectLiveness? = .yes)
-  public func encode(to encoder: any Swift.Encoder) throws
-}
-@available(*, deprecated, renamed: "CustomerEnrollBiometricResponse", message: "This struct will no longer supported in future release please use the updated 'CustomerEnrollBiometricResponse' struct")
-public struct CustomerEnrollBiometricResponseV3 : Swift.Codable {
-  public var status: IDentityLiteSDK.StatusData?
-  public var resultData: IDentityLiteSDK.FormDetailEnrollBiometricsResponseData?
-  public var deDuplicationData: [IDentityLiteSDK.DeDuplicationResponseDataV3]?
-  public var responseCustomerData: IDentityLiteSDK.CustomerDataResponse?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
 }
 public struct FormDetailValidateIdResponseData : Swift.Codable {
   public var uniqueRequestId: Swift.String?
@@ -427,7 +400,6 @@ public struct AdditionalCustomerEnrollBiometricRequestData : Swift.Encodable {
   public var verificationApprovalCode: Swift.String?
   public init(idToken: Swift.String? = "", uniqueRequestId: Swift.String = IDentitySDK.requestID, clientRequestID: Swift.String? = nil, manualReviewRequired: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.ManualReviewRequired? = .no, bypassAgeValidation: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.BypassAgeValidation? = .no, deDuplicationRequired: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.DeDuplicationRequired? = nil, postDataAPIRequired: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.PostDataAPIRequired? = .no, postDataAPIURL: Swift.String? = nil, sendMetaDataInPost: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.SendMetaDataInPost? = .yes, sendInputImagesInPost: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.SendInputImagesInPost? = .no, sendProcessedImagesInPost: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.SendProcessedImagesInPost? = .no, needImmediateResponse: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.NeedImmediateResponse? = nil, deduplicationSynchronous: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.DeduplicationSynchronous? = .no, verifyDataWithHost: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.VerifyDataWithHost? = .no, idBackImageRequired: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.IdBackImageRequired? = .yes, stripSpecialCharacters: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.StripSpecialCharacters? = .yes, idImageResolutionCheck: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.IdImageResolutionCheck? = .yes, deDupDataRequiredInResponse: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.DeDupDataRequiredInResponse? = .yes, deDupManualReviewRequired: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.DeDupManualReviewRequired? = .yes, postDataOnReviewRequired: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.PostDataOnReviewRequired? = .yes, postDataOnReviewAPIURL: Swift.String? = nil, paymentGateway: Swift.String? = nil, gpsCoordinates: Swift.String? = nil, piiExclusion: Swift.String? = nil, detectLiveness: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.DetectLiveness? = .yes, detectLabel: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.DetectLabel? = .no, detectClosedEyes: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.DetectClosedEyes? = .yes, sendDocumentIdInResponse: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestData.SendDocumentIdInResponse? = .yes, verificationApprovalCode: Swift.String? = nil)
   public func encode(to encoder: any Swift.Encoder) throws
-  public init(from oldObject: IDentityLiteSDK.AdditionalCustomerEnrollBiometricRequestDataV3)
 }
 public struct VideoIDDataValidateIdResponse : Swift.Codable {
   public var idPhotoVideoPhotoMatchScore: Swift.Double?
@@ -772,7 +744,6 @@ public struct AdditionalCustomerWFlagCommonData : Swift.Encodable {
   public var ocrMetadata: Swift.String?
   public init(idToken: Swift.String? = "", uniqueRequestId: Swift.String = IDentitySDK.requestID, clientTraceId: Swift.String? = nil, clientRequestID: Swift.String? = nil, manualReviewRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.ManualReviewRequired? = .no, bypassAgeValidation: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.BypassAgeValidation? = .no, deDuplicationRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DeDuplicationRequired? = .no, bypassNameMatching: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.BypassNameMatching? = .yes, postDataAPIRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.PostDataAPIRequired? = .no, postDataAPIURL: Swift.String? = nil, sendMetaDataInPost: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendMetaDataInPost? = .yes, sendInputImagesInPost: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendInputImagesInPost? = .no, sendProcessedImagesInPost: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendProcessedImagesInPost? = .no, needImmediateResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.NeedImmediateResponse? = .no, deduplicationSynchronous: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DeduplicationSynchronous? = .no, verifyDataWithHost: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.VerifyDataWithHost? = .no, idBackImageRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.IdBackImageRequired? = .yes, stripSpecialCharacters: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.StripSpecialCharacters? = .yes, idImageResolutionCheck: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.IdImageResolutionCheck? = .yes, deDupDataRequiredInResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DeDupDataRequiredInResponse? = .yes, deDupManualReviewRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DeDupManualReviewRequired? = .no, postDataOnReviewRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.PostDataOnReviewRequired? = .yes, postDataOnReviewAPIURL: Swift.String? = nil, paymentGateway: Swift.String? = nil, gpsCoordinates: Swift.String? = nil, piiExclusion: Swift.String? = nil, detectLiveness: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DetectLiveness? = .yes, detectLabel: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DetectLabel? = .yes, detectClosedEyes: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DetectClosedEyes? = .no, sendSignatureFromIdInResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendSignatureFromIdInResponse? = .yes, sendDocumentIdInResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendDocumentIdInResponse? = .yes, customerDataMatchConfig: IDentityLiteSDK.CustomerDataMatchConfig? = nil, sendProcessedImagesInResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendProcessedImagesInResponse? = .yes, sendInputImagesInResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendInputImagesInResponse? = .yes)
   public func encode(to encoder: any Swift.Encoder) throws
-  public init(from oldObject: IDentityLiteSDK.AdditionalCustomerWFlagCommonDataV3)
 }
 public struct OrderPEPResult : Swift.Codable {
   public var orderUrlPEP: Swift.String?
@@ -814,7 +785,6 @@ public struct PersonalDataRequest : Swift.Encodable {
   public var cardToken: Swift.String?
   public var cardLast4: Swift.String?
   public init(uniqueNumber: Swift.String? = nil, name: Swift.String? = nil, firstName: Swift.String? = nil, middleName: Swift.String? = nil, lastName: Swift.String? = nil, phone: Swift.String? = nil, phoneCountryCode: Swift.String? = nil, email: Swift.String? = nil, dob: Swift.String? = nil, gender: IDentityLiteSDK.Gender? = nil, addressLine1: Swift.String? = nil, addressLine2: Swift.String? = nil, city: Swift.String? = nil, district: Swift.String? = nil, postalCode: Swift.String? = nil, country: Swift.String? = nil, cardToken: Swift.String? = nil, cardLast4: Swift.String? = nil)
-  public init(from oldObject: IDentityLiteSDK.PersonalCustomerCommonRequestDataV3)
   public func encode(to encoder: any Swift.Encoder) throws
 }
 public struct VideoIDDataResponse : Swift.Codable {
@@ -871,15 +841,6 @@ public struct StatusData : Swift.Codable {
   public var requestId: Swift.Int?
   public var traceId: Swift.String?
   public var ipAddress: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-@available(*, deprecated, renamed: "CustomerEnrollResponse", message: "This struct will no longer supported in future release please use the updated 'CustomerEnrollResponse' struct")
-public struct CustomerEnrollResponseV3 : Swift.Codable {
-  public var status: IDentityLiteSDK.StatusData?
-  public var resultData: IDentityLiteSDK.FormDetailResultResponseData?
-  public var deDuplicationData: [IDentityLiteSDK.DeDuplicationResponseDataV3]?
-  public var responseCustomerData: IDentityLiteSDK.CustomerEnrollDataResponseV3?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -1082,41 +1043,6 @@ extension IDentityLiteSDK.VoiceCapture {
     public var timerLabelFont: UIKit.UIFont?
     public var buttonLabelFont: UIKit.UIFont?
   }
-}
-@available(*, deprecated, renamed: "PersonalCustomerIdentifyResponseData", message: "This struct will no longer supported in future release please use the updated 'PersonalCustomerIdentifyResponseData' struct")
-public struct PersonalCustomerIdentifyResponseDataV3 : Swift.Codable {
-  public var uniqueNumber: Swift.String?
-  public var name: Swift.String?
-  public var email: Swift.String?
-  public var dob: Swift.String?
-  public var gender: Swift.String?
-  public var address: Swift.String?
-  public var addressLine1: Swift.String?
-  public var addressLine2: Swift.String?
-  public var addressLine3: Swift.String?
-  public var city: Swift.String?
-  public var country: Swift.String?
-  public var state: Swift.String?
-  public var postalCode: Swift.String?
-  public var phone: Swift.String?
-  public var district: Swift.String?
-  public var fingerprintUsedForVerification: Swift.String?
-  public var enrolledDate: Swift.String?
-  public var enrolledFaceImage: Swift.String?
-  public var idNumber: Swift.String?
-  public var expDate: Swift.String?
-  public var customerCode: Swift.String?
-  public var selfieImage: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-@available(*, deprecated, renamed: "CustomerIdentifyDataResponse", message: "This struct will no longer supported in future release please use the updated 'CustomerIdentifyDataResponse' struct")
-public struct CustomerIdentifyDataResponseV3 : Swift.Codable {
-  public var extractedPersonalData: IDentityLiteSDK.PersonalCustomerIdentifyResponseDataV3?
-  public var cardData: IDentityLiteSDK.CardDataV3?
-  public var extractedPOAData: [IDentityLiteSDK.POAExtractedDataResponse]?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
 }
 extension IDentityLiteSDK.VoiceCapture {
   public struct Options {
@@ -1491,12 +1417,6 @@ public struct CustomerEnrollRequest : Swift.Encodable {
   public init(customerData: IDentityLiteSDK.CustomerEnrollDataRequest, additionalData: IDentityLiteSDK.AdditionalCustomerWFlagCommonData, companyData: IDentityLiteSDK.EmployeeData? = nil)
   public func encode(to encoder: any Swift.Encoder) throws
 }
-public typealias ValidateIdAPICompletionV3 = (_ result: Swift.Result<IDentityLiteSDK.CustomerValidateIdResponseV3, any Swift.Error>) -> Swift.Void
-public typealias LiveFaceCheckAPICompletionV3 = (_ result: Swift.Result<IDentityLiteSDK.CustomerLiveCheckResponseV3, any Swift.Error>) -> Swift.Void
-public typealias ValidateIdMatchFaceAPICompletionV3 = (_ result: Swift.Result<IDentityLiteSDK.CustomerValidateIdFaceMatchResponseV3, any Swift.Error>) -> Swift.Void
-public typealias ValidateIdCustomerEnrollAPICompletionV3 = (_ result: Swift.Result<IDentityLiteSDK.CustomerEnrollResponseV3, any Swift.Error>) -> Swift.Void
-public typealias CustomerEnrollBiometricsAPICompletionV3 = (_ result: Swift.Result<IDentityLiteSDK.CustomerEnrollBiometricResponseV3, any Swift.Error>) -> Swift.Void
-public typealias CustomerIdentifyAPICompletionV3 = (_ result: Swift.Result<IDentityLiteSDK.CustomerIdentifyResponseV3, any Swift.Error>) -> Swift.Void
 public typealias ValidateIdAPICompletion = (_ result: Swift.Result<IDentityLiteSDK.CustomerValidateIdResponse, any Swift.Error>) -> Swift.Void
 public typealias LiveFaceCheckAPICompletion = (_ result: Swift.Result<IDentityLiteSDK.CustomerLiveCheckResponse, any Swift.Error>) -> Swift.Void
 public typealias ValidateIdMatchFaceAPICompletion = (_ result: Swift.Result<IDentityLiteSDK.CustomerValidateIdFaceMatchResponse, any Swift.Error>) -> Swift.Void
@@ -1507,18 +1427,12 @@ public typealias CustomerIdentifyAPICompletion = (_ result: Swift.Result<IDentit
 public typealias GenericAPICompletion = (_ result: Swift.Result<[Swift.String : Any], any Swift.Error>) -> Swift.Void
 extension IDentityLiteSDK.IDentitySDK {
   public class func post(validateId request: IDentityLiteSDK.CustomerValidateIdRequest, completion: @escaping IDentityLiteSDK.ValidateIdAPICompletion)
-  public class func post(validateId request: IDentityLiteSDK.CustomerValidateIdRequest, completion: @escaping IDentityLiteSDK.ValidateIdAPICompletionV3)
   public class func post(liveFaceCheck request: IDentityLiteSDK.CustomerLiveCheckRequest, completion: @escaping IDentityLiteSDK.LiveFaceCheckAPICompletion)
-  public class func post(liveFaceCheck request: IDentityLiteSDK.CustomerLiveCheckRequest, completion: @escaping IDentityLiteSDK.LiveFaceCheckAPICompletionV3)
   public class func post(validateIdMatchFace request: IDentityLiteSDK.CustomerValidateIdFaceMatchRequest, completion: @escaping IDentityLiteSDK.ValidateIdMatchFaceAPICompletion)
-  public class func post(validateIdMatchFace request: IDentityLiteSDK.CustomerValidateIdFaceMatchRequest, completion: @escaping IDentityLiteSDK.ValidateIdMatchFaceAPICompletionV3)
   public class func post(enroll request: IDentityLiteSDK.CustomerEnrollRequest, completion: @escaping IDentityLiteSDK.ValidateIdCustomerEnrollAPICompletion)
-  public class func post(enroll request: IDentityLiteSDK.CustomerEnrollRequest, completion: @escaping IDentityLiteSDK.ValidateIdCustomerEnrollAPICompletionV3)
   public class func post(enrollBiometrics request: IDentityLiteSDK.CustomerEnrollBiometricsRequest, completion: @escaping IDentityLiteSDK.CustomerEnrollBiometricsAPICompletion)
-  public class func post(enrollBiometrics request: IDentityLiteSDK.CustomerEnrollBiometricsRequest, completion: @escaping IDentityLiteSDK.CustomerEnrollBiometricsAPICompletionV3)
   public class func post(verify request: IDentityLiteSDK.CustomerVerifyRequest, completion: @escaping IDentityLiteSDK.CustomerVerificationAPICompletion)
   public class func post(identify request: IDentityLiteSDK.CustomerIdentifyRequest, completion: @escaping IDentityLiteSDK.CustomerIdentifyAPICompletion)
-  public class func post(identify request: IDentityLiteSDK.CustomerIdentifyRequest, completion: @escaping IDentityLiteSDK.CustomerIdentifyAPICompletionV3)
   public class func post(xmlRequestString: Swift.String, completion: @escaping IDentityLiteSDK.GenericAPICompletion)
 }
 extension IDentityLiteSDK.IDCapture {
@@ -1813,24 +1727,6 @@ extension IDentityLiteSDK.CaptureSession : AVFoundation.AVCaptureVideoDataOutput
 }
 extension IDentityLiteSDK.CaptureSession {
   public func authorizationStatus(completion: @escaping IDentityLiteSDK.BoolCompletion)
-}
-@available(*, deprecated, renamed: "PersonalCustomerCommonRequestEnrollData", message: "This struct will no longer supported in future release please use the updated 'PersonalCustomerCommonRequestEnrollData' struct")
-public struct PersonalCustomerCommonRequestEnrollDataV3 : Swift.Encodable {
-  public var uniqueNumber: Swift.String
-  public var name: Swift.String?
-  public var phone: Swift.String?
-  public var phoneCountryCode: Swift.String?
-  public var email: Swift.String?
-  public var dob: Swift.String?
-  public var gender: IDentityLiteSDK.PersonalCustomerCommonRequestEnrollData.Gender?
-  public var addressLine1: Swift.String?
-  public var addressLine2: Swift.String?
-  public var city: Swift.String?
-  public var district: Swift.String?
-  public var postalCode: Swift.String?
-  public var country: Swift.String?
-  public init(uniqueNumber: Swift.String, name: Swift.String? = nil, phone: Swift.String? = nil, phoneCountryCode: Swift.String? = nil, email: Swift.String? = nil, dob: Swift.String? = nil, gender: IDentityLiteSDK.PersonalCustomerCommonRequestEnrollData.Gender? = nil, addressLine1: Swift.String? = nil, addressLine2: Swift.String? = nil, city: Swift.String? = nil, district: Swift.String? = nil, postalCode: Swift.String? = nil, country: Swift.String? = nil)
-  public func encode(to encoder: any Swift.Encoder) throws
 }
 @_hasMissingDesignatedInitializers public class SearchCompanyTemplateDetails {
   public var templatetDataArray: [IDentityLiteSDK.CompanyTemplateMappingData]?
@@ -2229,38 +2125,6 @@ public struct SecurityData : Swift.Encodable {
   @objc deinit
   @objc public func detectFingerPrint(image: UIKit.UIImage?) -> IDentityLiteSDK.DetectedFingerPrintData?
 }
-@available(*, deprecated, renamed: "CustomerValidateIdFaceMatchDataResponse", message: "This struct will no longer supported in future release please use the updated 'CustomerValidateIdFaceMatchDataResponse' struct")
-public struct CustomerValidateIdFaceMatchDataResponseV3 : Swift.Codable {
-  public var extractedIdData: IDentityLiteSDK.IdDataResponse?
-  public var extractedPersonalData: IDentityLiteSDK.PersonalCustomerValidateIdFaceMatchResponseData?
-  public var extractedPOAData: [IDentityLiteSDK.POAExtractedDataResponse]?
-  public var hostData: IDentityLiteSDK.HostdataResponseV3?
-  public var parsedAddress: IDentityLiteSDK.ParsedAddress?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-@available(*, deprecated, renamed: "FormDetailIdentifyResponseData", message: "This struct will no longer supported in future release please use the updated 'FormDetailIdentifyResponseData' struct")
-public struct FormDetailIdentifyResponseDataV3 : Swift.Codable {
-  public var uniqueRequestId: Swift.String?
-  public var verificationResultId: Swift.Int?
-  public var verificationResultDetails: [Swift.String : Any]?
-  public var verificationResult: Swift.String?
-  public var verificationResultCode: Swift.String?
-  public var faceMask: Swift.String?
-  public var faceMaskScore: Swift.Double?
-  public var liveFace: Swift.String?
-  public var realScore: Swift.Double?
-  public var headCovering: Swift.String?
-  public var headCoveringScore: Swift.Double?
-  public var eyeCovering: Swift.String?
-  public var eyeCoveringScore: Swift.Double?
-  public var cellPhone: Swift.String?
-  public var cellPhoneScore: Swift.Double?
-  public var estimatedAge: Swift.Int?
-  public var predicatedGender: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
 public struct CustomerValidateIdResponse : Swift.Codable {
   public var status: IDentityLiteSDK.StatusData?
   public var resultData: IDentityLiteSDK.FormDetailValidateIdResponseData?
@@ -2289,6 +2153,68 @@ public struct CustomerDataIdentifyRQ : Swift.Encodable {
 }
 public struct AdditionalCustomerLiveCheckResponseData : Swift.Codable {
   public var liveFaceDetectionFlag: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class IDMAnalytics {
+  public class func trackEvent(eventName: IDentityLiteSDK.EventName, eventStatus: IDentityLiteSDK.EventStatus, eventData: [Swift.String : Any])
+  @objc deinit
+}
+extension IDentityLiteSDK.IDMAnalytics {
+  public func flush()
+}
+public enum EventName : Swift.String, Swift.Codable {
+  case sdkInitializationEvent
+  case publicKeysDownloadEvent
+  case searchCompanyTemplateDownloadEvent
+  case xsltDownloadEvent
+  case modelDownloadFaceLivenessEvent
+  case modellDownloadFaceMaskEvent
+  case modelDownloadFaceFocusEvent
+  case modelDownloadIdRealnessEvent
+  case modelDownloadIdDocDetectionEvent
+  case modelDownloadIdFocusEvent
+  case modelDownloadClassificationEvent
+  case modelDownloadFingerPrintEvent
+  case selfieCaptureEvent
+  case idCaptureEvent
+  case idToSelfieMatchingEvent
+  case liveFaceCheckEvent
+  case idValidationEvent
+  case idValidationAndMatchFaceEvent
+  case idValidationAndcustomerEnrollEvent
+  case customerEnrollBiometricsEvent
+  case customerVerificationEvent
+  case identifyCustomerEvent
+  case finalSubmitEvent
+  case signatureCaptureEvent
+  case documentCaptureEvent
+  case voiceCaptureEvent
+  case fingerPrintCaptureEvent
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum EventStatus : Swift.String, Swift.Codable {
+  case initiated
+  case inProgress
+  case cancel
+  case timeout
+  case success
+  case completed
+  case failed
+  case error
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct AnyCodable : Swift.Codable {
+  public let value: Any
+  public init(_ value: Any)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -2429,26 +2355,15 @@ extension IDentityLiteSDK.IDentitySDK {
   public class func getXMLString(request: IDentityLiteSDK.GenericDataRequest, genericDataDictionary: [Swift.String : Any]) -> Swift.String
   public class func getJSONString(dictionary: [Swift.String : Any]) -> Swift.String?
   public class func getImageJSONString(for fileBase64: Swift.String, formKey: Swift.String, ifForFace: Swift.Bool? = nil, pdfDocumentName: Swift.String? = nil, extensionType: IDentityLiteSDK.ExtensionType? = nil) -> Swift.String?
-  public class func getDigitalSignatureJSONString(fileContent: Swift.String) -> Swift.String?
   public class func getFingerprintJSONString(fingerPrintData: IDentityLiteSDK.FingerPrintData?) -> Swift.String?
   public class func getVoiceJSONString(fileContent: Swift.String, formKey: Swift.String) -> Swift.String?
   public class func getLiveFaceImageDataNode(formKey: Swift.String, formID: Swift.String, request: IDentityLiteSDK.GenericDataRequest, additionalData: [Swift.String : Any]?) -> Swift.String?
   public class func getPrimaryIdImageDataNode(formKey: Swift.String, serviceId: Swift.String?, request: IDentityLiteSDK.GenericDataRequest, idType: Swift.String?, countryCode: Swift.String?, stateCode: Swift.String?) -> Swift.String?
   public class func getSecodaryIdImageDataNode(formKey: Swift.String, request: IDentityLiteSDK.GenericDataRequest, idType_sec: Swift.String?, countryCode_sec: Swift.String?, stateCode_sec: Swift.String?) -> Swift.String?
   public class func getEmployeeInformationDataNode(request: IDentityLiteSDK.GenericDataRequest, employeeInfoXMLString: Swift.String?, employeeCode: Swift.String?, serviceID: Swift.String?) -> Swift.String?
-  public class func getSignatureCaptureNode(request: IDentityLiteSDK.GenericDataRequest, isDigitalSignatureEnabled: Swift.Bool) -> Swift.String?
+  public class func getSignatureCaptureNode(request: IDentityLiteSDK.GenericDataRequest) -> Swift.String?
   public class func getFingerPrintXMLNode(request: IDentityLiteSDK.GenericDataRequest, for process: Swift.String) -> Swift.String?
   public class func getAdditionalDataXMLNode(loginId: Swift.String, merchantId: Swift.String, CompanyId: Swift.String, companyName: Swift.String, formKey: Swift.String, request: IDentityLiteSDK.GenericDataRequest, additionalDictionary: [Swift.String : Any]?) -> Swift.String?
-}
-@available(*, deprecated, renamed: "CustomerDataValidateIdResponse", message: "This struct will no longer supported in future release please use the updated 'CustomerDataValidateIdResponse' struct")
-public struct CustomerDataValidateIdResponseV3 : Swift.Codable {
-  public var extractedIdData: IDentityLiteSDK.IdDataResponse?
-  public var extractedPersonalData: IDentityLiteSDK.PersonalCustomerValidateIdResponseData?
-  public var extractedPOAData: [IDentityLiteSDK.POAExtractedDataResponse]?
-  public var hostData: IDentityLiteSDK.HostdataResponseV3?
-  public var parsedAddress: IDentityLiteSDK.ParsedAddress?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
 }
 public struct FormDetailIdentifyResponseData : Swift.Codable {
   public var uniqueRequestId: Swift.String?
@@ -2551,14 +2466,6 @@ public struct IdDataRequest : Swift.Encodable {
   public init(idType: IDentityLiteSDK.IdDataRequest.IdType, idCountry: Swift.String, idState: Swift.String? = nil, idImageFront: Swift.String, idImageBack: Swift.String? = nil, idNumber: Swift.String? = nil, idNumber2: Swift.String? = nil, issueDate: Swift.String? = nil, expDate: Swift.String? = nil, videoIdImageFront: Swift.String? = nil, videoIdImageBack: Swift.String? = nil, idFrontIrImage: Swift.String? = nil, idBackIrImage: Swift.String? = nil, idFrontUvImage: Swift.String? = nil, idBackUvImage: Swift.String? = nil)
   public func encode(to encoder: any Swift.Encoder) throws
 }
-@available(*, deprecated, renamed: "CustomerValidateIdResponse", message: "This struct will no longer supported in future release please use the updated 'CustomerValidateIdResponse' struct")
-public struct CustomerValidateIdResponseV3 : Swift.Codable {
-  public var status: IDentityLiteSDK.StatusData?
-  public var resultData: IDentityLiteSDK.FormDetailValidateIdResponseData?
-  public var responseCustomerData: IDentityLiteSDK.CustomerDataValidateIdResponseV3?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
 public struct CustomerLiveCheckDataRequest : Swift.Encodable {
   public var signatureData: IDentityLiteSDK.SignatureDataRequest?
   public var additionalDocuments: [IDentityLiteSDK.AdditionalDocumentsRequest]?
@@ -2593,67 +2500,28 @@ public struct RealnessScores {
   public let screenScore: Swift.Float
 }
 public struct GenericDataRequest : Swift.Encodable {
-  public var idData: IDentityLiteSDK.GenericIdData?
-  public var biometricData: IDentityLiteSDK.GenericBiometricData?
+  public var customerData: IDentityLiteSDK.GenericCustomerData?
   public var signatureData: IDentityLiteSDK.SignatureDataRequest?
   public var additionalDocuments: [IDentityLiteSDK.AdditionalDocumentsRequest]?
-  public init(idData: IDentityLiteSDK.GenericIdData? = nil, biometricData: IDentityLiteSDK.GenericBiometricData? = nil, signatureData: IDentityLiteSDK.SignatureDataRequest? = nil, additionalDocuments: [IDentityLiteSDK.AdditionalDocumentsRequest]? = nil)
+  public init(customerData: IDentityLiteSDK.GenericCustomerData? = nil, signatureData: IDentityLiteSDK.SignatureDataRequest? = nil, additionalDocuments: [IDentityLiteSDK.AdditionalDocumentsRequest]? = nil)
   public func encode(to encoder: any Swift.Encoder) throws
 }
-public struct GenericIdData : Swift.Encodable {
-  public enum IdType : Swift.String, Swift.Encodable {
-    case passport
-    case driversLicense
-    case photoId
-    case nationalId
-    case governmentMilitaryOrPoliceId
-    case residenceCard
-    case voterIdCard
-    case workVisaOrPemit
-    case unitedNationsRefugeeCard
-    case notSpecified
-    case healthIdCard
-    case taxIdCard
-    case studentVisaPermit
-    case boatShipIdCard
-    case globalEntryCard
-    case passportCard
-    case travelDocument
-    case bankCard
-    case passportAddress
-    case other
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
-  }
-  public var idType: IDentityLiteSDK.GenericIdData.IdType?
-  public var idCountry: Swift.String?
-  public var idState: Swift.String?
+public struct GenericCustomerData : Swift.Encodable {
+  public var selfie: Swift.String?
   public var idImageFront: Swift.String?
   public var idImageBack: Swift.String?
-  public var idNumber: Swift.String?
-  public var idNumber2: Swift.String?
-  public var issueDate: Swift.String?
-  public var expDate: Swift.String?
+  public var secondaryIdImageFront: Swift.String?
+  public var secondaryIdImageBack: Swift.String?
   public var videoIdImageFront: Swift.String?
   public var videoIdImageBack: Swift.String?
-  public var idFrontIrImage: Swift.String?
-  public var idBackIrImage: Swift.String?
-  public var idFrontUvImage: Swift.String?
-  public var idBackUvImage: Swift.String?
-  public init(idType: IDentityLiteSDK.GenericIdData.IdType? = nil, idCountry: Swift.String? = nil, idState: Swift.String? = nil, idImageFront: Swift.String? = nil, idImageBack: Swift.String? = nil, idNumber: Swift.String? = nil, idNumber2: Swift.String? = nil, issueDate: Swift.String? = nil, expDate: Swift.String? = nil, videoIdImageFront: Swift.String? = nil, videoIdImageBack: Swift.String? = nil, idFrontIrImage: Swift.String? = nil, idBackIrImage: Swift.String? = nil, idFrontUvImage: Swift.String? = nil, idBackUvImage: Swift.String? = nil)
-  public func encode(to encoder: any Swift.Encoder) throws
-}
-public struct GenericBiometricData : Swift.Encodable {
-  public var selfie: Swift.String?
   public var fingerPrintData: IDentityLiteSDK.FingerPrintData?
   public var voiceData: Swift.String?
   public var videoData: Swift.String?
   public var voiceStartTime: Swift.Int?
   public var expectedAudioText: Swift.String?
-  public init(selfie: Swift.String? = nil, fingerPrintData: IDentityLiteSDK.FingerPrintData? = nil, voiceData: Swift.String? = nil, videoData: Swift.String? = nil, voiceStartTime: Swift.Int? = nil, expectedAudioText: Swift.String? = nil)
+  public var metadata: IDentityLiteSDK.Metadata?
+  public var ocrMetadata: Swift.String?
+  public init(selfie: Swift.String? = nil, idImageFront: Swift.String? = nil, idImageBack: Swift.String? = nil, secondaryIdImageFront: Swift.String? = nil, secondaryIdImageBack: Swift.String? = nil, videoIdImageFront: Swift.String? = nil, videoIdImageBack: Swift.String? = nil, fingerPrintData: IDentityLiteSDK.FingerPrintData? = nil, voiceData: Swift.String? = nil, videoData: Swift.String? = nil, voiceStartTime: Swift.Int? = nil, expectedAudioText: Swift.String? = nil, metadata: IDentityLiteSDK.Metadata? = nil, ocrMetadata: Swift.String? = nil)
   public func encode(to encoder: any Swift.Encoder) throws
 }
 extension IDentityLiteSDK.SignatureCapture {
@@ -2692,15 +2560,6 @@ public struct DeDuplicationResponseData : Swift.Codable {
 public struct KeyInfo : Swift.Codable {
   public var previousUniqueKeyId: Swift.String?
   public var previousPublicKeyId: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-@available(*, deprecated, renamed: "CustomerLiveCheckResponse", message: "This struct will no longer supported in future release please use the updated 'CustomerLiveCheckResponse' struct")
-public struct CustomerLiveCheckResponseV3 : Swift.Codable {
-  public var status: IDentityLiteSDK.StatusData?
-  public var resultData: IDentityLiteSDK.FormDetailLiveCheckResponseData?
-  public var additionalData: IDentityLiteSDK.AdditionalCustomerLiveCheckResponseData?
-  public var responseCustomerData: IDentityLiteSDK.CustomerDataResponse?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -2918,16 +2777,6 @@ public struct BiometricDataValidateId : Swift.Encodable {
   public init(fingerPrintData: IDentityLiteSDK.FingerPrintData? = nil, voiceData: Swift.String? = nil, videoData: Swift.String? = nil, voiceStartTime: Swift.Int? = nil, expectedAudioText: Swift.String? = nil)
   public func encode(to encoder: any Swift.Encoder) throws
 }
-@available(*, deprecated, renamed: "CardData", message: "This struct will no longer supported in future release please use the updated 'CardData' struct")
-public struct CardDataV3 : Swift.Codable {
-  public var cardToken: Swift.String?
-  public var cardLast4: Swift.String?
-  public var cardExpDate: Swift.String?
-  public var nameOnCard: Swift.String?
-  public var postalCode: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
 public struct CustomerEnrollResponse : Swift.Codable {
   public var status: IDentityLiteSDK.StatusData?
   public var resultData: IDentityLiteSDK.FormDetailResultResponseData?
@@ -2979,7 +2828,6 @@ extension IDentityLiteSDK.SelfieCapture {
     public var moveFaceUp: Swift.String
     public var sunglassesDetected: Swift.String
     public var removeHat: Swift.String
-    public var removeCap: Swift.String
     public var removeHand: Swift.String
     public var removeScarf: Swift.String
     public var fakeFace: Swift.String
@@ -3051,14 +2899,6 @@ public struct StateList {
   public static var states: [IDentityLiteSDK.StateMasterVO] {
     get
   }
-}
-@available(*, deprecated, renamed: "CustomerIdentifyResponse", message: "This struct will no longer supported in future release please use the updated 'CustomerIdentifyResponse' struct")
-public struct CustomerIdentifyResponseV3 : Swift.Codable {
-  public var status: IDentityLiteSDK.StatusData?
-  public var resultData: IDentityLiteSDK.FormDetailIdentifyResponseDataV3?
-  public var responseCustomerData: IDentityLiteSDK.CustomerIdentifyDataResponseV3?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
 }
 extension IDentityLiteSDK.FingerPrintCapture {
   public struct Strings {
@@ -3353,14 +3193,6 @@ public struct TextMatchResult : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-@available(*, deprecated, renamed: "CustomerValidateIdFaceMatchResponse", message: "This struct will no longer supported in future release please use the updated 'CustomerValidateIdFaceMatchResponse' struct")
-public struct CustomerValidateIdFaceMatchResponseV3 : Swift.Codable {
-  public var status: IDentityLiteSDK.StatusData?
-  public var resultData: IDentityLiteSDK.FormDetailResultResponseData?
-  public var responseCustomerData: IDentityLiteSDK.CustomerValidateIdFaceMatchDataResponseV3?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
 public class FingerPrintCapture {
   public static var options: IDentityLiteSDK.FingerPrintCapture.Options
   public static var strings: IDentityLiteSDK.FingerPrintCapture.Strings
@@ -3410,25 +3242,6 @@ public struct BiometricValidateIdFaceMatchData : Swift.Encodable {
   public init(selfie: Swift.String, fingerPrintData: IDentityLiteSDK.FingerPrintData? = nil, voiceData: Swift.String? = nil, videoData: Swift.String? = nil, voiceStartTime: Swift.Int? = nil, expectedAudioText: Swift.String? = nil)
   public func encode(to encoder: any Swift.Encoder) throws
 }
-@available(*, deprecated, renamed: "PersonalDataRequest", message: "This struct will no longer supported in future release please use the updated 'PersonalDataRequest' struct")
-public struct PersonalCustomerCommonRequestDataV3 : Swift.Encodable {
-  public var uniqueNumber: Swift.String
-  public var name: Swift.String?
-  public var phone: Swift.String?
-  public var phoneCountryCode: Swift.String?
-  public var email: Swift.String?
-  public var dob: Swift.String?
-  public var gender: IDentityLiteSDK.Gender?
-  public var addressLine1: Swift.String?
-  public var addressLine2: Swift.String?
-  public var city: Swift.String?
-  public var district: Swift.String?
-  public var country: Swift.String?
-  public var cardToken: Swift.String?
-  public var cardLast4: Swift.String?
-  public init(uniqueNumber: Swift.String, name: Swift.String? = nil, phone: Swift.String? = nil, phoneCountryCode: Swift.String? = nil, email: Swift.String? = nil, dob: Swift.String? = nil, gender: IDentityLiteSDK.Gender? = nil, addressLine1: Swift.String? = nil, addressLine2: Swift.String? = nil, city: Swift.String? = nil, district: Swift.String? = nil, country: Swift.String? = nil, cardToken: Swift.String? = nil, cardLast4: Swift.String? = nil)
-  public func encode(to encoder: any Swift.Encoder) throws
-}
 public struct PersonalCustomerEnrollBiometricsRequestData : Swift.Encodable {
   public var uniqueNumber: Swift.String
   public var name: Swift.String?
@@ -3446,7 +3259,6 @@ public struct PersonalCustomerEnrollBiometricsRequestData : Swift.Encodable {
   public var cardToken: Swift.String?
   public var cardLast4: Swift.String?
   public init(uniqueNumber: Swift.String, name: Swift.String? = nil, phone: Swift.String? = nil, phoneCountryCode: Swift.String? = nil, email: Swift.String? = nil, dob: Swift.String? = nil, gender: IDentityLiteSDK.Gender? = nil, addressLine1: Swift.String? = nil, addressLine2: Swift.String? = nil, city: Swift.String? = nil, district: Swift.String? = nil, postalCode: Swift.String? = nil, country: Swift.String? = nil, cardToken: Swift.String? = nil, cardLast4: Swift.String? = nil)
-  public init(from oldObject: IDentityLiteSDK.PersonalCustomerCommonRequestDataV3)
   public func encode(to encoder: any Swift.Encoder) throws
 }
 extension UIKit.UIImage {
@@ -3457,6 +3269,7 @@ extension UIKit.UIImage {
 }
 extension IDentityLiteSDK.SignatureCapture {
   public struct Options {
+    public var isEnableDigitalSignature: Swift.Bool
     public var signatureStrokeWidth: CoreFoundation.CGFloat?
   }
 }
@@ -3679,16 +3492,6 @@ public struct IDList {
     get
   }
 }
-@available(*, deprecated, renamed: "CustomerEnrollDataResponse", message: "This struct will no longer supported in future release please use the updated 'CustomerEnrollDataResponse' struct")
-public struct CustomerEnrollDataResponseV3 : Swift.Codable {
-  public var extractedIdData: IDentityLiteSDK.IdDataResponse?
-  public var extractedPersonalData: IDentityLiteSDK.PersonalCustomerEnrollResponseData?
-  public var extractedPOAData: [IDentityLiteSDK.POAExtractedDataResponse]?
-  public var hostData: IDentityLiteSDK.HostdataResponseV3?
-  public var parsedAddress: IDentityLiteSDK.ParsedAddress?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
 public struct IneResponse : Swift.Codable {
   public var claveElector: Swift.String?
   public var anioRegistro: Swift.String?
@@ -3751,39 +3554,6 @@ public struct CustomerValidateIdFaceMatchRequest : Swift.Encodable {
   public var additionalData: IDentityLiteSDK.AdditionalCustomerWFlagCommonData
   public init(customerData: IDentityLiteSDK.CustomerValidateIdFaceMatchDataRequest, additionalData: IDentityLiteSDK.AdditionalCustomerWFlagCommonData)
   public func encode(to encoder: any Swift.Encoder) throws
-}
-@available(*, deprecated, renamed: "DeDuplicationResponseData", message: "This struct will no longer supported in future release please use the updated 'DeDuplicationResponseData' struct")
-public struct DeDuplicationResponseDataV3 : Swift.Codable {
-  public var faceMatchingScore: Swift.String?
-  public var duplicatePersonId: Swift.Int?
-  public var clientCustomerNumber: Swift.String?
-  public var customerCode: Swift.String?
-  public var faceImage: Swift.String?
-  public var customerName: Swift.String?
-  public var recordType: Swift.String?
-  public var fingerPrintData: Swift.String?
-  public var fpMatchingScore: Swift.String?
-  public var isDuplicate: Swift.String?
-  public var duplicationStatus: Swift.String?
-  public var enrolledDate: Swift.String?
-  public var duplicateVoiceMatchScore: Swift.String?
-  public var duplicateFrontImage: Swift.String?
-  public var duplicateBackImage: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-@available(*, deprecated, renamed: "HostdataResponse", message: "This struct will no longer supported in future release please use the updated 'HostdataResponse' struct")
-public struct HostdataResponseV3 : Swift.Codable {
-  public var textMatchResult: IDentityLiteSDK.TextMatchResult?
-  public var sexOffenders: IDentityLiteSDK.SexOffenderResult?
-  public var criminalRecord: IDentityLiteSDK.CriminalRecordResult?
-  public var ineResponse: IDentityLiteSDK.IneResponse?
-  public var renapoResponse: IDentityLiteSDK.RenapoResponse?
-  public var pepresult: IDentityLiteSDK.OrderPEPResult?
-  public var nmresult: IDentityLiteSDK.OrderNMResult?
-  public var wlsresult: IDentityLiteSDK.OrderWLSResult?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
 }
 public struct XsltData : Swift.Codable {
   public var code: Swift.String?
@@ -3893,37 +3663,6 @@ extension IDentityLiteSDK.IDentitySDK {
   public static var requestID: Swift.String {
     get
   }
-}
-@available(*, deprecated, renamed: "AdditionalCustomerWFlagCommonData", message: "This struct will no longer supported in future release please use the updated 'AdditionalCustomerWFlagCommonData' struct")
-public struct AdditionalCustomerWFlagCommonDataV3 : Swift.Encodable {
-  public var uniqueRequestId: Swift.String
-  public var clientTraceId: Swift.String?
-  public var clientRequestID: Swift.String?
-  public var manualReviewRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.ManualReviewRequired?
-  public var bypassAgeValidation: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.BypassAgeValidation?
-  public var deDuplicationRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DeDuplicationRequired?
-  public var bypassNameMatching: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.BypassNameMatching?
-  public var postDataAPIRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.PostDataAPIRequired?
-  public var sendInputImagesInPost: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendInputImagesInPost?
-  public var sendProcessedImagesInPost: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendProcessedImagesInPost?
-  public var needImmediateResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.NeedImmediateResponse?
-  public var deduplicationSynchronous: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DeduplicationSynchronous?
-  public var verifyDataWithHost: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.VerifyDataWithHost?
-  public var idBackImageRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.IdBackImageRequired?
-  public var stripSpecialCharacters: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.StripSpecialCharacters?
-  public var idImageResolutionCheck: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.IdImageResolutionCheck?
-  public var deDupDataRequiredInResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DeDupDataRequiredInResponse?
-  public var deDupManualReviewRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DeDupManualReviewRequired?
-  public var postDataOnReviewRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.PostDataOnReviewRequired?
-  public var paymentGateway: Swift.String?
-  public var gpsCoordinates: Swift.String?
-  public var piiExclusion: Swift.String?
-  public var sendProcessedImagesInResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendProcessedImagesInResponse?
-  public var sendInputImagesInResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendInputImagesInResponse?
-  public var metadata: IDentityLiteSDK.Metadata?
-  public var ocrMetadata: Swift.String?
-  public init(uniqueRequestId: Swift.String = IDentitySDK.requestID, clientTraceId: Swift.String? = nil, clientRequestID: Swift.String? = nil, manualReviewRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.ManualReviewRequired? = .no, bypassAgeValidation: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.BypassAgeValidation? = .no, deDuplicationRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DeDuplicationRequired? = .no, bypassNameMatching: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.BypassNameMatching? = .yes, postDataAPIRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.PostDataAPIRequired? = .no, sendInputImagesInPost: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendInputImagesInPost? = .no, sendProcessedImagesInPost: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendProcessedImagesInPost? = .no, needImmediateResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.NeedImmediateResponse? = .no, deduplicationSynchronous: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DeduplicationSynchronous? = .no, verifyDataWithHost: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.VerifyDataWithHost? = .no, idBackImageRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.IdBackImageRequired? = .yes, stripSpecialCharacters: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.StripSpecialCharacters? = .yes, idImageResolutionCheck: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.IdImageResolutionCheck? = .yes, deDupDataRequiredInResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DeDupDataRequiredInResponse? = .yes, deDupManualReviewRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DeDupManualReviewRequired? = .no, postDataOnReviewRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.PostDataOnReviewRequired? = .yes, paymentGateway: Swift.String? = nil, gpsCoordinates: Swift.String? = nil, piiExclusion: Swift.String? = nil, sendProcessedImagesInResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendProcessedImagesInResponse? = .yes, sendInputImagesInResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendInputImagesInResponse? = .yes)
-  public func encode(to encoder: any Swift.Encoder) throws
 }
 public struct TrainingModelDownloadRq : Swift.Encodable {
   public var uniqueKeyId: Swift.String
@@ -4186,6 +3925,12 @@ extension IDentityLiteSDK.SelfieCapture.LabelPosition : Swift.Hashable {}
 extension IDentityLiteSDK.ConsentData.ConsentAccepted : Swift.Equatable {}
 extension IDentityLiteSDK.ConsentData.ConsentAccepted : Swift.Hashable {}
 extension IDentityLiteSDK.ConsentData.ConsentAccepted : Swift.RawRepresentable {}
+extension IDentityLiteSDK.EventName : Swift.Equatable {}
+extension IDentityLiteSDK.EventName : Swift.Hashable {}
+extension IDentityLiteSDK.EventName : Swift.RawRepresentable {}
+extension IDentityLiteSDK.EventStatus : Swift.Equatable {}
+extension IDentityLiteSDK.EventStatus : Swift.Hashable {}
+extension IDentityLiteSDK.EventStatus : Swift.RawRepresentable {}
 extension IDentityLiteSDK.ProcessAsPOA : Swift.Equatable {}
 extension IDentityLiteSDK.ProcessAsPOA : Swift.Hashable {}
 extension IDentityLiteSDK.ProcessAsPOA : Swift.RawRepresentable {}
@@ -4198,9 +3943,6 @@ extension IDentityLiteSDK.ExtensionType : Swift.RawRepresentable {}
 extension IDentityLiteSDK.IdDataRequest.IdType : Swift.Equatable {}
 extension IDentityLiteSDK.IdDataRequest.IdType : Swift.Hashable {}
 extension IDentityLiteSDK.IdDataRequest.IdType : Swift.RawRepresentable {}
-extension IDentityLiteSDK.GenericIdData.IdType : Swift.Equatable {}
-extension IDentityLiteSDK.GenericIdData.IdType : Swift.Hashable {}
-extension IDentityLiteSDK.GenericIdData.IdType : Swift.RawRepresentable {}
 extension IDentityLiteSDK.FingerPrintMetadata.Format : Swift.Equatable {}
 extension IDentityLiteSDK.FingerPrintMetadata.Format : Swift.Hashable {}
 extension IDentityLiteSDK.FingerPrintMetadata.Format : Swift.RawRepresentable {}
