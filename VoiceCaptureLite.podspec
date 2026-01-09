@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name                   = "VoiceCaptureLite"
-  spec.version                = "10.1.24.2.3"
+  spec.version                = "11.1.1.2.2"
   spec.summary                = "VoiceCaptureLite lets user add VoiceCaptureLiteSDK in their project"
   spec.description            = <<-DESC 
                                 VoiceCaptureLite helps user to add VoiceCaptureLiteSDK in their project.
