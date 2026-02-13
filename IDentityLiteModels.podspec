@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name                   = "IDentityLiteModels"
-  spec.version                = "11.1.1.2.2"
+  spec.version                = "11.1.3.2.3"
   spec.summary                = "IDentityLiteModels lets user add IDentityLiteModels in their project"
   spec.description            = <<-DESC 
                                 IDentityLiteModels helps user to add IDentityLiteModels in their project.

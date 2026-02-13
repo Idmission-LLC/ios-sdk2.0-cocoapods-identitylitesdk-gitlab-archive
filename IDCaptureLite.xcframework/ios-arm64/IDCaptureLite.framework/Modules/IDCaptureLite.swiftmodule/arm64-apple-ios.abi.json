@@ -1323,56 +1323,56 @@
     {
       "filePath": "\/Users\/amold\/Documents\/SDK-2.0\/idmissioniossdk\/IDentitySDK\/IDCapture\/IDCaptureViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1072,
+      "offset": 1242,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amold\/Documents\/SDK-2.0\/idmissioniossdk\/IDentitySDK\/IDCapture\/IDCaptureViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2323,
+      "offset": 2493,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amold\/Documents\/SDK-2.0\/idmissioniossdk\/IDentitySDK\/IDCapture\/IDCaptureViewController.swift",
       "kind": "Array",
-      "offset": 2432,
+      "offset": 2602,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/amold\/Documents\/SDK-2.0\/idmissioniossdk\/IDentitySDK\/IDCapture\/IDCaptureViewController.swift",
       "kind": "Array",
-      "offset": 2489,
+      "offset": 2659,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/amold\/Documents\/SDK-2.0\/idmissioniossdk\/IDentitySDK\/IDCapture\/IDCaptureViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 43854,
+      "offset": 50886,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amold\/Documents\/SDK-2.0\/idmissioniossdk\/IDentitySDK\/IDCapture\/Extensions\/IDentitySDK+IDCapture.swift",
       "kind": "BooleanLiteral",
-      "offset": 4751,
+      "offset": 4480,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amold\/Documents\/SDK-2.0\/idmissioniossdk\/IDentitySDK\/IDCapture\/Extensions\/IDentitySDK+IDCapture.swift",
       "kind": "BooleanLiteral",
-      "offset": 6234,
+      "offset": 5963,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amold\/Documents\/SDK-2.0\/idmissioniossdk\/IDentitySDK\/IDCapture\/Extensions\/IDentitySDK+IDCapture.swift",
       "kind": "BooleanLiteral",
-      "offset": 8842,
+      "offset": 8571,
       "length": 5,
       "value": "false"
     },
@@ -1407,7 +1407,7 @@
     {
       "filePath": "\/Users\/amold\/Documents\/SDK-2.0\/idmissioniossdk\/IDentitySDK\/IDCapture\/IDCaptureInstructionsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 967,
+      "offset": 1024,
       "length": 5,
       "value": "false"
     },
