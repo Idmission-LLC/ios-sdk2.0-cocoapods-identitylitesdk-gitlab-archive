@@ -12,7 +12,7 @@ relocations:
   - { offset: 0x19BA51, size: 0x8, addend: 0x0, symName: _xsltLocaleStrcmp, symObjAddr: 0x794, symBinAddr: 0x4794, symSize: 0xC }
   - { offset: 0x19BB6E, size: 0x8, addend: 0x0, symName: '+[CommonClass deviceName]', symObjAddr: 0x0, symBinAddr: 0x47A0, symSize: 0x130 }
   - { offset: 0x19BB7C, size: 0x8, addend: 0x0, symName: '+[CommonClass deviceName]', symObjAddr: 0x0, symBinAddr: 0x47A0, symSize: 0x130 }
-  - { offset: 0x19BBA6, size: 0x8, addend: 0x0, symName: _deviceName.deviceNamesByCode, symObjAddr: 0x4940, symBinAddr: 0x62D8A0, symSize: 0x0 }
+  - { offset: 0x19BBA6, size: 0x8, addend: 0x0, symName: _deviceName.deviceNamesByCode, symObjAddr: 0x4938, symBinAddr: 0x62D8A0, symSize: 0x0 }
   - { offset: 0x19BC67, size: 0x8, addend: 0x0, symName: '+[CommonClass getAVCaptureDevice]', symObjAddr: 0x130, symBinAddr: 0x48D0, symSize: 0x130 }
   - { offset: 0x19BD4A, size: 0x8, addend: 0x0, symName: _xsltEvalXPathPredicate, symObjAddr: 0x0, symBinAddr: 0x4A00, symSize: 0x148 }
   - { offset: 0x19BE51, size: 0x8, addend: 0x0, symName: _xsltEvalXPathPredicate, symObjAddr: 0x0, symBinAddr: 0x4A00, symSize: 0x148 }
@@ -927,19 +927,19 @@ relocations:
   - { offset: 0x1E853E, size: 0x8, addend: 0x0, symName: '-[UIImage(VisionDetection) scaledImageWithSize:]', symObjAddr: 0x0, symBinAddr: 0x3214C, symSize: 0xE8 }
   - { offset: 0x1E86B6, size: 0x8, addend: 0x0, symName: _xsltGetCNsProp, symObjAddr: 0x0, symBinAddr: 0x32234, symSize: 0x1B0 }
   - { offset: 0x1E86DF, size: 0x8, addend: 0x0, symName: _xsltGenericError, symObjAddr: 0x3290, symBinAddr: 0x61CA58, symSize: 0x0 }
-  - { offset: 0x1E8701, size: 0x8, addend: 0x0, symName: _xsltGenericErrorContext, symObjAddr: 0x11778, symBinAddr: 0x65A808, symSize: 0x0 }
+  - { offset: 0x1E8701, size: 0x8, addend: 0x0, symName: _xsltGenericErrorContext, symObjAddr: 0x11770, symBinAddr: 0x65A808, symSize: 0x0 }
   - { offset: 0x1E8718, size: 0x8, addend: 0x0, symName: _xsltGenericDebug, symObjAddr: 0x3298, symBinAddr: 0x61CA60, symSize: 0x0 }
-  - { offset: 0x1E872F, size: 0x8, addend: 0x0, symName: _xsltGenericDebugContext, symObjAddr: 0x11780, symBinAddr: 0x65A810, symSize: 0x0 }
+  - { offset: 0x1E872F, size: 0x8, addend: 0x0, symName: _xsltGenericDebugContext, symObjAddr: 0x11778, symBinAddr: 0x65A810, symSize: 0x0 }
   - { offset: 0x1E8739, size: 0x8, addend: 0x0, symName: _xsltTimestamp, symObjAddr: 0x1F80, symBinAddr: 0x341B4, symSize: 0xE4 }
-  - { offset: 0x1E8761, size: 0x8, addend: 0x0, symName: _xsltTimestamp.startup, symObjAddr: 0x11790, symBinAddr: 0x62D8D8, symSize: 0x0 }
-  - { offset: 0x1E8829, size: 0x8, addend: 0x0, symName: _xslDebugStatus, symObjAddr: 0x11788, symBinAddr: 0x65A818, symSize: 0x0 }
+  - { offset: 0x1E8761, size: 0x8, addend: 0x0, symName: _xsltTimestamp.startup, symObjAddr: 0x11788, symBinAddr: 0x62D8D8, symSize: 0x0 }
+  - { offset: 0x1E8829, size: 0x8, addend: 0x0, symName: _xslDebugStatus, symObjAddr: 0x11780, symBinAddr: 0x65A818, symSize: 0x0 }
   - { offset: 0x1E8847, size: 0x8, addend: 0x0, symName: _xsltSortFunction, symObjAddr: 0x32A0, symBinAddr: 0x61CA68, symSize: 0x0 }
   - { offset: 0x1E982C, size: 0x8, addend: 0x0, symName: _calibration, symObjAddr: 0x32A8, symBinAddr: 0x61CA70, symSize: 0x0 }
   - { offset: 0x1E9836, size: 0x8, addend: 0x0, symName: _pretty_templ_match, symObjAddr: 0x28FC, symBinAddr: 0x34B30, symSize: 0xC0 }
-  - { offset: 0x1E985F, size: 0x8, addend: 0x0, symName: _pretty_templ_match.dst, symObjAddr: 0x117B8, symBinAddr: 0x62D900, symSize: 0x0 }
-  - { offset: 0x1E98C6, size: 0x8, addend: 0x0, symName: _xsltDebuggerCurrentCallbacks.0, symObjAddr: 0x117A0, symBinAddr: 0x62D8E8, symSize: 0x0 }
-  - { offset: 0x1E98D1, size: 0x8, addend: 0x0, symName: _xsltDebuggerCurrentCallbacks.1, symObjAddr: 0x117A8, symBinAddr: 0x62D8F0, symSize: 0x0 }
-  - { offset: 0x1E98DC, size: 0x8, addend: 0x0, symName: _xsltDebuggerCurrentCallbacks.2, symObjAddr: 0x117B0, symBinAddr: 0x62D8F8, symSize: 0x0 }
+  - { offset: 0x1E985F, size: 0x8, addend: 0x0, symName: _pretty_templ_match.dst, symObjAddr: 0x117B0, symBinAddr: 0x62D900, symSize: 0x0 }
+  - { offset: 0x1E98C6, size: 0x8, addend: 0x0, symName: _xsltDebuggerCurrentCallbacks.0, symObjAddr: 0x11798, symBinAddr: 0x62D8E8, symSize: 0x0 }
+  - { offset: 0x1E98D1, size: 0x8, addend: 0x0, symName: _xsltDebuggerCurrentCallbacks.1, symObjAddr: 0x117A0, symBinAddr: 0x62D8F0, symSize: 0x0 }
+  - { offset: 0x1E98DC, size: 0x8, addend: 0x0, symName: _xsltDebuggerCurrentCallbacks.2, symObjAddr: 0x117A8, symBinAddr: 0x62D8F8, symSize: 0x0 }
   - { offset: 0x1E99AA, size: 0x8, addend: 0x0, symName: _xsltGetCNsProp, symObjAddr: 0x0, symBinAddr: 0x32234, symSize: 0x1B0 }
   - { offset: 0x1E9C2C, size: 0x8, addend: 0x0, symName: _xsltGetNsProp, symObjAddr: 0x1B0, symBinAddr: 0x323E4, symSize: 0x170 }
   - { offset: 0x1E9DC1, size: 0x8, addend: 0x0, symName: _xsltGetUTF8Char, symObjAddr: 0x320, symBinAddr: 0x32554, symSize: 0x11C }

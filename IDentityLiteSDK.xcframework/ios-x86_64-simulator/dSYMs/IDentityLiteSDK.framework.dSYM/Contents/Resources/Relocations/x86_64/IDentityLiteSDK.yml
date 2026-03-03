@@ -184,8 +184,8 @@ relocations:
   - { offset: 0x1B8915, size: 0x8, addend: 0x0, symName: '+[SSZipArchive isFilePasswordProtectedAtPath:]', symObjAddr: 0x0, symBinAddr: 0xD4C8, symSize: 0x11E }
   - { offset: 0x1B892F, size: 0x8, addend: 0x0, symName: _SSZipArchiveErrorDomain, symObjAddr: 0x60D0, symBinAddr: 0x5F4E60, symSize: 0x0 }
   - { offset: 0x1B8951, size: 0x8, addend: 0x0, symName: '+[SSZipArchive _gregorian]', symObjAddr: 0x51A6, symBinAddr: 0x1266E, symSize: 0x22 }
-  - { offset: 0x1B897D, size: 0x8, addend: 0x0, symName: __gregorian.gregorian, symObjAddr: 0x1AD28, symBinAddr: 0x628EF0, symSize: 0x0 }
-  - { offset: 0x1B8994, size: 0x8, addend: 0x0, symName: __gregorian.onceToken, symObjAddr: 0x1AD30, symBinAddr: 0x628EF8, symSize: 0x0 }
+  - { offset: 0x1B897D, size: 0x8, addend: 0x0, symName: __gregorian.gregorian, symObjAddr: 0x1AD20, symBinAddr: 0x628EF0, symSize: 0x0 }
+  - { offset: 0x1B8994, size: 0x8, addend: 0x0, symName: __gregorian.onceToken, symObjAddr: 0x1AD28, symBinAddr: 0x628EF8, symSize: 0x0 }
   - { offset: 0x1B89DB, size: 0x8, addend: 0x0, symName: '+[SSZipArchive _dateWithMSDOSFormat:]', symObjAddr: 0x5207, symBinAddr: 0x126CF, symSize: 0x105 }
   - { offset: 0x1B8BB1, size: 0x8, addend: 0x0, symName: '+[SSZipArchive isFilePasswordProtectedAtPath:]', symObjAddr: 0x0, symBinAddr: 0xD4C8, symSize: 0x11E }
   - { offset: 0x1B8EBA, size: 0x8, addend: 0x0, symName: '+[SSZipArchive isPasswordValidForArchiveAtPath:password:error:]', symObjAddr: 0x11E, symBinAddr: 0xD5E6, symSize: 0x617 }
