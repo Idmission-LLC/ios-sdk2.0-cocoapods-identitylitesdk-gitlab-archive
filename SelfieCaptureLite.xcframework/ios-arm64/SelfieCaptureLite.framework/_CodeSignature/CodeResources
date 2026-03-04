@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		27Xv8v4EW7HGGsLA+4hCIbx73KI=
+		pV9AQA84vO/sL7RMBeL3CZQ+i0I=
 		</data>
 		<key>Modules/SelfieCaptureLite.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/SelfieCaptureLite.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Qz3wVJoz9txMQ8UI58gxiSgQcIg=
+		WrFpTgyAatvPrx0hgL9efFc33tY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -117,7 +117,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DVzorVtzxsD91HBdAVgMuZkTyAjCmAsS24AfKdPaiHM=
+			WuPVU/V/WSMKr4hTXjyHWLTzCpvMBznl2elFnvwN5kU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

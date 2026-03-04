@@ -2498,6 +2498,9 @@ public enum EventName : Swift.String, Swift.Codable {
   case publicKeysDownloadEvent
   case searchCompanyTemplateDownloadEvent
   case xsltDownloadEvent
+  case modelDownloadFaceFullRangeSparseEvent
+  case modelDownloadFaceLandmarksDetectorEvent
+  case modelDownloadFaceBlendshapesDetectorEvent
   case modelDownloadFaceLivenessEvent
   case modellDownloadFaceMaskEvent
   case modelDownloadFaceFocusEvent
@@ -4206,6 +4209,9 @@ public enum InitializationState : Swift.String {
 }
 public enum InitializationStage : Swift.String {
   case login
+  case faceFullRangeSparseTrainingModelLabel
+  case faceLandmarksDetectorTrainingModelLabel
+  case faceBlendshapesDetectorTrainingModelLabel
   case passiveFaceTrainingModelLabel
   case faceMaskTrainingModelLabel
   case focusFaceTrainingModelLabel
@@ -4237,12 +4243,22 @@ public typealias ErrorCompletion = ((any Swift.Error)?) -> Swift.Void
     get
   }
   weak public static var delegate: (any IDentityLiteSDK.InitializationDelegate)?
+  public class func setDevelopmentRelaxationSecret(_ secret: Swift.Int)
   public class func setScreenSecurityEnabled(_ enabled: Swift.Bool)
   public class func setScreenRecordingBlurEnabled(_ enabled: Swift.Bool)
   public class func initializeSDK(language: IDentityLiteSDK.Language = .en, isGPSEnabled: Swift.Bool = true, isUpdateModelsData: Swift.Bool = true, accessToken: Swift.String, completion: @escaping IDentityLiteSDK.ErrorCompletion)
   @objc deinit
 }
 extension IDentityLiteSDK.IDentitySDK {
+  public static var faceDetectorModelName: Swift.String {
+    get
+  }
+  public static var faceLandmarkModelName: Swift.String {
+    get
+  }
+  public static var faceBlendedShapesModelName: Swift.String {
+    get
+  }
   public static var livenessModelName: Swift.String {
     get
   }
