@@ -3759,6 +3759,22 @@ public struct BiometricValidateIdFaceMatchData : Swift.Encodable {
   #endif
   public func encode(to encoder: any Swift.Encoder) throws
 }
+extension UIKit.UIDevice {
+  public enum IntegritySignal : Swift.Int {
+    case healthy
+    case jailbreakCompromised
+    case debuggerCompromised
+    case hookingCompromised
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.Int)
+    #endif
+    @available(iOS 2.0, *)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+}
 public struct PersonalCustomerEnrollBiometricsRequestData : Swift.Encodable {
   public var uniqueNumber: Swift.String
   public var name: Swift.String?
@@ -4629,6 +4645,9 @@ extension IDentityLiteSDK.AdditionalCustomerLiveCheckData.DetectClosedEyes : Swi
 extension IDentityLiteSDK.AdditionalCustomerLiveCheckData.SendDocumentIdInResponse : Swift.Equatable {}
 extension IDentityLiteSDK.AdditionalCustomerLiveCheckData.SendDocumentIdInResponse : Swift.Hashable {}
 extension IDentityLiteSDK.AdditionalCustomerLiveCheckData.SendDocumentIdInResponse : Swift.RawRepresentable {}
+extension UIKit.UIDevice.IntegritySignal : Swift.Equatable {}
+extension UIKit.UIDevice.IntegritySignal : Swift.Hashable {}
+extension UIKit.UIDevice.IntegritySignal : Swift.RawRepresentable {}
 extension IDentityLiteSDK.DocumentCapture.LabelPosition : Swift.Equatable {}
 extension IDentityLiteSDK.DocumentCapture.LabelPosition : Swift.Hashable {}
 extension IDentityLiteSDK.MetalBilinearScaler.NormalizationType : Swift.Equatable {}
