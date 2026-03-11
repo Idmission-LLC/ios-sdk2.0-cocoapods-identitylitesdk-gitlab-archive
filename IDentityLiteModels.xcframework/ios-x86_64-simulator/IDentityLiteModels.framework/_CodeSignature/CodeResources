@@ -42,7 +42,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		cYEVc2IGsB5kLLRmrpsTTiU2M0Q=
+		5ltSUJkCTx2JpjfrgY0wZaLmRWc=
 		</data>
 		<key>Modules/IDentityLiteModels.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -50,19 +50,19 @@
 		</data>
 		<key>Modules/IDentityLiteModels.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		D5ubmWRGs4usKk1JJJJXItkgm/w=
+		3a+ugVY1PJST3b3mjah75THY7iI=
 		</data>
 		<key>Modules/IDentityLiteModels.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		acbuW3Km9KLtI4PXdaBUYU6ZKUg=
+		JiWlxDm5JnBvL5852NTWNEtc+gE=
 		</data>
 		<key>Modules/IDentityLiteModels.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		D5ubmWRGs4usKk1JJJJXItkgm/w=
+		3a+ugVY1PJST3b3mjah75THY7iI=
 		</data>
 		<key>Modules/IDentityLiteModels.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		6HDXbhA8GFzA43MLjMYuJj/3+48=
+		rzubmODKQP7FPXDzbJoB4lKyYh4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -149,28 +149,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oIHU0NSer6kiHDvpIjQqIKXtRJgnD1kvt8F2jRP1Faw=
+			DX9+PcQPFX0WKxxZfnzQXPtTFbiTrsDZbHwig81RMfw=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteModels.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+LbRxRIfkzV0MClbiRhG8wQ0klpHAkX9glS9hMXW1Xk=
+			1cE0xgUyZfyzY+ImSrjtFOfgrAgftAzuzGMVsisF/wE=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteModels.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oIHU0NSer6kiHDvpIjQqIKXtRJgnD1kvt8F2jRP1Faw=
+			DX9+PcQPFX0WKxxZfnzQXPtTFbiTrsDZbHwig81RMfw=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteModels.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VySOd567eqkftjSX3gG3i+/7rP03dMlfK/Nuy5CTALU=
+			GTaUtT5RTylKy2bR2CmvqVR9fipDa2Ew10Wc7K6iqj8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -13,13 +13,13 @@ SDK_VERSION=$1
 
 cd "$(dirname "$0")"   # go to identitylitesdk2.0/
 
-## Check if branch is clean
-#if [ -n "$(git status --porcelain)" ]; then
-#  echo "✅ LiteSDK: Found uncommitted changes, proceeding."
-#else
-#  echo "❌ LiteSDK: No changes to commit. Working tree is clean."
-#  exit 1
-#fi
+# Check if branch is clean
+if [ -n "$(git status --porcelain)" ]; then
+ echo "✅ LiteSDK: Found uncommitted changes, proceeding."
+else
+ echo "❌ LiteSDK: No changes to commit. Working tree is clean."
+ exit 1
+fi
 
 # Update .podspec file version
 echo "🚀 LiteSDK: Updating All .podspec file vesions"
