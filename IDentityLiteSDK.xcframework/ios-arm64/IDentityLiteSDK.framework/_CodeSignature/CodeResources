@@ -214,7 +214,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		C15gt+VShah226ez/F6x+8AmgOc=
+		/btWOsOzxNsLCBqjgkLcC4am4dY=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -222,23 +222,23 @@
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		BZ7LWQesOLTZPuOaAwH+6D7ACDw=
+		hbpA/td5RlMwgAz4ft55UTgBuBo=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		Na5x5+Tf1AACiWklPJ2+EdZd5G4=
+		hknh1uW/hesyPo6Kke8x4KP8Dck=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		0pKtdIHRjO/Io5D0OETSza6srg8=
+		Wt4URz/7vdqSta4tax4GZD3ZdqE=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		Na5x5+Tf1AACiWklPJ2+EdZd5G4=
+		hknh1uW/hesyPo6Kke8x4KP8Dck=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		v6VvqmZj0wUOV3n1QdD07tpcRus=
+		NrhnxfCESaO90slVZMR3mnjEJxc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -630,35 +630,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1FGjfy4+Ne9IzWuLEdJvtaBlkIDZ+05qvxmTOM7Gctg=
+			wjcbz5rG99mBq8YjkH20YYpAQZA80QcXfrjHwetoVsE=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PK0mbpOERzIB2LUMHtzMJQY8d2fOF/REUZuRWUkx2ak=
+			s3i3Kn/U/OYLWiCdi3hgPxWg2fjR49ZoWhZl4KbKx+U=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aD3Y25CY4NyZmH8g9XIS54OUyumFyKcMhkUMAHPrbTo=
+			4YCvU3gjJ+5wkAIs66wXlTAmGT+TVpo3hOUx6ysgeBQ=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PK0mbpOERzIB2LUMHtzMJQY8d2fOF/REUZuRWUkx2ak=
+			s3i3Kn/U/OYLWiCdi3hgPxWg2fjR49ZoWhZl4KbKx+U=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			E4PWtKNwHVkYGx1a3Z7O6yTkIIYHAWyWB34+L8kK4Y8=
+			1hwJNEnB/GxwaKPF0LFBO38KtDz94ia7wXPxhlcogv8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
