@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		lO0qaYOkwWjs4X656iOH6gKqkrM=
+		3ZtZkgQgK0SQMgnJ70G8mztVWx8=
 		</data>
 		<key>Headers/IDCaptureLite-Swift.h</key>
 		<data>
-		RbHJsZw2z4hDH/gPzx3C/qhaPw8=
+		D8/9PkowhG8wb16GbzMU+N324C4=
 		</data>
 		<key>IDCapture.storyboardc/0MQ-BS-jP5-view-1qV-G3-ufb.nib</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>IDCapture.storyboardc/Ff5-cc-gUl-view-big-ZQ-W6Q.nib</key>
 		<data>
-		VZgQaaSnzq4EAq9TmgJhDMTV4jY=
+		e4tvmrfJMF/NNGgJami7cQVWbe4=
 		</data>
 		<key>IDCapture.storyboardc/IDCaptureInstructionsViewController.nib</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>IDCapture.storyboardc/Kxl-rx-rZ7-view-MTo-GG-BaX.nib</key>
 		<data>
-		VZgQaaSnzq4EAq9TmgJhDMTV4jY=
+		e4tvmrfJMF/NNGgJami7cQVWbe4=
 		</data>
 		<key>IDCapture.storyboardc/RetryViewController.nib</key>
 		<data>
@@ -46,15 +46,15 @@
 		</data>
 		<key>IDCapture.storyboardc/SelectCountryTableViewController.nib</key>
 		<data>
-		9CnYwGFEfB6eg1HCA99MpoHQFx0=
+		cDSquPG9O0NzOSRsENLtPRmuTzQ=
 		</data>
 		<key>IDCapture.storyboardc/SelectIdTypeTableViewController.nib</key>
 		<data>
-		u0O+6AMF4upmXGQyoKr6vJci/1k=
+		XJfSKApODMwnBzWJAorjoimWCZA=
 		</data>
 		<key>IDCapture.storyboardc/SelectStateTableViewController.nib</key>
 		<data>
-		QKguAOQlvb4ZcFg52akFlBANcCM=
+		vSI6G77A+ul+9vam9sb+kljYzRc=
 		</data>
 		<key>IDCapture.storyboardc/T4m-RV-e8I-view-2Da-Et-BYa.nib</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>IDCapture.storyboardc/mkj-2R-7XC-view-Woh-ia-fDF.nib</key>
 		<data>
-		VZgQaaSnzq4EAq9TmgJhDMTV4jY=
+		e4tvmrfJMF/NNGgJami7cQVWbe4=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		NGcap3EMmLmHVfpWlFKCrONQ5fM=
+		VmeBqVSUQvVSPxyq1+S3Ws0O0iw=
 		</data>
 		<key>Modules/IDCaptureLite.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -74,19 +74,19 @@
 		</data>
 		<key>Modules/IDCaptureLite.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		ddlhBHqSXvPio4DIblDfqOh56Oo=
+		wRlnAWqBbWpQx+2CI7AkUFyscn0=
 		</data>
 		<key>Modules/IDCaptureLite.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		zRlP07ZU/AQoXSuQ/t9i34o1EJ8=
+		cQRk4HFGnUmzjQcuMnGfjgvzQF8=
 		</data>
 		<key>Modules/IDCaptureLite.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		ddlhBHqSXvPio4DIblDfqOh56Oo=
+		wRlnAWqBbWpQx+2CI7AkUFyscn0=
 		</data>
 		<key>Modules/IDCaptureLite.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		F+/rf8s7Udu6m4VUTp51rN+Wma8=
+		v6Y6jcgGUkjhoOIzllCRdEe4iwc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -99,14 +99,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			r18Il5dBGzyq1GGFtabZQoVyxH+zT+vacEROiDVUhbY=
+			W16oHtPebSNQOHJgfq6xk0l+AvmE6Kb9QRIQh3MDVZ4=
 			</data>
 		</dict>
 		<key>Headers/IDCaptureLite-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ByFxaNQN9g3IbKrJlNuGFObSWrs6poMKgq6e/e1PvtA=
+			THKGCUXNQtwlmZlVaGlaBdyQ+nsimfgDP5elt4j2oDA=
 			</data>
 		</dict>
 		<key>IDCapture.storyboardc/0MQ-BS-jP5-view-1qV-G3-ufb.nib</key>
@@ -127,7 +127,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jxjFUdGDTvOHP7FBb67WeqU08FWx1yWuw0SteKkv+Cc=
+			aPU+hiBar25+W5YgAkiCpsChB9zlw9JJpO4upWGUOOM=
 			</data>
 		</dict>
 		<key>IDCapture.storyboardc/IDCaptureInstructionsViewController.nib</key>
@@ -155,7 +155,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jxjFUdGDTvOHP7FBb67WeqU08FWx1yWuw0SteKkv+Cc=
+			aPU+hiBar25+W5YgAkiCpsChB9zlw9JJpO4upWGUOOM=
 			</data>
 		</dict>
 		<key>IDCapture.storyboardc/RetryViewController.nib</key>
@@ -169,21 +169,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FD8RaAlcA1+sxp0ByFxTsGad+buv6wEP6ptxAcUhu1s=
+			GV+tKKrFzp5LsRG4TuOgd9aSNl1bXTz7ZmD0E1voYOw=
 			</data>
 		</dict>
 		<key>IDCapture.storyboardc/SelectIdTypeTableViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zOS8juck+ethSshbBz2NthBgt5IK5YIHsvEixvCP3Sw=
+			j0mdESlEMNi1KtevYgnOV5inMhvVcjrvo+G+TOclSWk=
 			</data>
 		</dict>
 		<key>IDCapture.storyboardc/SelectStateTableViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nOe2E1nEoojJyz8D5+6t8C4euHigQBr/8KhgsU1bE1g=
+			QRho9bK83+4yxkWmvS+DD/osZ9nGpwIiXVcf7ebIn8U=
 			</data>
 		</dict>
 		<key>IDCapture.storyboardc/T4m-RV-e8I-view-2Da-Et-BYa.nib</key>
@@ -197,7 +197,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jxjFUdGDTvOHP7FBb67WeqU08FWx1yWuw0SteKkv+Cc=
+			aPU+hiBar25+W5YgAkiCpsChB9zlw9JJpO4upWGUOOM=
 			</data>
 		</dict>
 		<key>Modules/IDCaptureLite.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -211,28 +211,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EscrduiCqFnc8VLWIzu/cz0q/JR9bbD1ONDosI7ykeQ=
+			cbu/WTtV8kyDRPV9JUWeiARGgn/v2Rq2wU3XkHLgm5o=
 			</data>
 		</dict>
 		<key>Modules/IDCaptureLite.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KLfywpkXG6UrsBQBg2reAM2Yzd+5ucbIcd/YXNGd1OM=
+			Kiz+1h55k9RPSERCdCUyReuoPrr7oQF+rRqT2XPQNaU=
 			</data>
 		</dict>
 		<key>Modules/IDCaptureLite.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EscrduiCqFnc8VLWIzu/cz0q/JR9bbD1ONDosI7ykeQ=
+			cbu/WTtV8kyDRPV9JUWeiARGgn/v2Rq2wU3XkHLgm5o=
 			</data>
 		</dict>
 		<key>Modules/IDCaptureLite.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ev6zNEWwSzu9hejF49qej6J2RE2Uw6lo95rt2zucZQ0=
+			+ZU378QFHbXrzL3A19QLxiGuocxCrYobcq/m9BVGSwA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
