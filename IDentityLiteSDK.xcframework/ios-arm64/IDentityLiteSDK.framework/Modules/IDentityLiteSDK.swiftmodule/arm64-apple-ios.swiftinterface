@@ -154,7 +154,7 @@ public protocol ScreenSecurityDelegate : AnyObject {
 @_hasMissingDesignatedInitializers final public class ScreenSecurityManager {
   public static let shared: IDentityLiteSDK.ScreenSecurityManager
   weak final public var delegate: (any IDentityLiteSDK.ScreenSecurityDelegate)?
-  final public var isBlurProtectionEnabled: Swift.Bool
+  final public var isScreenRecordingEnabled: Swift.Bool
   public static let didDetectScreenshotNotification: Foundation.Notification.Name
   public static let didChangeRecordingStatusNotification: Foundation.Notification.Name
   final public func startMonitoring()
@@ -1002,6 +1002,7 @@ public enum IDCaptureState {
   case finger
   case notInFocus
   case capturing
+  case idPredictionTimeout
   case detectedBox(IDentityLiteSDK.DetectedData)
   case classifiedDocument(IDentityLiteSDK.DetectedData)
   case success(IDentityLiteSDK.DetectedData)
@@ -1090,6 +1091,7 @@ public class IDCapture {
   public static var style: IDentityLiteSDK.IDCapture.ButtonStyle
   weak public var delegate: (any IDentityLiteSDK.IDCaptureDelegate)?
   public init(overlayFrame: CoreFoundation.CGRect, isVideoCapture: Swift.Bool = false)
+  public func captureAnway()
   public func typeMismatch()
   public func retry()
   @objc deinit
@@ -1475,6 +1477,9 @@ extension IDentityLiteSDK.IDCapture {
     public var instructionScreenBackButtonIsHidden: Swift.Bool
     public var cameraScreenBackButtonIsHidden: Swift.Bool
     public var passportNFCPhotoMatchThreshold: Swift.Float
+    public var allowOverrideWrongDocumentTypeAfterMs: Swift.Double
+    public var isIdCaptureProgressBarEnabled: Swift.Bool
+    public var idCaptureProgressBarLineWidth: CoreFoundation.CGFloat
   }
 }
 public struct CustomerEnrollBiometricsRequest : Swift.Encodable {
@@ -1534,10 +1539,17 @@ extension IDentityLiteSDK.IDCapture {
     public var backgroundColor: UIKit.UIColor?
     public var captureLabelColor: UIKit.UIColor?
     public var captureLabelTextColor: UIKit.UIColor?
-    public var successLabelTextColor: UIKit.UIColor?
-    public var errorLabelTextColor: UIKit.UIColor?
     public var successLabelBackgroundColor: UIKit.UIColor?
+    public var successLabelTextColor: UIKit.UIColor?
     public var errorLabelBackgroundColor: UIKit.UIColor?
+    public var errorLabelTextColor: UIKit.UIColor?
+    public var infoLabelBackgroundColor: UIKit.UIColor?
+    public var infoLabelTextColor: UIKit.UIColor?
+    public var warningLabelBackgroundColor: UIKit.UIColor?
+    public var warningLabelTextColor: UIKit.UIColor?
+    public var captureAnywayButtonColor: UIKit.UIColor?
+    public var captureAnywayButtonTextColor: UIKit.UIColor?
+    public var idCaptureProgressBarColor: UIKit.UIColor?
     public var retryScreenBackgroundColor: UIKit.UIColor?
     public var retryScreenLabelTextColor: UIKit.UIColor?
     public var retryScreenImageTintColor: UIKit.UIColor?
@@ -1764,6 +1776,8 @@ extension IDentityLiteSDK.IDCapture {
     public var closeButtonTextFont: UIKit.UIFont?
     public var labelFont: UIKit.UIFont?
     public var captureLabelFont: UIKit.UIFont?
+    public var warningLabelFont: UIKit.UIFont?
+    public var captureAnywayButtonTextFont: UIKit.UIFont?
     public var retryScreenLabelFont: UIKit.UIFont?
     public var retryScreenRetryButtonFont: UIKit.UIFont?
     public var retryScreenCancelButtonFont: UIKit.UIFont?
@@ -2789,6 +2803,8 @@ extension IDentityLiteSDK.IDCapture {
     public var alignRectangle: Swift.String
     public var backImageDetected: Swift.String
     public var frontImageDetected: Swift.String
+    public var idCaptureWarningMessage: Swift.String
+    public var captureAnywayButtonText: Swift.String
     public var tooMuchGlare: Swift.String
     public var glareDetected: Swift.String
     public var removeFinger: Swift.String
@@ -2822,6 +2838,7 @@ extension IDentityLiteSDK.IDCapture {
   }
   public struct ButtonStyle {
     public var instructionScreenContinueButton: IDentityLiteSDK.IDCapture.ButtonBorderStyle?
+    public var captureAnywayButton: IDentityLiteSDK.IDCapture.ButtonBorderStyle?
     public var retryScreenRetryButton: IDentityLiteSDK.IDCapture.ButtonBorderStyle?
     public var retryScreenCancelButton: IDentityLiteSDK.IDCapture.ButtonBorderStyle?
   }
@@ -3897,7 +3914,7 @@ public typealias ErrorCompletion = ((any Swift.Error)?) -> Swift.Void
   weak public static var delegate: (any IDentityLiteSDK.InitializationDelegate)?
   public class func setDevelopmentRelaxationSecret(_ secret: Swift.Int)
   public class func setScreenSecurityEnabled(_ enabled: Swift.Bool)
-  public class func enabledScreenRecording(_ enabled: Swift.Bool)
+  public class func isScreenRecordingEnabled(_ enabled: Swift.Bool)
   public class func initializeSDK(language: IDentityLiteSDK.Language = .en, isGPSEnabled: Swift.Bool = true, isUpdateModelsData: Swift.Bool = true, accessToken: Swift.String, completion: @escaping IDentityLiteSDK.ErrorCompletion)
   @objc deinit
 }
@@ -3957,6 +3974,15 @@ public struct AdditionalDocumentsRequest : Swift.Encodable {
   public func encode(to encoder: any Swift.Encoder) throws
 }
 extension IDentityLiteSDK.IDCapture {
+  public enum CaptureLabelPosition {
+    case top
+    case bottom
+    public static func == (a: IDentityLiteSDK.IDCapture.CaptureLabelPosition, b: IDentityLiteSDK.IDCapture.CaptureLabelPosition) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
   public enum LabelPosition {
     case top
     case center
@@ -3968,6 +3994,7 @@ extension IDentityLiteSDK.IDCapture {
     }
   }
   public struct Layout {
+    public var captureLabelPosition: IDentityLiteSDK.IDCapture.CaptureLabelPosition
     public var labelPosition: IDentityLiteSDK.IDCapture.LabelPosition
   }
 }
@@ -4295,5 +4322,7 @@ extension IDentityLiteSDK.InitializationState : Swift.RawRepresentable {}
 extension IDentityLiteSDK.InitializationStage : Swift.Equatable {}
 extension IDentityLiteSDK.InitializationStage : Swift.Hashable {}
 extension IDentityLiteSDK.InitializationStage : Swift.RawRepresentable {}
+extension IDentityLiteSDK.IDCapture.CaptureLabelPosition : Swift.Equatable {}
+extension IDentityLiteSDK.IDCapture.CaptureLabelPosition : Swift.Hashable {}
 extension IDentityLiteSDK.IDCapture.LabelPosition : Swift.Equatable {}
 extension IDentityLiteSDK.IDCapture.LabelPosition : Swift.Hashable {}
