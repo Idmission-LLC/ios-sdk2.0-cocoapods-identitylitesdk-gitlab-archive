@@ -36,7 +36,7 @@ relocations:
   - { offset: 0x1424CA, size: 0x8, addend: 0x0, symName: _exsltSetsTrailingFunction, symObjAddr: 0x442, symBinAddr: 0x465F, symSize: 0xDC }
   - { offset: 0x142639, size: 0x8, addend: 0x0, symName: _exsltSetsXpathCtxtRegister, symObjAddr: 0x51E, symBinAddr: 0x473B, symSize: 0x10D }
   - { offset: 0x1427C2, size: 0x8, addend: 0x0, symName: _xsltNumberFormat, symObjAddr: 0x0, symBinAddr: 0x4848, symSize: 0x357 }
-  - { offset: 0x1427EA, size: 0x8, addend: 0x0, symName: _default_token, symObjAddr: 0xD440, symBinAddr: 0x6C0588, symSize: 0x0 }
+  - { offset: 0x1427EA, size: 0x8, addend: 0x0, symName: _default_token, symObjAddr: 0xD448, symBinAddr: 0x6C0588, symSize: 0x0 }
   - { offset: 0x14298D, size: 0x8, addend: 0x0, symName: _xsltNumberFormat, symObjAddr: 0x0, symBinAddr: 0x4848, symSize: 0x357 }
   - { offset: 0x142D99, size: 0x8, addend: 0x0, symName: _xsltNumberFormatTokenize, symObjAddr: 0x357, symBinAddr: 0x4B9F, symSize: 0x308 }
   - { offset: 0x14304A, size: 0x8, addend: 0x0, symName: _xsltNumberFormatInsertNumbers, symObjAddr: 0x65F, symBinAddr: 0x4EA7, symSize: 0x249 }
