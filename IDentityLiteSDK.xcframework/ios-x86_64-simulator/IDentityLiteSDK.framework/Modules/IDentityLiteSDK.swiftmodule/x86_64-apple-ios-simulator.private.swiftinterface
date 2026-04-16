@@ -141,7 +141,7 @@ extension IDentityLiteSDK.SignatureCapture {
 public struct FormDetailValidateIdResponseData : Swift.Codable {
   public var uniqueRequestId: Swift.String?
   public var verificationResultId: Swift.Int?
-  public var verificationResultDetails: [Swift.String : Any]?
+  public var verificationResultDetails: [Swift.String : IDentityLiteSDK.JSONValue]?
   public var verificationResult: Swift.String?
   public var verificationResultCode: Swift.String?
   public var videoIDData: IDentityLiteSDK.VideoIDDataValidateIdResponse?
@@ -781,7 +781,7 @@ public struct AdditionalCustomerWFlagCommonData : Swift.Encodable {
   public var sendInputImagesInResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendInputImagesInResponse?
   public var metadata: IDentityLiteSDK.Metadata?
   public var ocrMetadata: Swift.String?
-  public init(idToken: Swift.String? = "", uniqueRequestId: Swift.String = IDentitySDK.requestID, clientTraceId: Swift.String? = nil, clientRequestID: Swift.String? = nil, manualReviewRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.ManualReviewRequired? = .no, bypassAgeValidation: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.BypassAgeValidation? = .no, deDuplicationRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DeDuplicationRequired? = .no, bypassNameMatching: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.BypassNameMatching? = .yes, postDataAPIRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.PostDataAPIRequired? = .no, postDataAPIURL: Swift.String? = nil, sendMetaDataInPost: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendMetaDataInPost? = nil, sendInputImagesInPost: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendInputImagesInPost? = nil, sendProcessedImagesInPost: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendProcessedImagesInPost? = nil, needImmediateResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.NeedImmediateResponse? = nil, deduplicationSynchronous: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DeduplicationSynchronous? = nil, verifyDataWithHost: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.VerifyDataWithHost? = nil, idBackImageRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.IdBackImageRequired? = nil, stripSpecialCharacters: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.StripSpecialCharacters? = nil, idImageResolutionCheck: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.IdImageResolutionCheck? = .yes, deDupDataRequiredInResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DeDupDataRequiredInResponse? = nil, deDupManualReviewRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DeDupManualReviewRequired? = .yes, postDataOnReviewRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.PostDataOnReviewRequired? = .no, postDataOnReviewAPIURL: Swift.String? = nil, paymentGateway: Swift.String? = nil, gpsCoordinates: Swift.String? = nil, piiExclusion: Swift.String? = nil, detectLiveness: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DetectLiveness? = .yes, advancedTamperDetection: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.AdvancedTamperDetection? = .no, detectLabel: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DetectLabel? = nil, detectClosedEyes: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DetectClosedEyes? = nil, sendSignatureFromIdInResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendSignatureFromIdInResponse? = nil, sendDocumentIdInResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendDocumentIdInResponse? = nil, customerDataMatchConfig: IDentityLiteSDK.CustomerDataMatchConfig? = nil, sendProcessedImagesInResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendProcessedImagesInResponse? = .yes, sendInputImagesInResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendInputImagesInResponse? = .yes)
+  public init(idToken: Swift.String? = "", uniqueRequestId: Swift.String = IDentitySDK.requestID, clientTraceId: Swift.String? = nil, clientRequestID: Swift.String? = nil, manualReviewRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.ManualReviewRequired? = .no, bypassAgeValidation: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.BypassAgeValidation? = .no, deDuplicationRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DeDuplicationRequired? = .no, bypassNameMatching: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.BypassNameMatching? = .yes, postDataAPIRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.PostDataAPIRequired? = .no, postDataAPIURL: Swift.String? = nil, sendMetaDataInPost: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendMetaDataInPost? = nil, sendInputImagesInPost: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendInputImagesInPost? = nil, sendProcessedImagesInPost: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendProcessedImagesInPost? = nil, needImmediateResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.NeedImmediateResponse? = nil, deduplicationSynchronous: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DeduplicationSynchronous? = nil, verifyDataWithHost: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.VerifyDataWithHost? = nil, idBackImageRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.IdBackImageRequired? = nil, stripSpecialCharacters: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.StripSpecialCharacters? = nil, idImageResolutionCheck: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.IdImageResolutionCheck? = .yes, deDupDataRequiredInResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DeDupDataRequiredInResponse? = nil, deDupManualReviewRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DeDupManualReviewRequired? = .yes, postDataOnReviewRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.PostDataOnReviewRequired? = .no, postDataOnReviewAPIURL: Swift.String? = nil, paymentGateway: Swift.String? = nil, gpsCoordinates: Swift.String? = nil, piiExclusion: Swift.String? = nil, detectLiveness: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DetectLiveness? = .yes, advancedTamperDetection: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.AdvancedTamperDetection? = .no, detectLabel: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DetectLabel? = nil, detectClosedEyes: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DetectClosedEyes? = nil, sendSignatureFromIdInResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendSignatureFromIdInResponse? = nil, sendDocumentIdInResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendDocumentIdInResponse? = nil, customerDataMatchConfig: IDentityLiteSDK.CustomerDataMatchConfig? = nil, sendProcessedImagesInResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendProcessedImagesInResponse? = .no, sendInputImagesInResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendInputImagesInResponse? = .no)
   public func encode(to encoder: any Swift.Encoder) throws
 }
 public struct OrderPEPResult : Swift.Codable {
@@ -1265,7 +1265,7 @@ extension IDentityLiteSDK.VoiceCapture {
 public struct FormDetailVerifyResponseData : Swift.Codable {
   public var uniqueRequestId: Swift.String?
   public var verificationResultId: Swift.Int?
-  public var verificationResultDetails: [Swift.String : Any]?
+  public var verificationResultDetails: [Swift.String : IDentityLiteSDK.JSONValue]?
   public var verificationResult: Swift.String?
   public var verificationResultCode: Swift.String?
   public var faceMask: Swift.String?
@@ -1472,7 +1472,7 @@ public struct PersonalCustomerIdentifyResponseData : Swift.Codable {
 public struct FormDetailEnrollBiometricsResponseData : Swift.Codable {
   public var uniqueRequestId: Swift.String?
   public var verificationResultId: Swift.Int?
-  public var verificationResultDetails: [Swift.String : Any]?
+  public var verificationResultDetails: [Swift.String : IDentityLiteSDK.JSONValue]?
   public var verificationResult: Swift.String?
   public var verificationResultCode: Swift.String?
   public var faceMask: Swift.String?
@@ -2515,7 +2515,7 @@ extension IDentityLiteSDK.IDentitySDK {
 public struct FormDetailLiveCheckResponseData : Swift.Codable {
   public var uniqueRequestId: Swift.String?
   public var verificationResultId: Swift.Int?
-  public var verificationResultDetails: [Swift.String : Any]?
+  public var verificationResultDetails: [Swift.String : IDentityLiteSDK.JSONValue]?
   public var verificationResult: Swift.String?
   public var verificationResultCode: Swift.String?
   public var faceMask: Swift.String?
@@ -2528,9 +2528,9 @@ public struct FormDetailLiveCheckResponseData : Swift.Codable {
   public var eyeCoveringScore: Swift.Double?
   public var cellPhone: Swift.String?
   public var cellPhoneScore: Swift.Double?
-  public var estimatedAge: Swift.Int?
+  public var estimatedAge: Swift.Double?
   public var predicatedGender: Swift.String?
-  public var closedEyes: Swift.String?
+  public var closedEyes: Swift.Bool?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -2576,7 +2576,7 @@ extension IDentityLiteSDK.IDentitySDK {
 public struct FormDetailIdentifyResponseData : Swift.Codable {
   public var uniqueRequestId: Swift.String?
   public var verificationResultId: Swift.Int?
-  public var verificationResultDetails: [Swift.String : Any]?
+  public var verificationResultDetails: [Swift.String : IDentityLiteSDK.JSONValue]?
   public var verificationResult: Swift.String?
   public var verificationResultCode: Swift.String?
   public var faceMask: Swift.String?
@@ -2591,7 +2591,7 @@ public struct FormDetailIdentifyResponseData : Swift.Codable {
   public var cellPhoneScore: Swift.Double?
   public var estimatedAge: Swift.Int?
   public var predicatedGender: Swift.String?
-  public var closedEyes: Swift.String?
+  public var closedEyes: Swift.Bool?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -3763,7 +3763,7 @@ public class MetalBilinearScaler {
 public struct FormDetailResultResponseData : Swift.Codable {
   public var uniqueRequestId: Swift.String?
   public var verificationResultId: Swift.Int?
-  public var verificationResultDetails: [Swift.String : Any]?
+  public var verificationResultDetails: [Swift.String : IDentityLiteSDK.JSONValue]?
   public var verificationResult: Swift.String?
   public var verificationResultCode: Swift.String?
   public var faceVerificationResult: Swift.String?

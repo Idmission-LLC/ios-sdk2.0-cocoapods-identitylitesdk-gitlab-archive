@@ -13096,12 +13096,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : Any]?",
+                "printedName": "[Swift.String : IDentityLiteSDK.JSONValue]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
+                    "printedName": "[Swift.String : IDentityLiteSDK.JSONValue]",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -13111,8 +13111,9 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
+                        "name": "JSONValue",
+                        "printedName": "IDentityLiteSDK.JSONValue",
+                        "usr": "s:15IDentityLiteSDK9JSONValueO"
                       }
                     ],
                     "usr": "s:SD"
@@ -13122,8 +13123,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:15IDentityLiteSDK32FormDetailValidateIdResponseDataV25verificationResultDetailsSDySSypGSgvp",
-            "mangledName": "$s15IDentityLiteSDK32FormDetailValidateIdResponseDataV25verificationResultDetailsSDySSypGSgvp",
+            "usr": "s:15IDentityLiteSDK32FormDetailValidateIdResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvp",
+            "mangledName": "$s15IDentityLiteSDK32FormDetailValidateIdResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvp",
             "moduleName": "IDentityLiteSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -13141,12 +13142,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "[Swift.String : Any]?",
+                    "printedName": "[Swift.String : IDentityLiteSDK.JSONValue]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Dictionary",
-                        "printedName": "[Swift.String : Any]",
+                        "printedName": "[Swift.String : IDentityLiteSDK.JSONValue]",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -13156,8 +13157,9 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "ProtocolComposition",
-                            "printedName": "Any"
+                            "name": "JSONValue",
+                            "printedName": "IDentityLiteSDK.JSONValue",
+                            "usr": "s:15IDentityLiteSDK9JSONValueO"
                           }
                         ],
                         "usr": "s:SD"
@@ -13167,8 +13169,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15IDentityLiteSDK32FormDetailValidateIdResponseDataV25verificationResultDetailsSDySSypGSgvg",
-                "mangledName": "$s15IDentityLiteSDK32FormDetailValidateIdResponseDataV25verificationResultDetailsSDySSypGSgvg",
+                "usr": "s:15IDentityLiteSDK32FormDetailValidateIdResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvg",
+                "mangledName": "$s15IDentityLiteSDK32FormDetailValidateIdResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvg",
                 "moduleName": "IDentityLiteSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -13186,12 +13188,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "[Swift.String : Any]?",
+                    "printedName": "[Swift.String : IDentityLiteSDK.JSONValue]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Dictionary",
-                        "printedName": "[Swift.String : Any]",
+                        "printedName": "[Swift.String : IDentityLiteSDK.JSONValue]",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -13201,8 +13203,9 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "ProtocolComposition",
-                            "printedName": "Any"
+                            "name": "JSONValue",
+                            "printedName": "IDentityLiteSDK.JSONValue",
+                            "usr": "s:15IDentityLiteSDK9JSONValueO"
                           }
                         ],
                         "usr": "s:SD"
@@ -13212,8 +13215,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15IDentityLiteSDK32FormDetailValidateIdResponseDataV25verificationResultDetailsSDySSypGSgvs",
-                "mangledName": "$s15IDentityLiteSDK32FormDetailValidateIdResponseDataV25verificationResultDetailsSDySSypGSgvs",
+                "usr": "s:15IDentityLiteSDK32FormDetailValidateIdResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvs",
+                "mangledName": "$s15IDentityLiteSDK32FormDetailValidateIdResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvs",
                 "moduleName": "IDentityLiteSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -13230,8 +13233,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15IDentityLiteSDK32FormDetailValidateIdResponseDataV25verificationResultDetailsSDySSypGSgvM",
-                "mangledName": "$s15IDentityLiteSDK32FormDetailValidateIdResponseDataV25verificationResultDetailsSDySSypGSgvM",
+                "usr": "s:15IDentityLiteSDK32FormDetailValidateIdResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvM",
+                "mangledName": "$s15IDentityLiteSDK32FormDetailValidateIdResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvM",
                 "moduleName": "IDentityLiteSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -87958,12 +87961,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : Any]?",
+                "printedName": "[Swift.String : IDentityLiteSDK.JSONValue]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
+                    "printedName": "[Swift.String : IDentityLiteSDK.JSONValue]",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -87973,8 +87976,9 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
+                        "name": "JSONValue",
+                        "printedName": "IDentityLiteSDK.JSONValue",
+                        "usr": "s:15IDentityLiteSDK9JSONValueO"
                       }
                     ],
                     "usr": "s:SD"
@@ -87984,8 +87988,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:15IDentityLiteSDK28FormDetailVerifyResponseDataV25verificationResultDetailsSDySSypGSgvp",
-            "mangledName": "$s15IDentityLiteSDK28FormDetailVerifyResponseDataV25verificationResultDetailsSDySSypGSgvp",
+            "usr": "s:15IDentityLiteSDK28FormDetailVerifyResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvp",
+            "mangledName": "$s15IDentityLiteSDK28FormDetailVerifyResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvp",
             "moduleName": "IDentityLiteSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -88003,12 +88007,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "[Swift.String : Any]?",
+                    "printedName": "[Swift.String : IDentityLiteSDK.JSONValue]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Dictionary",
-                        "printedName": "[Swift.String : Any]",
+                        "printedName": "[Swift.String : IDentityLiteSDK.JSONValue]",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -88018,8 +88022,9 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "ProtocolComposition",
-                            "printedName": "Any"
+                            "name": "JSONValue",
+                            "printedName": "IDentityLiteSDK.JSONValue",
+                            "usr": "s:15IDentityLiteSDK9JSONValueO"
                           }
                         ],
                         "usr": "s:SD"
@@ -88029,8 +88034,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15IDentityLiteSDK28FormDetailVerifyResponseDataV25verificationResultDetailsSDySSypGSgvg",
-                "mangledName": "$s15IDentityLiteSDK28FormDetailVerifyResponseDataV25verificationResultDetailsSDySSypGSgvg",
+                "usr": "s:15IDentityLiteSDK28FormDetailVerifyResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvg",
+                "mangledName": "$s15IDentityLiteSDK28FormDetailVerifyResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvg",
                 "moduleName": "IDentityLiteSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -88048,12 +88053,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "[Swift.String : Any]?",
+                    "printedName": "[Swift.String : IDentityLiteSDK.JSONValue]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Dictionary",
-                        "printedName": "[Swift.String : Any]",
+                        "printedName": "[Swift.String : IDentityLiteSDK.JSONValue]",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -88063,8 +88068,9 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "ProtocolComposition",
-                            "printedName": "Any"
+                            "name": "JSONValue",
+                            "printedName": "IDentityLiteSDK.JSONValue",
+                            "usr": "s:15IDentityLiteSDK9JSONValueO"
                           }
                         ],
                         "usr": "s:SD"
@@ -88074,8 +88080,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15IDentityLiteSDK28FormDetailVerifyResponseDataV25verificationResultDetailsSDySSypGSgvs",
-                "mangledName": "$s15IDentityLiteSDK28FormDetailVerifyResponseDataV25verificationResultDetailsSDySSypGSgvs",
+                "usr": "s:15IDentityLiteSDK28FormDetailVerifyResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvs",
+                "mangledName": "$s15IDentityLiteSDK28FormDetailVerifyResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvs",
                 "moduleName": "IDentityLiteSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -88092,8 +88098,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15IDentityLiteSDK28FormDetailVerifyResponseDataV25verificationResultDetailsSDySSypGSgvM",
-                "mangledName": "$s15IDentityLiteSDK28FormDetailVerifyResponseDataV25verificationResultDetailsSDySSypGSgvM",
+                "usr": "s:15IDentityLiteSDK28FormDetailVerifyResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvM",
+                "mangledName": "$s15IDentityLiteSDK28FormDetailVerifyResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvM",
                 "moduleName": "IDentityLiteSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -103379,12 +103385,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : Any]?",
+                "printedName": "[Swift.String : IDentityLiteSDK.JSONValue]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
+                    "printedName": "[Swift.String : IDentityLiteSDK.JSONValue]",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -103394,8 +103400,9 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
+                        "name": "JSONValue",
+                        "printedName": "IDentityLiteSDK.JSONValue",
+                        "usr": "s:15IDentityLiteSDK9JSONValueO"
                       }
                     ],
                     "usr": "s:SD"
@@ -103405,8 +103412,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:15IDentityLiteSDK38FormDetailEnrollBiometricsResponseDataV25verificationResultDetailsSDySSypGSgvp",
-            "mangledName": "$s15IDentityLiteSDK38FormDetailEnrollBiometricsResponseDataV25verificationResultDetailsSDySSypGSgvp",
+            "usr": "s:15IDentityLiteSDK38FormDetailEnrollBiometricsResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvp",
+            "mangledName": "$s15IDentityLiteSDK38FormDetailEnrollBiometricsResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvp",
             "moduleName": "IDentityLiteSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -103424,12 +103431,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "[Swift.String : Any]?",
+                    "printedName": "[Swift.String : IDentityLiteSDK.JSONValue]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Dictionary",
-                        "printedName": "[Swift.String : Any]",
+                        "printedName": "[Swift.String : IDentityLiteSDK.JSONValue]",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -103439,8 +103446,9 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "ProtocolComposition",
-                            "printedName": "Any"
+                            "name": "JSONValue",
+                            "printedName": "IDentityLiteSDK.JSONValue",
+                            "usr": "s:15IDentityLiteSDK9JSONValueO"
                           }
                         ],
                         "usr": "s:SD"
@@ -103450,8 +103458,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15IDentityLiteSDK38FormDetailEnrollBiometricsResponseDataV25verificationResultDetailsSDySSypGSgvg",
-                "mangledName": "$s15IDentityLiteSDK38FormDetailEnrollBiometricsResponseDataV25verificationResultDetailsSDySSypGSgvg",
+                "usr": "s:15IDentityLiteSDK38FormDetailEnrollBiometricsResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvg",
+                "mangledName": "$s15IDentityLiteSDK38FormDetailEnrollBiometricsResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvg",
                 "moduleName": "IDentityLiteSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -103469,12 +103477,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "[Swift.String : Any]?",
+                    "printedName": "[Swift.String : IDentityLiteSDK.JSONValue]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Dictionary",
-                        "printedName": "[Swift.String : Any]",
+                        "printedName": "[Swift.String : IDentityLiteSDK.JSONValue]",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -103484,8 +103492,9 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "ProtocolComposition",
-                            "printedName": "Any"
+                            "name": "JSONValue",
+                            "printedName": "IDentityLiteSDK.JSONValue",
+                            "usr": "s:15IDentityLiteSDK9JSONValueO"
                           }
                         ],
                         "usr": "s:SD"
@@ -103495,8 +103504,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15IDentityLiteSDK38FormDetailEnrollBiometricsResponseDataV25verificationResultDetailsSDySSypGSgvs",
-                "mangledName": "$s15IDentityLiteSDK38FormDetailEnrollBiometricsResponseDataV25verificationResultDetailsSDySSypGSgvs",
+                "usr": "s:15IDentityLiteSDK38FormDetailEnrollBiometricsResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvs",
+                "mangledName": "$s15IDentityLiteSDK38FormDetailEnrollBiometricsResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvs",
                 "moduleName": "IDentityLiteSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -103513,8 +103522,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15IDentityLiteSDK38FormDetailEnrollBiometricsResponseDataV25verificationResultDetailsSDySSypGSgvM",
-                "mangledName": "$s15IDentityLiteSDK38FormDetailEnrollBiometricsResponseDataV25verificationResultDetailsSDySSypGSgvM",
+                "usr": "s:15IDentityLiteSDK38FormDetailEnrollBiometricsResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvM",
+                "mangledName": "$s15IDentityLiteSDK38FormDetailEnrollBiometricsResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvM",
                 "moduleName": "IDentityLiteSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -145310,12 +145319,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : Any]?",
+                "printedName": "[Swift.String : IDentityLiteSDK.JSONValue]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
+                    "printedName": "[Swift.String : IDentityLiteSDK.JSONValue]",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -145325,8 +145334,9 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
+                        "name": "JSONValue",
+                        "printedName": "IDentityLiteSDK.JSONValue",
+                        "usr": "s:15IDentityLiteSDK9JSONValueO"
                       }
                     ],
                     "usr": "s:SD"
@@ -145336,8 +145346,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:15IDentityLiteSDK31FormDetailLiveCheckResponseDataV25verificationResultDetailsSDySSypGSgvp",
-            "mangledName": "$s15IDentityLiteSDK31FormDetailLiveCheckResponseDataV25verificationResultDetailsSDySSypGSgvp",
+            "usr": "s:15IDentityLiteSDK31FormDetailLiveCheckResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvp",
+            "mangledName": "$s15IDentityLiteSDK31FormDetailLiveCheckResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvp",
             "moduleName": "IDentityLiteSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -145355,12 +145365,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "[Swift.String : Any]?",
+                    "printedName": "[Swift.String : IDentityLiteSDK.JSONValue]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Dictionary",
-                        "printedName": "[Swift.String : Any]",
+                        "printedName": "[Swift.String : IDentityLiteSDK.JSONValue]",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -145370,8 +145380,9 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "ProtocolComposition",
-                            "printedName": "Any"
+                            "name": "JSONValue",
+                            "printedName": "IDentityLiteSDK.JSONValue",
+                            "usr": "s:15IDentityLiteSDK9JSONValueO"
                           }
                         ],
                         "usr": "s:SD"
@@ -145381,8 +145392,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15IDentityLiteSDK31FormDetailLiveCheckResponseDataV25verificationResultDetailsSDySSypGSgvg",
-                "mangledName": "$s15IDentityLiteSDK31FormDetailLiveCheckResponseDataV25verificationResultDetailsSDySSypGSgvg",
+                "usr": "s:15IDentityLiteSDK31FormDetailLiveCheckResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvg",
+                "mangledName": "$s15IDentityLiteSDK31FormDetailLiveCheckResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvg",
                 "moduleName": "IDentityLiteSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -145400,12 +145411,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "[Swift.String : Any]?",
+                    "printedName": "[Swift.String : IDentityLiteSDK.JSONValue]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Dictionary",
-                        "printedName": "[Swift.String : Any]",
+                        "printedName": "[Swift.String : IDentityLiteSDK.JSONValue]",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -145415,8 +145426,9 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "ProtocolComposition",
-                            "printedName": "Any"
+                            "name": "JSONValue",
+                            "printedName": "IDentityLiteSDK.JSONValue",
+                            "usr": "s:15IDentityLiteSDK9JSONValueO"
                           }
                         ],
                         "usr": "s:SD"
@@ -145426,8 +145438,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15IDentityLiteSDK31FormDetailLiveCheckResponseDataV25verificationResultDetailsSDySSypGSgvs",
-                "mangledName": "$s15IDentityLiteSDK31FormDetailLiveCheckResponseDataV25verificationResultDetailsSDySSypGSgvs",
+                "usr": "s:15IDentityLiteSDK31FormDetailLiveCheckResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvs",
+                "mangledName": "$s15IDentityLiteSDK31FormDetailLiveCheckResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvs",
                 "moduleName": "IDentityLiteSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -145444,8 +145456,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15IDentityLiteSDK31FormDetailLiveCheckResponseDataV25verificationResultDetailsSDySSypGSgvM",
-                "mangledName": "$s15IDentityLiteSDK31FormDetailLiveCheckResponseDataV25verificationResultDetailsSDySSypGSgvM",
+                "usr": "s:15IDentityLiteSDK31FormDetailLiveCheckResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvM",
+                "mangledName": "$s15IDentityLiteSDK31FormDetailLiveCheckResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvM",
                 "moduleName": "IDentityLiteSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -146792,21 +146804,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Int?",
+                "printedName": "Swift.Double?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:15IDentityLiteSDK31FormDetailLiveCheckResponseDataV12estimatedAgeSiSgvp",
-            "mangledName": "$s15IDentityLiteSDK31FormDetailLiveCheckResponseDataV12estimatedAgeSiSgvp",
+            "usr": "s:15IDentityLiteSDK31FormDetailLiveCheckResponseDataV12estimatedAgeSdSgvp",
+            "mangledName": "$s15IDentityLiteSDK31FormDetailLiveCheckResponseDataV12estimatedAgeSdSgvp",
             "moduleName": "IDentityLiteSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -146824,21 +146836,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.Int?",
+                    "printedName": "Swift.Double?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15IDentityLiteSDK31FormDetailLiveCheckResponseDataV12estimatedAgeSiSgvg",
-                "mangledName": "$s15IDentityLiteSDK31FormDetailLiveCheckResponseDataV12estimatedAgeSiSgvg",
+                "usr": "s:15IDentityLiteSDK31FormDetailLiveCheckResponseDataV12estimatedAgeSdSgvg",
+                "mangledName": "$s15IDentityLiteSDK31FormDetailLiveCheckResponseDataV12estimatedAgeSdSgvg",
                 "moduleName": "IDentityLiteSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -146856,21 +146868,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.Int?",
+                    "printedName": "Swift.Double?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15IDentityLiteSDK31FormDetailLiveCheckResponseDataV12estimatedAgeSiSgvs",
-                "mangledName": "$s15IDentityLiteSDK31FormDetailLiveCheckResponseDataV12estimatedAgeSiSgvs",
+                "usr": "s:15IDentityLiteSDK31FormDetailLiveCheckResponseDataV12estimatedAgeSdSgvs",
+                "mangledName": "$s15IDentityLiteSDK31FormDetailLiveCheckResponseDataV12estimatedAgeSdSgvs",
                 "moduleName": "IDentityLiteSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -146887,8 +146899,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15IDentityLiteSDK31FormDetailLiveCheckResponseDataV12estimatedAgeSiSgvM",
-                "mangledName": "$s15IDentityLiteSDK31FormDetailLiveCheckResponseDataV12estimatedAgeSiSgvM",
+                "usr": "s:15IDentityLiteSDK31FormDetailLiveCheckResponseDataV12estimatedAgeSdSgvM",
+                "mangledName": "$s15IDentityLiteSDK31FormDetailLiveCheckResponseDataV12estimatedAgeSdSgvM",
                 "moduleName": "IDentityLiteSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -147014,21 +147026,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String?",
+                "printedName": "Swift.Bool?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:15IDentityLiteSDK31FormDetailLiveCheckResponseDataV10closedEyesSSSgvp",
-            "mangledName": "$s15IDentityLiteSDK31FormDetailLiveCheckResponseDataV10closedEyesSSSgvp",
+            "usr": "s:15IDentityLiteSDK31FormDetailLiveCheckResponseDataV10closedEyesSbSgvp",
+            "mangledName": "$s15IDentityLiteSDK31FormDetailLiveCheckResponseDataV10closedEyesSbSgvp",
             "moduleName": "IDentityLiteSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -147046,21 +147058,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.String?",
+                    "printedName": "Swift.Bool?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15IDentityLiteSDK31FormDetailLiveCheckResponseDataV10closedEyesSSSgvg",
-                "mangledName": "$s15IDentityLiteSDK31FormDetailLiveCheckResponseDataV10closedEyesSSSgvg",
+                "usr": "s:15IDentityLiteSDK31FormDetailLiveCheckResponseDataV10closedEyesSbSgvg",
+                "mangledName": "$s15IDentityLiteSDK31FormDetailLiveCheckResponseDataV10closedEyesSbSgvg",
                 "moduleName": "IDentityLiteSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -147078,21 +147090,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.String?",
+                    "printedName": "Swift.Bool?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15IDentityLiteSDK31FormDetailLiveCheckResponseDataV10closedEyesSSSgvs",
-                "mangledName": "$s15IDentityLiteSDK31FormDetailLiveCheckResponseDataV10closedEyesSSSgvs",
+                "usr": "s:15IDentityLiteSDK31FormDetailLiveCheckResponseDataV10closedEyesSbSgvs",
+                "mangledName": "$s15IDentityLiteSDK31FormDetailLiveCheckResponseDataV10closedEyesSbSgvs",
                 "moduleName": "IDentityLiteSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -147109,8 +147121,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15IDentityLiteSDK31FormDetailLiveCheckResponseDataV10closedEyesSSSgvM",
-                "mangledName": "$s15IDentityLiteSDK31FormDetailLiveCheckResponseDataV10closedEyesSSSgvM",
+                "usr": "s:15IDentityLiteSDK31FormDetailLiveCheckResponseDataV10closedEyesSbSgvM",
+                "mangledName": "$s15IDentityLiteSDK31FormDetailLiveCheckResponseDataV10closedEyesSbSgvM",
                 "moduleName": "IDentityLiteSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -149562,12 +149574,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : Any]?",
+                "printedName": "[Swift.String : IDentityLiteSDK.JSONValue]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
+                    "printedName": "[Swift.String : IDentityLiteSDK.JSONValue]",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -149577,8 +149589,9 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
+                        "name": "JSONValue",
+                        "printedName": "IDentityLiteSDK.JSONValue",
+                        "usr": "s:15IDentityLiteSDK9JSONValueO"
                       }
                     ],
                     "usr": "s:SD"
@@ -149588,8 +149601,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:15IDentityLiteSDK30FormDetailIdentifyResponseDataV25verificationResultDetailsSDySSypGSgvp",
-            "mangledName": "$s15IDentityLiteSDK30FormDetailIdentifyResponseDataV25verificationResultDetailsSDySSypGSgvp",
+            "usr": "s:15IDentityLiteSDK30FormDetailIdentifyResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvp",
+            "mangledName": "$s15IDentityLiteSDK30FormDetailIdentifyResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvp",
             "moduleName": "IDentityLiteSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -149607,12 +149620,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "[Swift.String : Any]?",
+                    "printedName": "[Swift.String : IDentityLiteSDK.JSONValue]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Dictionary",
-                        "printedName": "[Swift.String : Any]",
+                        "printedName": "[Swift.String : IDentityLiteSDK.JSONValue]",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -149622,8 +149635,9 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "ProtocolComposition",
-                            "printedName": "Any"
+                            "name": "JSONValue",
+                            "printedName": "IDentityLiteSDK.JSONValue",
+                            "usr": "s:15IDentityLiteSDK9JSONValueO"
                           }
                         ],
                         "usr": "s:SD"
@@ -149633,8 +149647,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15IDentityLiteSDK30FormDetailIdentifyResponseDataV25verificationResultDetailsSDySSypGSgvg",
-                "mangledName": "$s15IDentityLiteSDK30FormDetailIdentifyResponseDataV25verificationResultDetailsSDySSypGSgvg",
+                "usr": "s:15IDentityLiteSDK30FormDetailIdentifyResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvg",
+                "mangledName": "$s15IDentityLiteSDK30FormDetailIdentifyResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvg",
                 "moduleName": "IDentityLiteSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -149652,12 +149666,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "[Swift.String : Any]?",
+                    "printedName": "[Swift.String : IDentityLiteSDK.JSONValue]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Dictionary",
-                        "printedName": "[Swift.String : Any]",
+                        "printedName": "[Swift.String : IDentityLiteSDK.JSONValue]",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -149667,8 +149681,9 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "ProtocolComposition",
-                            "printedName": "Any"
+                            "name": "JSONValue",
+                            "printedName": "IDentityLiteSDK.JSONValue",
+                            "usr": "s:15IDentityLiteSDK9JSONValueO"
                           }
                         ],
                         "usr": "s:SD"
@@ -149678,8 +149693,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15IDentityLiteSDK30FormDetailIdentifyResponseDataV25verificationResultDetailsSDySSypGSgvs",
-                "mangledName": "$s15IDentityLiteSDK30FormDetailIdentifyResponseDataV25verificationResultDetailsSDySSypGSgvs",
+                "usr": "s:15IDentityLiteSDK30FormDetailIdentifyResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvs",
+                "mangledName": "$s15IDentityLiteSDK30FormDetailIdentifyResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvs",
                 "moduleName": "IDentityLiteSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -149696,8 +149711,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15IDentityLiteSDK30FormDetailIdentifyResponseDataV25verificationResultDetailsSDySSypGSgvM",
-                "mangledName": "$s15IDentityLiteSDK30FormDetailIdentifyResponseDataV25verificationResultDetailsSDySSypGSgvM",
+                "usr": "s:15IDentityLiteSDK30FormDetailIdentifyResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvM",
+                "mangledName": "$s15IDentityLiteSDK30FormDetailIdentifyResponseDataV25verificationResultDetailsSDySSAA9JSONValueOGSgvM",
                 "moduleName": "IDentityLiteSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -151266,21 +151281,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String?",
+                "printedName": "Swift.Bool?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:15IDentityLiteSDK30FormDetailIdentifyResponseDataV10closedEyesSSSgvp",
-            "mangledName": "$s15IDentityLiteSDK30FormDetailIdentifyResponseDataV10closedEyesSSSgvp",
+            "usr": "s:15IDentityLiteSDK30FormDetailIdentifyResponseDataV10closedEyesSbSgvp",
+            "mangledName": "$s15IDentityLiteSDK30FormDetailIdentifyResponseDataV10closedEyesSbSgvp",
             "moduleName": "IDentityLiteSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -151298,21 +151313,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.String?",
+                    "printedName": "Swift.Bool?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15IDentityLiteSDK30FormDetailIdentifyResponseDataV10closedEyesSSSgvg",
-                "mangledName": "$s15IDentityLiteSDK30FormDetailIdentifyResponseDataV10closedEyesSSSgvg",
+                "usr": "s:15IDentityLiteSDK30FormDetailIdentifyResponseDataV10closedEyesSbSgvg",
+                "mangledName": "$s15IDentityLiteSDK30FormDetailIdentifyResponseDataV10closedEyesSbSgvg",
                 "moduleName": "IDentityLiteSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -151330,21 +151345,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.String?",
+                    "printedName": "Swift.Bool?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15IDentityLiteSDK30FormDetailIdentifyResponseDataV10closedEyesSSSgvs",
-                "mangledName": "$s15IDentityLiteSDK30FormDetailIdentifyResponseDataV10closedEyesSSSgvs",
+                "usr": "s:15IDentityLiteSDK30FormDetailIdentifyResponseDataV10closedEyesSbSgvs",
+                "mangledName": "$s15IDentityLiteSDK30FormDetailIdentifyResponseDataV10closedEyesSbSgvs",
                 "moduleName": "IDentityLiteSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -151361,8 +151376,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15IDentityLiteSDK30FormDetailIdentifyResponseDataV10closedEyesSSSgvM",
-                "mangledName": "$s15IDentityLiteSDK30FormDetailIdentifyResponseDataV10closedEyesSSSgvM",
+                "usr": "s:15IDentityLiteSDK30FormDetailIdentifyResponseDataV10closedEyesSbSgvM",
+                "mangledName": "$s15IDentityLiteSDK30FormDetailIdentifyResponseDataV10closedEyesSbSgvM",
                 "moduleName": "IDentityLiteSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -216473,12 +216488,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : Any]?",
+                "printedName": "[Swift.String : IDentityLiteSDK.JSONValue]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
+                    "printedName": "[Swift.String : IDentityLiteSDK.JSONValue]",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -216488,8 +216503,9 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
+                        "name": "JSONValue",
+                        "printedName": "IDentityLiteSDK.JSONValue",
+                        "usr": "s:15IDentityLiteSDK9JSONValueO"
                       }
                     ],
                     "usr": "s:SD"
@@ -216499,8 +216515,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:15IDentityLiteSDK28FormDetailResultResponseDataV012verificationF7DetailsSDySSypGSgvp",
-            "mangledName": "$s15IDentityLiteSDK28FormDetailResultResponseDataV012verificationF7DetailsSDySSypGSgvp",
+            "usr": "s:15IDentityLiteSDK28FormDetailResultResponseDataV012verificationF7DetailsSDySSAA9JSONValueOGSgvp",
+            "mangledName": "$s15IDentityLiteSDK28FormDetailResultResponseDataV012verificationF7DetailsSDySSAA9JSONValueOGSgvp",
             "moduleName": "IDentityLiteSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -216518,12 +216534,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "[Swift.String : Any]?",
+                    "printedName": "[Swift.String : IDentityLiteSDK.JSONValue]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Dictionary",
-                        "printedName": "[Swift.String : Any]",
+                        "printedName": "[Swift.String : IDentityLiteSDK.JSONValue]",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -216533,8 +216549,9 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "ProtocolComposition",
-                            "printedName": "Any"
+                            "name": "JSONValue",
+                            "printedName": "IDentityLiteSDK.JSONValue",
+                            "usr": "s:15IDentityLiteSDK9JSONValueO"
                           }
                         ],
                         "usr": "s:SD"
@@ -216544,8 +216561,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15IDentityLiteSDK28FormDetailResultResponseDataV012verificationF7DetailsSDySSypGSgvg",
-                "mangledName": "$s15IDentityLiteSDK28FormDetailResultResponseDataV012verificationF7DetailsSDySSypGSgvg",
+                "usr": "s:15IDentityLiteSDK28FormDetailResultResponseDataV012verificationF7DetailsSDySSAA9JSONValueOGSgvg",
+                "mangledName": "$s15IDentityLiteSDK28FormDetailResultResponseDataV012verificationF7DetailsSDySSAA9JSONValueOGSgvg",
                 "moduleName": "IDentityLiteSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -216563,12 +216580,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "[Swift.String : Any]?",
+                    "printedName": "[Swift.String : IDentityLiteSDK.JSONValue]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Dictionary",
-                        "printedName": "[Swift.String : Any]",
+                        "printedName": "[Swift.String : IDentityLiteSDK.JSONValue]",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -216578,8 +216595,9 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "ProtocolComposition",
-                            "printedName": "Any"
+                            "name": "JSONValue",
+                            "printedName": "IDentityLiteSDK.JSONValue",
+                            "usr": "s:15IDentityLiteSDK9JSONValueO"
                           }
                         ],
                         "usr": "s:SD"
@@ -216589,8 +216607,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15IDentityLiteSDK28FormDetailResultResponseDataV012verificationF7DetailsSDySSypGSgvs",
-                "mangledName": "$s15IDentityLiteSDK28FormDetailResultResponseDataV012verificationF7DetailsSDySSypGSgvs",
+                "usr": "s:15IDentityLiteSDK28FormDetailResultResponseDataV012verificationF7DetailsSDySSAA9JSONValueOGSgvs",
+                "mangledName": "$s15IDentityLiteSDK28FormDetailResultResponseDataV012verificationF7DetailsSDySSAA9JSONValueOGSgvs",
                 "moduleName": "IDentityLiteSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -216607,8 +216625,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15IDentityLiteSDK28FormDetailResultResponseDataV012verificationF7DetailsSDySSypGSgvM",
-                "mangledName": "$s15IDentityLiteSDK28FormDetailResultResponseDataV012verificationF7DetailsSDySSypGSgvM",
+                "usr": "s:15IDentityLiteSDK28FormDetailResultResponseDataV012verificationF7DetailsSDySSAA9JSONValueOGSgvM",
+                "mangledName": "$s15IDentityLiteSDK28FormDetailResultResponseDataV012verificationF7DetailsSDySSAA9JSONValueOGSgvM",
                 "moduleName": "IDentityLiteSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -252377,28 +252395,28 @@
     {
       "filePath": "\/Users\/amold\/Documents\/SDK-2.0\/idmissioniossdk\/IDentitySDK\/IDentitySDK\/API Manager\/Codable\/Request\/Enroll Request\/AdditionalCustomerWFlagCommonData.swift",
       "kind": "StringLiteral",
-      "offset": 20484,
+      "offset": 20483,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/amold\/Documents\/SDK-2.0\/idmissioniossdk\/IDentitySDK\/IDentitySDK\/API Manager\/Codable\/Request\/Enroll Request\/AdditionalCustomerWFlagCommonData.swift",
       "kind": "StringLiteral",
-      "offset": 25931,
+      "offset": 25928,
       "length": 18,
       "value": "\"IntrinsicLoginID\""
     },
     {
       "filePath": "\/Users\/amold\/Documents\/SDK-2.0\/idmissioniossdk\/IDentitySDK\/IDentitySDK\/API Manager\/Codable\/Request\/Enroll Request\/AdditionalCustomerWFlagCommonData.swift",
       "kind": "StringLiteral",
-      "offset": 25985,
+      "offset": 25982,
       "length": 21,
       "value": "\"IntrinsicMerchantID\""
     },
     {
       "filePath": "\/Users\/amold\/Documents\/SDK-2.0\/idmissioniossdk\/IDentitySDK\/IDentitySDK\/API Manager\/Codable\/Request\/Enroll Request\/AdditionalCustomerWFlagCommonData.swift",
       "kind": "StringLiteral",
-      "offset": 26042,
+      "offset": 26039,
       "length": 21,
       "value": "\"IntrinsicSDKVersion\""
     },
