@@ -1492,6 +1492,7 @@ public struct FormDetailEnrollBiometricsResponseData : Swift.Codable {
 public enum WrongDocumentTypeHandlingMode {
   case autoCapture
   case manualCapture
+  case exit
   public static func == (a: IDentityLiteSDK.WrongDocumentTypeHandlingMode, b: IDentityLiteSDK.WrongDocumentTypeHandlingMode) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -1596,6 +1597,8 @@ extension IDentityLiteSDK.IDCapture {
     public var warningLabelTextColor: UIKit.UIColor?
     public var captureAnywayButtonColor: UIKit.UIColor?
     public var captureAnywayButtonTextColor: UIKit.UIColor?
+    public var exitButtonColor: UIKit.UIColor?
+    public var exitButtonTextColor: UIKit.UIColor?
     public var idCaptureProgressBarColor: UIKit.UIColor?
     public var previewScreenBackgroundColor: UIKit.UIColor?
     public var previewScreenTopViewColor: UIKit.UIColor?
@@ -1856,6 +1859,7 @@ extension IDentityLiteSDK.IDCapture {
     public var captureLabelFont: UIKit.UIFont?
     public var warningLabelFont: UIKit.UIFont?
     public var captureAnywayButtonTextFont: UIKit.UIFont?
+    public var exitButtonTextFont: UIKit.UIFont?
     public var previewScreenTitleLabelFont: UIKit.UIFont?
     public var previewScreenRetryBtnFont: UIKit.UIFont?
     public var previewScreenDoneBtnFont: UIKit.UIFont?
@@ -2912,6 +2916,7 @@ extension IDentityLiteSDK.IDCapture {
     public var frontImageDetected: Swift.String
     public var idCaptureWarningMessage: Swift.String
     public var captureAnywayButtonText: Swift.String
+    public var exitButtonText: Swift.String
     public var tooMuchGlare: Swift.String
     public var glareDetected: Swift.String
     public var removeFinger: Swift.String
@@ -2950,6 +2955,7 @@ extension IDentityLiteSDK.IDCapture {
   public struct ButtonStyle {
     public var instructionScreenContinueButton: IDentityLiteSDK.IDCapture.ButtonBorderStyle?
     public var captureAnywayButton: IDentityLiteSDK.IDCapture.ButtonBorderStyle?
+    public var exitButton: IDentityLiteSDK.IDCapture.ButtonBorderStyle?
     public var previewScreenRetryButton: IDentityLiteSDK.IDCapture.ButtonBorderStyle?
     public var previewScreenDoneButton: IDentityLiteSDK.IDCapture.ButtonBorderStyle?
     public var retryScreenRetryButton: IDentityLiteSDK.IDCapture.ButtonBorderStyle?
