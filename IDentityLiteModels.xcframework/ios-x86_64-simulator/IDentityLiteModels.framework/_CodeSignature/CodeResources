@@ -32,13 +32,9 @@
 		<data>
 		8kWOZ1DgTWQMsMbZfbHid4LBrFY=
 		</data>
-		<key>IdTrainingModel_UNIQUE_KEY_ID_5024_20260305020917.tflite</key>
-		<data>
-		lO8mrQLajNq8eKDZnQPrSTzdI/I=
-		</data>
 		<key>Info.plist</key>
 		<data>
-		xHTVQ9NVogibIB++1tN8E7lEIOw=
+		wHo5QcRIysu4qbq9Gbo5xjHjPrU=
 		</data>
 		<key>Modules/IDentityLiteModels.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -118,13 +114,6 @@
 			<key>hash2</key>
 			<data>
 			grKm4WqwF95b6DJz2GDGLEOj7mVCT4vP8KDfbIS15Kg=
-			</data>
-		</dict>
-		<key>IdTrainingModel_UNIQUE_KEY_ID_5024_20260305020917.tflite</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			gr+sSZcBuEfy6mANW3ffNOiO9QLkncOKV9GclxL/NUY=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteModels.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>

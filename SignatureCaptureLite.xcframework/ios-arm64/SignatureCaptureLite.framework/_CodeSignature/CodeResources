@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		N+I1h2lSRG0jujAIsJz+M5FSrok=
+		IeeYgROkbD5uOWLMx+N1n1F20M8=
 		</data>
 		<key>Modules/SignatureCaptureLite.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/SignatureCaptureLite.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		tP7IYnIM/Qq3OvSNzOirCPssqmA=
+		wzEHaPrdGLYjxK8aWLqSM7L55Fs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -112,7 +112,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yR+zb5tRZc0jpKbkGP2bE9iZ5p7Wqq9jBuuDj1nOnt0=
+			7jghmGg/ln/Wm/wwoWvrUTqcm0KcWiD7IyZh4CM+DCs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
