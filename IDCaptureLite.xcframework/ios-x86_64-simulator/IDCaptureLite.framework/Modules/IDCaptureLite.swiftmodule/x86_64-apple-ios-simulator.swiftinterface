@@ -29,12 +29,6 @@ extension IDentityLiteSDK.IDentitySDK {
 extension IDentityLiteSDK.StateMasterVO : Swift.Equatable {
   public static func == (lhs: IDentityLiteSDK.StateMasterVO, rhs: IDentityLiteSDK.StateMasterVO) -> Swift.Bool
 }
-extension Foundation.UserDefaults {
-  public static var realIdNotDetectedCount: Swift.Int {
-    get
-    set
-  }
-}
 extension IDentityLiteSDK.CountryMaster : Swift.Equatable {
   public static func == (lhs: IDentityLiteSDK.CountryMaster, rhs: IDentityLiteSDK.CountryMaster) -> Swift.Bool
 }

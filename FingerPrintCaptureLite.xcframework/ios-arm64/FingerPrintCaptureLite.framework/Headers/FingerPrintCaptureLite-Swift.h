@@ -312,12 +312,6 @@ SWIFT_CLASS("_TtC22FingerPrintCaptureLite23FingerPrintResponseData")
 @end
 
 
-SWIFT_CLASS("_TtC22FingerPrintCaptureLite16ModelsEntryPoint")
-@interface ModelsEntryPoint : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
 
 
 #endif
