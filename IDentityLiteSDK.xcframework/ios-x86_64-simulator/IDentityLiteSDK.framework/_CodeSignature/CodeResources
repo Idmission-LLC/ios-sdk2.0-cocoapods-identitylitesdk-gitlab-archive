@@ -62,7 +62,7 @@
 		</data>
 		<key>Headers/IDentityLiteSDK-Swift.h</key>
 		<data>
-		XYMcSAAtRUTmO3ckGyswVb47kdw=
+		vecfD0WGrBO1UhK8OEz/813P150=
 		</data>
 		<key>Headers/IDentityLiteSDK.h</key>
 		<data>
@@ -214,7 +214,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Ienb7FDSqe6VfEy78fWoRCkooz4=
+		A1i3cvg1cb1V6AinrW/tNTuSHsk=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -222,23 +222,23 @@
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		5fhFM7OFUi7MGPml/IxtaTQf4gc=
+		828WzCE2Vr/WQqjoRt7bv4QGvwk=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		vsym4muw575oBwBxWNpCsenl5hU=
+		AnpmK4tTxAswqIfrufBpE+JjdWo=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		e6IiFo9WyBjK8W5hhLBlEyL+cbA=
+		cPWdq7VAnMnpMTdLSZUzNgK0Qx0=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		vsym4muw575oBwBxWNpCsenl5hU=
+		AnpmK4tTxAswqIfrufBpE+JjdWo=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ew8ed7D+AOeNOvaG8gNWHoxKw8w=
+		Ty5CnEfGT7CB3bJ575urrLk5Ik8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -357,7 +357,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YnqAwXqsMYaV6nRM33u+CSQR3VqDspyP4m/vz7fIDXI=
+			WpSvC3taeHnfXNKCJlAwtyeqexboRTB6n1tCvZ5cREM=
 			</data>
 		</dict>
 		<key>Headers/IDentityLiteSDK.h</key>
@@ -630,35 +630,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EOsw2X+CkTtePrcBGvYbjf0ZOC7/KF+AbMSrMLMj5+0=
+			sBE/8cSjjMwGf3hRp/fsPvxDvQNMFs5gJbVhXO7Wz9c=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0+MvbLXneQiXATeOoR9JqbKp/1xEHkFg9T+dWldXmGI=
+			CnkmwDahfjA3Ygn0uSsx7+aFO2p7GLBagQHNkfmyfyw=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			exhFsKVEdN4FebQ0Y6KgbmkjL0qISdNfFJWodhi2d9M=
+			fG4GukmDEhyNH43kGqB2DXW+sr+Smwm0ON/mqoqjM9M=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0+MvbLXneQiXATeOoR9JqbKp/1xEHkFg9T+dWldXmGI=
+			CnkmwDahfjA3Ygn0uSsx7+aFO2p7GLBagQHNkfmyfyw=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			h8U7t48BhqvRL0Nwsa9Vu98TaMGicl+J0spKOGgrJMI=
+			p637sLaSwCPGDPFbqMge7FEcY6oFfAJOAl/h3Zk58x8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

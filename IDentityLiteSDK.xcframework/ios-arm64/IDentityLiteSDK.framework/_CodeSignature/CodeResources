@@ -62,7 +62,7 @@
 		</data>
 		<key>Headers/IDentityLiteSDK-Swift.h</key>
 		<data>
-		VilrrY84SK06oFAGaUx1KzY+6Hg=
+		l6qnDBd83fD6wuwZKkovhe6USCA=
 		</data>
 		<key>Headers/IDentityLiteSDK.h</key>
 		<data>
@@ -214,7 +214,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8Spk+yKyHwp537byGtb4zSg3O+I=
+		iFq2Vz426a7maYWNlNpJy7Mbyrg=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -222,23 +222,23 @@
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		7+YX35QvJQy6QU3ar0PeR89iiTc=
+		IW1IWFjwwfW87df096x/aW0nBMo=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		+FrHqTd3Zx+AFs7nSxX2U6PCeJI=
+		oEi0cWGdCnQXCy9LJ9ydB9IoHQA=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		U/NpgwkFOHc69FnHosKoC67Dz4o=
+		t5QaC9pEnqt8Oyy4JEyKRY1eOfA=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		+FrHqTd3Zx+AFs7nSxX2U6PCeJI=
+		oEi0cWGdCnQXCy9LJ9ydB9IoHQA=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		bcfCLnBhbBfd38xsKQcsHDV+ILs=
+		YHJ8ki/bFbQjQEtzwvKihrFdLBA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -357,7 +357,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wdti2VbUoU/JxQ5WLJTIA/R2C0Yh/IJWZe7teL8zyp8=
+			k2ZbjmYfX8421NsNpWTK2wSoHrrT2UDMbxyVsCgz++8=
 			</data>
 		</dict>
 		<key>Headers/IDentityLiteSDK.h</key>
@@ -630,35 +630,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aCeawYGv8U6we8mFYhzwfVgAxSWs9xc5Q3xOOjhQm5k=
+			fWgY0Bqsn8pjPJe54mW1aL37DgjvolKkJWH/s05DZgs=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hpRemLJelBL/PT5Dcdc/gHyon7LQDax0guVFc33KsrM=
+			EIlRngSiaIMc8DvI17VxUusZ54QSV4mdmPjc65AEj/o=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+YanFc1eeudnyNuxQHu7mc1fGWWKm6Nwvjn7OOBsEo4=
+			VXFWdH6q9ISjUIuXqKgGZfN0v3NcobCJhEhUpqCpcyM=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hpRemLJelBL/PT5Dcdc/gHyon7LQDax0guVFc33KsrM=
+			EIlRngSiaIMc8DvI17VxUusZ54QSV4mdmPjc65AEj/o=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UVSR9piC9Ad0nwdG1U80yEFlA9K1JvbdB1khMTgy1Ng=
+			0goqYcFxN2GBnz3uEWd/vXPYaqAyyuCPF7toxuN3B7Q=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
