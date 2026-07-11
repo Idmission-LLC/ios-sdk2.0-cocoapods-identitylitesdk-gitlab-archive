@@ -630,7 +630,7 @@ relocations:
   - { offset: 0x1D7631, size: 0x8, addend: 0x0, symName: _xsltEngineVersion, symObjAddr: 0x4440, symBinAddr: 0x661738, symSize: 0x0 }
   - { offset: 0x1D7651, size: 0x8, addend: 0x0, symName: _xsltLibxsltVersion, symObjAddr: 0x4448, symBinAddr: 0x5B9DB8, symSize: 0x0 }
   - { offset: 0x1D7673, size: 0x8, addend: 0x0, symName: _xsltLibxmlVersion, symObjAddr: 0x444C, symBinAddr: 0x5B9DBC, symSize: 0x0 }
-  - { offset: 0x1D7689, size: 0x8, addend: 0x0, symName: _initialized, symObjAddr: 0x1383C, symBinAddr: 0x670A60, symSize: 0x0 }
+  - { offset: 0x1D7689, size: 0x8, addend: 0x0, symName: _initialized, symObjAddr: 0x13844, symBinAddr: 0x670A60, symSize: 0x0 }
   - { offset: 0x1D769A, size: 0x8, addend: 0x0, symName: _xsltNewDecimalFormat, symObjAddr: 0x2BFD, symBinAddr: 0x2164F, symSize: 0xE3 }
   - { offset: 0x1D76C2, size: 0x8, addend: 0x0, symName: _xsltNewDecimalFormat.permille, symObjAddr: 0x4450, symBinAddr: 0x5B9DC0, symSize: 0x0 }
   - { offset: 0x1D877D, size: 0x8, addend: 0x0, symName: _xsltInit, symObjAddr: 0x0, symBinAddr: 0x1EA52, symSize: 0x1C }
@@ -691,7 +691,7 @@ relocations:
   - { offset: 0x1DFD0F, size: 0x8, addend: 0x0, symName: _xsltLocalVariablePop, symObjAddr: 0x0, symBinAddr: 0x2442C, symSize: 0x6D }
   - { offset: 0x1DFD29, size: 0x8, addend: 0x0, symName: _xsltMaxDepth, symObjAddr: 0x6E08, symBinAddr: 0x661748, symSize: 0x0 }
   - { offset: 0x1DFD46, size: 0x8, addend: 0x0, symName: _xsltMaxVars, symObjAddr: 0x6E0C, symBinAddr: 0x66174C, symSize: 0x0 }
-  - { offset: 0x1DFD6B, size: 0x8, addend: 0x0, symName: _xsltDoXIncludeDefault, symObjAddr: 0x258F8, symBinAddr: 0x670A64, symSize: 0x0 }
+  - { offset: 0x1DFD6B, size: 0x8, addend: 0x0, symName: _xsltDoXIncludeDefault, symObjAddr: 0x25900, symBinAddr: 0x670A64, symSize: 0x0 }
   - { offset: 0x1DFD82, size: 0x8, addend: 0x0, symName: _xsltDefaultTrace, symObjAddr: 0x6E10, symBinAddr: 0x661750, symSize: 0x0 }
   - { offset: 0x1DFDA0, size: 0x8, addend: 0x0, symName: _xsltHTMLVersions, symObjAddr: 0x8F10, symBinAddr: 0x63CEB0, symSize: 0x0 }
   - { offset: 0x1E0E4F, size: 0x8, addend: 0x0, symName: _xsltLocalVariablePop, symObjAddr: 0x0, symBinAddr: 0x2442C, symSize: 0x6D }
@@ -1025,14 +1025,14 @@ relocations:
   - { offset: 0x20571E, size: 0x8, addend: 0x0, symName: _xsltCopyNamespace, symObjAddr: 0x728, symBinAddr: 0x3BC55, symSize: 0x34 }
   - { offset: 0x20577B, size: 0x8, addend: 0x0, symName: _xsltFreeNamespaceAliasHashes, symObjAddr: 0x75C, symBinAddr: 0x3BC89, symSize: 0x2E }
   - { offset: 0x205867, size: 0x8, addend: 0x0, symName: _xsltFreeExts, symObjAddr: 0x0, symBinAddr: 0x3BCB7, symSize: 0x47 }
-  - { offset: 0x20588F, size: 0x8, addend: 0x0, symName: _xsltExtensionsHash, symObjAddr: 0xF9E0, symBinAddr: 0x670E90, symSize: 0x0 }
-  - { offset: 0x2058A5, size: 0x8, addend: 0x0, symName: _xsltExtMutex, symObjAddr: 0xF9E8, symBinAddr: 0x670E98, symSize: 0x0 }
-  - { offset: 0x2058BB, size: 0x8, addend: 0x0, symName: _xsltFunctionsHash, symObjAddr: 0xF9F0, symBinAddr: 0x670EA0, symSize: 0x0 }
-  - { offset: 0x2058D1, size: 0x8, addend: 0x0, symName: _xsltElementsHash, symObjAddr: 0xF9F8, symBinAddr: 0x670EA8, symSize: 0x0 }
-  - { offset: 0x2058E7, size: 0x8, addend: 0x0, symName: _xsltTopLevelsHash, symObjAddr: 0xFA00, symBinAddr: 0x670EB0, symSize: 0x0 }
-  - { offset: 0x2058FE, size: 0x8, addend: 0x0, symName: _testStyleData, symObjAddr: 0xFA10, symBinAddr: 0x670EC0, symSize: 0x0 }
-  - { offset: 0x205921, size: 0x8, addend: 0x0, symName: _testData, symObjAddr: 0xFA18, symBinAddr: 0x670EC8, symSize: 0x0 }
-  - { offset: 0x205937, size: 0x8, addend: 0x0, symName: _xsltModuleHash, symObjAddr: 0xFA08, symBinAddr: 0x670EB8, symSize: 0x0 }
+  - { offset: 0x20588F, size: 0x8, addend: 0x0, symName: _xsltExtensionsHash, symObjAddr: 0xF9E8, symBinAddr: 0x670E90, symSize: 0x0 }
+  - { offset: 0x2058A5, size: 0x8, addend: 0x0, symName: _xsltExtMutex, symObjAddr: 0xF9F0, symBinAddr: 0x670E98, symSize: 0x0 }
+  - { offset: 0x2058BB, size: 0x8, addend: 0x0, symName: _xsltFunctionsHash, symObjAddr: 0xF9F8, symBinAddr: 0x670EA0, symSize: 0x0 }
+  - { offset: 0x2058D1, size: 0x8, addend: 0x0, symName: _xsltElementsHash, symObjAddr: 0xFA00, symBinAddr: 0x670EA8, symSize: 0x0 }
+  - { offset: 0x2058E7, size: 0x8, addend: 0x0, symName: _xsltTopLevelsHash, symObjAddr: 0xFA08, symBinAddr: 0x670EB0, symSize: 0x0 }
+  - { offset: 0x2058FE, size: 0x8, addend: 0x0, symName: _testStyleData, symObjAddr: 0xFA18, symBinAddr: 0x670EC0, symSize: 0x0 }
+  - { offset: 0x205921, size: 0x8, addend: 0x0, symName: _testData, symObjAddr: 0xFA20, symBinAddr: 0x670EC8, symSize: 0x0 }
+  - { offset: 0x205937, size: 0x8, addend: 0x0, symName: _xsltModuleHash, symObjAddr: 0xFA10, symBinAddr: 0x670EB8, symSize: 0x0 }
   - { offset: 0x206B53, size: 0x8, addend: 0x0, symName: _xsltFreeExts, symObjAddr: 0x0, symBinAddr: 0x3BCB7, symSize: 0x47 }
   - { offset: 0x206C37, size: 0x8, addend: 0x0, symName: _xsltRegisterExtPrefix, symObjAddr: 0x47, symBinAddr: 0x3BCFE, symSize: 0x161 }
   - { offset: 0x206E4F, size: 0x8, addend: 0x0, symName: _xsltStyleGetExtData, symObjAddr: 0x46F, symBinAddr: 0x3C126, symSize: 0x1BD }

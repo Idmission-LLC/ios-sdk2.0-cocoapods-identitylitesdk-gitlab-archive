@@ -74,7 +74,7 @@
 		</data>
 		<key>ios-arm64/IDCaptureLite.framework/IDCaptureLite</key>
 		<data>
-		mugbD66dh4bv5Ro3RwMn9C5IasQ=
+		2Zrkq6h0rXHOLz0rwxmj0LCxvGw=
 		</data>
 		<key>ios-arm64/IDCaptureLite.framework/Info.plist</key>
 		<data>
@@ -110,7 +110,7 @@
 		</data>
 		<key>ios-arm64/dSYMs/IDCaptureLite.framework.dSYM/Contents/Resources/DWARF/IDCaptureLite</key>
 		<data>
-		l61yDf7ZnbDWi8doeNzyJSq1GpI=
+		EBlRX8GgMKJ1tE6JuLEzAEStwZM=
 		</data>
 		<key>ios-arm64/dSYMs/IDCaptureLite.framework.dSYM/Contents/Resources/Relocations/aarch64/IDCaptureLite.yml</key>
 		<data>
@@ -222,7 +222,7 @@
 		</data>
 		<key>ios-x86_64-simulator/dSYMs/IDCaptureLite.framework.dSYM/Contents/Resources/DWARF/IDCaptureLite</key>
 		<data>
-		k81fgwwPWE3fe8q0dYiIOHPBwd8=
+		D8wGcLJBLKih9b2+heMC7/zAnRk=
 		</data>
 		<key>ios-x86_64-simulator/dSYMs/IDCaptureLite.framework.dSYM/Contents/Resources/Relocations/x86_64/IDCaptureLite.yml</key>
 		<data>
@@ -422,11 +422,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mugbD66dh4bv5Ro3RwMn9C5IasQ=
+			2Zrkq6h0rXHOLz0rwxmj0LCxvGw=
 			</data>
 			<key>hash2</key>
 			<data>
-			aERkQbjn+oxI9O60M94vK1QaATyKIRZK0QI2AKnYXJU=
+			x9ihV/wQC4U43LgLd+gvIF0I4Ymvh+0XwaHVa4IdiPk=
 			</data>
 		</dict>
 		<key>ios-arm64/IDCaptureLite.framework/Info.plist</key>
@@ -521,11 +521,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			l61yDf7ZnbDWi8doeNzyJSq1GpI=
+			EBlRX8GgMKJ1tE6JuLEzAEStwZM=
 			</data>
 			<key>hash2</key>
 			<data>
-			KtT42CQpH97w3+Y+5N+HX/jm9dTtbu+ETZqAoP1GKVY=
+			VnJijuN8l53YjlrwAgjogIKSY5SdZOAHtp3SyomLIko=
 			</data>
 		</dict>
 		<key>ios-arm64/dSYMs/IDCaptureLite.framework.dSYM/Contents/Resources/Relocations/aarch64/IDCaptureLite.yml</key>
@@ -829,11 +829,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			k81fgwwPWE3fe8q0dYiIOHPBwd8=
+			D8wGcLJBLKih9b2+heMC7/zAnRk=
 			</data>
 			<key>hash2</key>
 			<data>
-			zdPHpQTrdY5gHvLj1S8wP+nywCi1mDGk57g5c6lOVoY=
+			YIJAZWtE1T3+zlZ1oLKyrYIZ/zXy1BZGmt8G6mfpBvs=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/dSYMs/IDCaptureLite.framework.dSYM/Contents/Resources/Relocations/x86_64/IDCaptureLite.yml</key>

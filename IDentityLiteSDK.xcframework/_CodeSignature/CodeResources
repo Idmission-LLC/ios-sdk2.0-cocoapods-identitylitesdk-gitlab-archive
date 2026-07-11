@@ -214,7 +214,7 @@
 		</data>
 		<key>ios-arm64/IDentityLiteSDK.framework/IDentityLiteSDK</key>
 		<data>
-		c+jQAq+gncKItw91pkVYUTA2T9E=
+		jbAJFisOv8nZ8gZgUQCgwak/Qy4=
 		</data>
 		<key>ios-arm64/IDentityLiteSDK.framework/Info.plist</key>
 		<data>
@@ -262,7 +262,7 @@
 		</data>
 		<key>ios-arm64/dSYMs/IDentityLiteSDK.framework.dSYM/Contents/Resources/DWARF/IDentityLiteSDK</key>
 		<data>
-		gmWoXrxH+Ahg+EjScBl1qWnSQy0=
+		YXhP3zAiutBjops27eBRddr+OSI=
 		</data>
 		<key>ios-arm64/dSYMs/IDentityLiteSDK.framework.dSYM/Contents/Resources/Relocations/aarch64/IDentityLiteSDK.yml</key>
 		<data>
@@ -526,11 +526,11 @@
 		</data>
 		<key>ios-x86_64-simulator/dSYMs/IDentityLiteSDK.framework.dSYM/Contents/Resources/DWARF/IDentityLiteSDK</key>
 		<data>
-		rQfubIHoBxDl2SadNmzcNKPBPCY=
+		PvseiFIa0bp9nzWhENUwnl3hQR0=
 		</data>
 		<key>ios-x86_64-simulator/dSYMs/IDentityLiteSDK.framework.dSYM/Contents/Resources/Relocations/x86_64/IDentityLiteSDK.yml</key>
 		<data>
-		mDn7j/ru2dkSazYmUYjMn7v5CV4=
+		GuV9Vw4hrWIBUZhW4SwOyeBQ1YI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -1111,11 +1111,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			c+jQAq+gncKItw91pkVYUTA2T9E=
+			jbAJFisOv8nZ8gZgUQCgwak/Qy4=
 			</data>
 			<key>hash2</key>
 			<data>
-			BwbZKjkeTdjIwptzYvEr8gxJpsU7vBz1529Kbs+a7eQ=
+			vwRQ5DSrThDaiGm/nUXqRWcFQ0+GN2nbTOhedJh+HzQ=
 			</data>
 		</dict>
 		<key>ios-arm64/IDentityLiteSDK.framework/Info.plist</key>
@@ -1243,11 +1243,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gmWoXrxH+Ahg+EjScBl1qWnSQy0=
+			YXhP3zAiutBjops27eBRddr+OSI=
 			</data>
 			<key>hash2</key>
 			<data>
-			du70ttbbwHulCoTOAkNwdXQQE8aSvMkaSwRGD8Xv15M=
+			6jAJsj9Q9jaj3DbocS6U8JMuW+HRxG9+51ijM1U3a/I=
 			</data>
 		</dict>
 		<key>ios-arm64/dSYMs/IDentityLiteSDK.framework.dSYM/Contents/Resources/Relocations/aarch64/IDentityLiteSDK.yml</key>
@@ -1969,22 +1969,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rQfubIHoBxDl2SadNmzcNKPBPCY=
+			PvseiFIa0bp9nzWhENUwnl3hQR0=
 			</data>
 			<key>hash2</key>
 			<data>
-			kySew6nmvb5X1xpsNcPEXkJ0IWMRsGYFlRFQt6E8fdA=
+			jjz1ozntYbL7O3MrK09V1FMqfeUr6E5Chh+iJxX2q4A=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/dSYMs/IDentityLiteSDK.framework.dSYM/Contents/Resources/Relocations/x86_64/IDentityLiteSDK.yml</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mDn7j/ru2dkSazYmUYjMn7v5CV4=
+			GuV9Vw4hrWIBUZhW4SwOyeBQ1YI=
 			</data>
 			<key>hash2</key>
 			<data>
-			6KU9zsuW9NEN5/2OEuglOTv3dgYKyxNdDVfQNjy3+jg=
+			6gXQRrIj0Bd0tJ6UArcKVYMve0d17gfQTzYEmi/pO2k=
 			</data>
 		</dict>
 	</dict>
