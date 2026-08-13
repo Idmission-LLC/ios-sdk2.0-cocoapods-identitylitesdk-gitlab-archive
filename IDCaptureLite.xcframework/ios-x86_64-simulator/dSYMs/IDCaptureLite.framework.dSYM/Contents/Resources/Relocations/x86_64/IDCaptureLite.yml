@@ -2,8 +2,8 @@
 triple:          'x86_64-apple-darwin'
 binary-path:     '/Users/amold/Library/Developer/Xcode/DerivedData/idmissioniossdk-lite/Build/Products/Release-iphonesimulator/IDCaptureLite.framework/IDCaptureLite'
 relocations:
-  - { offset: 0x858A6, size: 0x8, addend: 0x0, symName: _IDCaptureLiteVersionString, symObjAddr: 0x0, symBinAddr: 0x2CB70, symSize: 0x0 }
-  - { offset: 0x858DB, size: 0x8, addend: 0x0, symName: _IDCaptureLiteVersionNumber, symObjAddr: 0x38, symBinAddr: 0x2CBA8, symSize: 0x0 }
+  - { offset: 0x858A6, size: 0x8, addend: 0x0, symName: _IDCaptureLiteVersionString, symObjAddr: 0x0, symBinAddr: 0x2CB80, symSize: 0x0 }
+  - { offset: 0x858DB, size: 0x8, addend: 0x0, symName: _IDCaptureLiteVersionNumber, symObjAddr: 0x38, symBinAddr: 0x2CBB8, symSize: 0x0 }
   - { offset: 0x85F62, size: 0x8, addend: 0x0, symName: '_$sSmsSKRzrlE10removeLastyySiFSS_Tg5', symObjAddr: 0x135F0, symBinAddr: 0x14C90, symSize: 0xB0 }
   - { offset: 0x86026, size: 0x8, addend: 0x0, symName: '_$sSTsSQ7ElementRpzrlE6starts4withSbqd___tSTRd__AAQyd__ABRSlFSS_SSTg5', symObjAddr: 0x136A0, symBinAddr: 0x14D40, symSize: 0x190 }
   - { offset: 0x86266, size: 0x8, addend: 0x0, symName: '_$s13IDCaptureLite0A14ViewControllerCMa', symObjAddr: 0x0, symBinAddr: 0x16A0, symSize: 0x30 }
