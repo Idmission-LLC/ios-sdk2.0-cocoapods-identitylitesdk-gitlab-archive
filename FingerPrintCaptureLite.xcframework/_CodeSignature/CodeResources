@@ -34,7 +34,7 @@
 		</data>
 		<key>ios-arm64/FingerPrintCaptureLite.framework/FingerPrintCaptureLite</key>
 		<data>
-		6zIKIBHp+04sKZ9eXaL2TxBFRUY=
+		WY0nuiq4V5LZVvrHDAn6mV1jabQ=
 		</data>
 		<key>ios-arm64/FingerPrintCaptureLite.framework/Headers/FingerDetectionLayerView.h</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>ios-arm64/dSYMs/FingerPrintCaptureLite.framework.dSYM/Contents/Resources/DWARF/FingerPrintCaptureLite</key>
 		<data>
-		HdAZMLW0WH3R4pswPwWbwkNg2e0=
+		wmHvhr3+yfPqLUp+AvsUWISFPRQ=
 		</data>
 		<key>ios-arm64/dSYMs/FingerPrintCaptureLite.framework.dSYM/Contents/Resources/Relocations/aarch64/FingerPrintCaptureLite.yml</key>
 		<data>
@@ -198,7 +198,7 @@
 		</data>
 		<key>ios-x86_64-simulator/dSYMs/FingerPrintCaptureLite.framework.dSYM/Contents/Resources/DWARF/FingerPrintCaptureLite</key>
 		<data>
-		HOmjeCMlrLQWTeb46iO7wUMRxK0=
+		QFc2SKpZVkKTN+8ymqC7TBzSR3w=
 		</data>
 		<key>ios-x86_64-simulator/dSYMs/FingerPrintCaptureLite.framework.dSYM/Contents/Resources/Relocations/x86_64/FingerPrintCaptureLite.yml</key>
 		<data>
@@ -260,7 +260,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2kKvnQQSVavMfnPIpEUC/tfw5DZGVOY2XJ2BChca1c8=
+			Lueg6o0VM09lbbdyjggMaDagtSf2w9DmzL81CJ+LeyM=
 			</data>
 		</dict>
 		<key>ios-arm64/FingerPrintCaptureLite.framework/Headers/FingerDetectionLayerView.h</key>
@@ -372,7 +372,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PuWhoY5BbhqOlMiINW/R8dYDhwDBSavwMXr3gZJLNKA=
+			y1wehS3VxgozNvLqU0G0svPM7jWE021RevrUzhNX1Cw=
 			</data>
 		</dict>
 		<key>ios-arm64/dSYMs/FingerPrintCaptureLite.framework.dSYM/Contents/Resources/Relocations/aarch64/FingerPrintCaptureLite.yml</key>
@@ -547,7 +547,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4yBpP3KBsYkirw+cQlBGm3vAdo/ICXXFT6SiT2VL8O8=
+			DI9VI8iXGbrd2u5kF/2On0fXGrXm5NeetPFkh61LRVI=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/dSYMs/FingerPrintCaptureLite.framework.dSYM/Contents/Resources/Relocations/x86_64/FingerPrintCaptureLite.yml</key>

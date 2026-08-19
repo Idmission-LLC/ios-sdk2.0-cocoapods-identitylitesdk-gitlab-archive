@@ -222,23 +222,23 @@
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		GIZzaSdifoItlaFowbMugKV46WE=
+		8yhmGihSTc7ZTY4LPa7B7AEipIE=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		sv2/gmPCSSy2NVpLHpMcUpR2qt0=
+		4M3hTEecihdnFwAn/NYquud7Ims=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		5XkdJVhRIHAOagZ+Ic2gLTx6R0A=
+		SRvpGBTkOMrQMDsSv7+ExzNQ5tg=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		sv2/gmPCSSy2NVpLHpMcUpR2qt0=
+		4M3hTEecihdnFwAn/NYquud7Ims=
 		</data>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		W+4CfDkVBe39grntIhsojvTg18Q=
+		bPkRadXD62kCLyxsuA4+nzx3lL8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -630,35 +630,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dnT91mMAMj1seh/zYgE9zrGZ5Tr3k+f2hoqL59HrSYk=
+			i7dHUYhEwxxi0l/TqKkNtkw5mamG9nbh4xQhFWRCHno=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MThvZgetf8MXXKDiHBg+xTB1coUlZUhb8pn8KoXiA9A=
+			c79OPLkk+m1TUeQ7bkNtKuWaO9LvyFrgGqVCDlOWnqw=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aaMiPEOcYUKpvCZ7mGVMi1t93aUri46Cc05fiWgi+xY=
+			8pmebX5k/6fwOOrvpq+iRGZMZ65XRW3MQgUV0N4Y1S0=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MThvZgetf8MXXKDiHBg+xTB1coUlZUhb8pn8KoXiA9A=
+			c79OPLkk+m1TUeQ7bkNtKuWaO9LvyFrgGqVCDlOWnqw=
 			</data>
 		</dict>
 		<key>Modules/IDentityLiteSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gEye2PFfvxdLXH5jQPEkhLRU+Ls3PLSTHCrXR3iITGk=
+			arfzJWhOhcNVZU9kEZOGctJdYTfLxaLzTv1pCWkWCzg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

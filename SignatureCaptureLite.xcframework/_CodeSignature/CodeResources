@@ -54,7 +54,7 @@
 		</data>
 		<key>ios-arm64/SignatureCaptureLite.framework/SignatureCaptureLite</key>
 		<data>
-		bnwC1wbtDbzhx0RNx2U1hVzxMtk=
+		fSCwt3FOeeI6lEH1eKtyUjveMEA=
 		</data>
 		<key>ios-arm64/SignatureCaptureLite.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>ios-arm64/dSYMs/SignatureCaptureLite.framework.dSYM/Contents/Resources/DWARF/SignatureCaptureLite</key>
 		<data>
-		QBFLy3q/+8jROFVP1OyEo9Bi5mY=
+		fvzEgcnAUQNXOOznFzobUpB8NjM=
 		</data>
 		<key>ios-arm64/dSYMs/SignatureCaptureLite.framework.dSYM/Contents/Resources/Relocations/aarch64/SignatureCaptureLite.yml</key>
 		<data>
@@ -134,7 +134,7 @@
 		</data>
 		<key>ios-x86_64-simulator/dSYMs/SignatureCaptureLite.framework.dSYM/Contents/Resources/DWARF/SignatureCaptureLite</key>
 		<data>
-		3XsVDgIeRTovfTyhNVKMaZFxgJY=
+		8P8MdvIenYeq3vfbnWwRqFDDXt8=
 		</data>
 		<key>ios-x86_64-simulator/dSYMs/SignatureCaptureLite.framework.dSYM/Contents/Resources/Relocations/x86_64/SignatureCaptureLite.yml</key>
 		<data>
@@ -231,7 +231,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			56IG0HCDkfuiVopl3ttQLdZuzqvGKmc1wA7YZ4aVQZw=
+			k3er+d8/TLrbJRVr0LTdGQkrUp6Pbgjqqa0c6lgvayo=
 			</data>
 		</dict>
 		<key>ios-arm64/SignatureCaptureLite.framework/_CodeSignature/CodeResources</key>
@@ -252,7 +252,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NqZAWCIW96pwhGjdArsBWhWDCBEHwiHCM5l+1i3hr3Y=
+			DlQ/A7oa0aD2o66UfmqiFasMSZkr6Z204ASi5EYJGXE=
 			</data>
 		</dict>
 		<key>ios-arm64/dSYMs/SignatureCaptureLite.framework.dSYM/Contents/Resources/Relocations/aarch64/SignatureCaptureLite.yml</key>
@@ -371,7 +371,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IpuUzbAlCKmTfTmMOAxUdS8+9bancN7A+gc1nyNY6J8=
+			ups3KzY89vhMRU1OQ8xHJszDstnydTtrUmWR2w1g3mc=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/dSYMs/SignatureCaptureLite.framework.dSYM/Contents/Resources/Relocations/x86_64/SignatureCaptureLite.yml</key>
