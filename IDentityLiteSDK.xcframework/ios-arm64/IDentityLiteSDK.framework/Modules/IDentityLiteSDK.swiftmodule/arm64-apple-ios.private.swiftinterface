@@ -27,10 +27,118 @@ import Security
 import Swift
 import SwiftUI
 import UIKit
+import Vision
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import zlib
+public protocol IDCaptureDelegate : AnyObject {
+  func updated(state: IDentityLiteSDK.IDCaptureState)
+  func dynamicOrientationDidChange(isPortrait: Swift.Bool)
+}
+extension IDentityLiteSDK.IDCaptureDelegate {
+  public func dynamicOrientationDidChange(isPortrait: Swift.Bool)
+}
+public enum IDCaptureState {
+  case detectingBox(isDetectingFront: Swift.Bool)
+  case backImageDetected
+  case frontImageDetected
+  case tooMuchGlare
+  case moveCloser
+  case moveAway
+  case alignRectangle
+  case glare
+  case finger
+  case notInFocus(isDetectingBackFirst: Swift.Bool)
+  case capturing
+  case idPredictionTimeout(isDetectingFront: Swift.Bool)
+  case idPredictionWarningTimeout(isDetectingFront: Swift.Bool)
+  case detectedBox(IDentityLiteSDK.DetectedData)
+  case classifiedDocument(IDentityLiteSDK.DetectedData)
+  case success(IDentityLiteSDK.DetectedData)
+  case timedOut(IDentityLiteSDK.DetectedData)
+  case failed(IDentityLiteSDK.DetectedData)
+}
+public struct DebugData {
+  public var documentLocation: CoreFoundation.CGRect
+  public var fullSize: CoreFoundation.CGSize?
+  public var faceLocation: CoreFoundation.CGRect?
+  public var faceRectScore: Swift.Float?
+  public var realnessScores: IDentityLiteSDK.RealnessScores?
+  public var topClassifierResults: [(Swift.String, Swift.Float)]?
+  public var focusScore: Swift.Float?
+  public var glareRect: CoreFoundation.CGRect?
+  public var fingerRect: CoreFoundation.CGRect?
+  public var glareScore: Swift.Float?
+  public var fingerScore: Swift.Float?
+  public var mrzRect: CoreFoundation.CGRect?
+  public var barcodeRect: CoreFoundation.CGRect?
+}
+public struct DetectedData {
+  public enum DocumentSide {
+    case front
+    case back
+    public static func == (a: IDentityLiteSDK.DetectedData.DocumentSide, b: IDentityLiteSDK.DetectedData.DocumentSide) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var documentLocation: CoreFoundation.CGRect
+  public var documentConfidence: Swift.Float
+  public var faceLocation: CoreFoundation.CGRect?
+  public var faceRectScore: Swift.Float?
+  public var fullImageSize: CoreFoundation.CGSize
+  public var type: Swift.String?
+  public var sides: Swift.Int
+  public var side: IDentityLiteSDK.DetectedData.DocumentSide?
+  public var shouldHavePhoto: Swift.Bool
+  public var shouldHaveMrz: Swift.Bool
+  public var shouldHaveBarcode: Swift.Bool {
+    get
+  }
+  public var isRealnesCheckDone: Swift.Bool?
+  public var isReal: Swift.Bool?
+  public var realness: Swift.Float?
+  public var avgPhotoCopy: Swift.Float?
+  public var avgScreen: Swift.Float?
+  public var isPhotoPresent: Swift.Bool
+  public var mrz: IDentityLiteSDK.MRZResult?
+  public var barcode: [Swift.String : Swift.String]?
+  public var barcodeImage: UIKit.UIImage?
+  public var nfcFaceImageMatched: Swift.Bool?
+  public var nfcFaceImageMatchDistance: Swift.Float?
+  public var nfcReadFailed: Swift.Bool
+  public var nfcReadCanceled: Swift.Bool
+  public var ocrStrings: [Swift.String]?
+  public var idType: Swift.String?
+  public var country: Swift.String?
+  public var state: Swift.String?
+  public var barcodeType: Swift.String?
+  public var image: UIKit.UIImage?
+  public var faceImage: UIKit.UIImage?
+  public var finalExifIdImageBase64String: Swift.String?
+}
+public struct SelectedData {
+  public var idType: Swift.String
+  public var country: Swift.String
+  public var state: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(idType: Swift.String, country: Swift.String, state: Swift.String? = nil)
+  #endif
+}
+public enum CaptureBack : Swift.Int {
+  case no
+  case yes
+  case auto
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 extension IDentityLiteSDK.FingerPrintCapture {
   public struct Options {
     public var enableInstructionScreen: Swift.Bool
@@ -184,8 +292,9 @@ public struct CustomerEnrollDataResponse : Swift.Codable {
 public struct SignatureDataRequest : Swift.Codable {
   public var signatureImage: Swift.String?
   public var signatureVideo: Swift.String?
+  public var nfcSignature: Swift.String?
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(signatureImage: Swift.String? = nil, signatureVideo: Swift.String? = nil)
+  public init(signatureImage: Swift.String? = nil, signatureVideo: Swift.String? = nil, nfcSignature: Swift.String? = nil)
   #endif
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -562,11 +671,12 @@ public struct CustomerAutofillAdditionalDataRS : Swift.Codable {
 }
 public struct BiometricVerifyRequestData : Swift.Encodable {
   public var selfie: Swift.String
+  public var nfcSelfie: Swift.String?
   public var fingerPrintData: IDentityLiteSDK.FingerPrintData?
   public var voiceData: Swift.String?
   public var videoData: Swift.String?
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(selfie: Swift.String, fingerPrintData: IDentityLiteSDK.FingerPrintData? = nil, voiceData: Swift.String? = nil, videoData: Swift.String? = nil)
+  public init(selfie: Swift.String, nfcSelfie: Swift.String? = nil, fingerPrintData: IDentityLiteSDK.FingerPrintData? = nil, voiceData: Swift.String? = nil, videoData: Swift.String? = nil)
   #endif
   public func encode(to encoder: any Swift.Encoder) throws
 }
@@ -890,10 +1000,16 @@ public struct AdditionalCustomerWFlagCommonData : Swift.Encodable {
   public var customerDataMatchConfig: IDentityLiteSDK.CustomerDataMatchConfig?
   public var sendProcessedImagesInResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendProcessedImagesInResponse?
   public var sendInputImagesInResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendInputImagesInResponse?
+  public var agentCountry: Swift.String?
+  public var posTransactionDateTime: Swift.String?
+  public var subDocType: Swift.String?
+  public var transactionType: Swift.String?
+  public var channel: Swift.String?
+  public var requestSource: Swift.String?
   public var metadata: IDentityLiteSDK.Metadata?
   public var ocrMetadata: Swift.String?
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(idToken: Swift.String? = "", uniqueRequestId: Swift.String = IDentitySDK.requestID, clientTraceId: Swift.String? = nil, clientRequestID: Swift.String? = nil, manualReviewRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.ManualReviewRequired? = .no, bypassAgeValidation: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.BypassAgeValidation? = .no, deDuplicationRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DeDuplicationRequired? = .no, bypassNameMatching: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.BypassNameMatching? = .yes, postDataAPIRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.PostDataAPIRequired? = .no, postDataAPIURL: Swift.String? = nil, sendMetaDataInPost: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendMetaDataInPost? = nil, sendInputImagesInPost: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendInputImagesInPost? = nil, sendProcessedImagesInPost: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendProcessedImagesInPost? = nil, needImmediateResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.NeedImmediateResponse? = nil, deduplicationSynchronous: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DeduplicationSynchronous? = nil, verifyDataWithHost: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.VerifyDataWithHost? = nil, idBackImageRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.IdBackImageRequired? = nil, stripSpecialCharacters: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.StripSpecialCharacters? = nil, idImageResolutionCheck: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.IdImageResolutionCheck? = .yes, deDupDataRequiredInResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DeDupDataRequiredInResponse? = nil, deDupManualReviewRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DeDupManualReviewRequired? = .yes, postDataOnReviewRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.PostDataOnReviewRequired? = .no, postDataOnReviewAPIURL: Swift.String? = nil, paymentGateway: Swift.String? = nil, gpsCoordinates: Swift.String? = nil, piiExclusion: Swift.String? = nil, detectLiveness: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DetectLiveness? = .yes, advancedTamperDetection: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.AdvancedTamperDetection? = .no, detectLabel: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DetectLabel? = nil, detectClosedEyes: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DetectClosedEyes? = nil, sendSignatureFromIdInResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendSignatureFromIdInResponse? = nil, sendDocumentIdInResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendDocumentIdInResponse? = nil, customerDataMatchConfig: IDentityLiteSDK.CustomerDataMatchConfig? = nil, sendProcessedImagesInResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendProcessedImagesInResponse? = .no, sendInputImagesInResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendInputImagesInResponse? = .no)
+  public init(idToken: Swift.String? = "", uniqueRequestId: Swift.String = IDentitySDK.requestID, clientTraceId: Swift.String? = nil, clientRequestID: Swift.String? = nil, manualReviewRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.ManualReviewRequired? = .no, bypassAgeValidation: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.BypassAgeValidation? = .no, deDuplicationRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DeDuplicationRequired? = .no, bypassNameMatching: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.BypassNameMatching? = .yes, postDataAPIRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.PostDataAPIRequired? = .no, postDataAPIURL: Swift.String? = nil, sendMetaDataInPost: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendMetaDataInPost? = nil, sendInputImagesInPost: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendInputImagesInPost? = nil, sendProcessedImagesInPost: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendProcessedImagesInPost? = nil, needImmediateResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.NeedImmediateResponse? = nil, deduplicationSynchronous: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DeduplicationSynchronous? = nil, verifyDataWithHost: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.VerifyDataWithHost? = nil, idBackImageRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.IdBackImageRequired? = nil, stripSpecialCharacters: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.StripSpecialCharacters? = nil, idImageResolutionCheck: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.IdImageResolutionCheck? = .yes, deDupDataRequiredInResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DeDupDataRequiredInResponse? = nil, deDupManualReviewRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DeDupManualReviewRequired? = .yes, postDataOnReviewRequired: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.PostDataOnReviewRequired? = .no, postDataOnReviewAPIURL: Swift.String? = nil, paymentGateway: Swift.String? = nil, gpsCoordinates: Swift.String? = nil, piiExclusion: Swift.String? = nil, detectLiveness: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DetectLiveness? = .yes, advancedTamperDetection: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.AdvancedTamperDetection? = .no, detectLabel: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DetectLabel? = nil, detectClosedEyes: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.DetectClosedEyes? = nil, sendSignatureFromIdInResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendSignatureFromIdInResponse? = nil, sendDocumentIdInResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendDocumentIdInResponse? = nil, customerDataMatchConfig: IDentityLiteSDK.CustomerDataMatchConfig? = nil, sendProcessedImagesInResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendProcessedImagesInResponse? = .no, sendInputImagesInResponse: IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendInputImagesInResponse? = .no, agentCountry: Swift.String? = nil, posTransactionDateTime: Swift.String? = nil, subDocType: Swift.String? = nil, transactionType: Swift.String? = nil, channel: Swift.String? = nil, requestSource: Swift.String? = nil)
   #endif
   public func encode(to encoder: any Swift.Encoder) throws
 }
@@ -1141,107 +1257,6 @@ public struct TrainingModelDownloadDetails : Swift.Encodable {
   #endif
   public func encode(to encoder: any Swift.Encoder) throws
 }
-public protocol IDCaptureDelegate : AnyObject {
-  func updated(state: IDentityLiteSDK.IDCaptureState)
-}
-public enum IDCaptureState {
-  case detectingBox
-  case backImageDetected
-  case frontImageDetected
-  case tooMuchGlare
-  case moveCloser
-  case moveAway
-  case alignRectangle
-  case glare
-  case finger
-  case notInFocus
-  case capturing
-  case idPredictionTimeout
-  case idPredictionWarningTimeout
-  case detectedBox(IDentityLiteSDK.DetectedData)
-  case classifiedDocument(IDentityLiteSDK.DetectedData)
-  case success(IDentityLiteSDK.DetectedData)
-  case timedOut(IDentityLiteSDK.DetectedData)
-  case failed(IDentityLiteSDK.DetectedData)
-}
-public struct DebugData {
-  public var documentLocation: CoreFoundation.CGRect
-  public var fullSize: CoreFoundation.CGSize?
-  public var faceLocation: CoreFoundation.CGRect?
-  public var faceRectScore: Swift.Float?
-  public var realnessScores: IDentityLiteSDK.RealnessScores?
-  public var topClassifierResults: [(Swift.String, Swift.Float)]?
-  public var focusScore: Swift.Float?
-  public var glareRect: CoreFoundation.CGRect?
-  public var fingerRect: CoreFoundation.CGRect?
-  public var glareScore: Swift.Float?
-  public var fingerScore: Swift.Float?
-  public var mrzRect: CoreFoundation.CGRect?
-  public var barcodeRect: CoreFoundation.CGRect?
-}
-public struct DetectedData {
-  public enum DocumentSide {
-    case front
-    case back
-    public static func == (a: IDentityLiteSDK.DetectedData.DocumentSide, b: IDentityLiteSDK.DetectedData.DocumentSide) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-  public var documentLocation: CoreFoundation.CGRect
-  public var documentConfidence: Swift.Float
-  public var faceLocation: CoreFoundation.CGRect?
-  public var faceRectScore: Swift.Float?
-  public var fullImageSize: CoreFoundation.CGSize
-  public var type: Swift.String?
-  public var sides: Swift.Int
-  public var side: IDentityLiteSDK.DetectedData.DocumentSide?
-  public var shouldHavePhoto: Swift.Bool
-  public var shouldHaveMrz: Swift.Bool
-  public var shouldHaveBarcode: Swift.Bool {
-    get
-  }
-  public var isRealnesCheckDone: Swift.Bool?
-  public var isReal: Swift.Bool?
-  public var realness: Swift.Float?
-  public var avgPhotoCopy: Swift.Float?
-  public var avgScreen: Swift.Float?
-  public var isPhotoPresent: Swift.Bool
-  public var mrz: IDentityLiteSDK.MRZResult?
-  public var barcode: [Swift.String : Swift.String]?
-  public var barcodeImage: UIKit.UIImage?
-  public var nfcFaceImageMatched: Swift.Bool?
-  public var nfcFaceImageMatchDistance: Swift.Float?
-  public var ocrStrings: [Swift.String]?
-  public var idType: Swift.String?
-  public var country: Swift.String?
-  public var state: Swift.String?
-  public var barcodeType: Swift.String?
-  public var image: UIKit.UIImage?
-  public var faceImage: UIKit.UIImage?
-  public var finalExifIdImageBase64String: Swift.String?
-}
-public struct SelectedData {
-  public var idType: Swift.String
-  public var country: Swift.String
-  public var state: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init(idType: Swift.String, country: Swift.String, state: Swift.String? = nil)
-  #endif
-}
-public enum CaptureBack : Swift.Int {
-  case no
-  case yes
-  case auto
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init?(rawValue: Swift.Int)
-  #endif
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
 public class IDCapture {
   public var captureBack: IDentityLiteSDK.CaptureBack?
   public var idTypeCountryState: IDentityLiteSDK.SelectedData?
@@ -1252,10 +1267,15 @@ public class IDCapture {
   public static var images: IDentityLiteSDK.IDCapture.Images
   public static var layout: IDentityLiteSDK.IDCapture.Layout
   public static var style: IDentityLiteSDK.IDCapture.ButtonStyle
+  public static var isGuidePortrait: Swift.Bool {
+    get
+  }
   weak public var delegate: (any IDentityLiteSDK.IDCaptureDelegate)?
   public init(overlayFrame: CoreFoundation.CGRect, isVideoCapture: Swift.Bool = false)
+  public func updateOverlayFrame(_ frame: CoreFoundation.CGRect)
   public func captureAnyway()
   public func typeMismatch()
+  public func discardCapture()
   public func retry()
   public func done()
   @objc deinit
@@ -1287,6 +1307,10 @@ public struct POAExtractedDataResponse : Swift.Codable {
   public var customerName: Swift.String?
   public var customerAddress: Swift.String?
   public var amount: Swift.String?
+  public var additionalCustomerName: Swift.String?
+  public var rfc: Swift.String?
+  public var rmu: Swift.String?
+  public var parsedPoaAddress: IDentityLiteSDK.ParsedPoaAddress?
   public var addressMatch: Swift.String?
   public var postalCodeMatch: Swift.String?
   public var addressWithInputMatch: Swift.String?
@@ -1295,10 +1319,22 @@ public struct POAExtractedDataResponse : Swift.Codable {
   public var postalCodeMatchScore: Swift.String?
   public var addressWithInputMatchScore: Swift.String?
   public var postalCodeWithInputMatchScore: Swift.String?
+  public var firstNameMatch: Swift.String?
+  public var lastNameMatch: Swift.String?
   public var fistNameMatchScore: Swift.String?
   public var lastNameMatchScore: Swift.String?
+  public var firstNameMatchWithInputData: Swift.String?
   public var fistNameMatchScoreWithInputData: Swift.String?
+  public var lastNameMatchWithInputData: Swift.String?
   public var lastNameMatchScoreWithInputData: Swift.String?
+  public var middleNameMatch: Swift.String?
+  public var middleNameMatchScore: Swift.String?
+  public var nameMatch: Swift.String?
+  public var nameMatchScore: Swift.String?
+  public var middleNameMatchWithInputData: Swift.String?
+  public var middleNameMatchScoreWithInputData: Swift.String?
+  public var nameMatchWithInputData: Swift.String?
+  public var nameMatchScoreWithInputData: Swift.String?
   public var isPOA: Swift.String?
   public var isPOAScore: Swift.String?
   public var poaDocumentType: Swift.String?
@@ -1583,6 +1619,18 @@ public struct ParsedAddress : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct ParsedPoaAddress : Swift.Codable {
+  public var streetName: Swift.String?
+  public var streetNumber: Swift.String?
+  public var unit: Swift.String?
+  public var district: Swift.String?
+  public var municipality: Swift.String?
+  public var city: Swift.String?
+  public var province: Swift.String?
+  public var postalCode: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct PersonalCustomerVerifyResponseData : Swift.Codable {
   public var uniqueNumber: Swift.String?
   public var name: Swift.String?
@@ -1680,7 +1728,7 @@ public enum WrongDocumentTypeHandlingMode {
   }
 }
 public enum IdCaptureOrientationMode {
-  case horizontal, vertical
+  case horizontal, vertical, dynamic
   public static func == (a: IDentityLiteSDK.IdCaptureOrientationMode, b: IDentityLiteSDK.IdCaptureOrientationMode) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -1714,6 +1762,8 @@ extension IDentityLiteSDK.IDCapture {
     public var idCaptureInstructionAnimationImages: [UIKit.UIImage]?
     public var idInstructionAnimationDuration: Swift.Double
     public var enablePassportNFC: Swift.Bool
+    public var showPassportNFCReadProgress: Swift.Bool
+    public var passportNFCReadChunkSize: Swift.Int
     public var performIdCaptureBeforeSelfie: Swift.Bool
     public var instructionScreenBackButtonIsHidden: Swift.Bool
     public var cameraScreenBackButtonIsHidden: Swift.Bool
@@ -1727,6 +1777,7 @@ extension IDentityLiteSDK.IDCapture {
     public var isIDCapturePreviewEnabled: Swift.Bool
     public var consecutiveFakeIdCaptureLimit: Swift.Int
     public var idCaptureOrientationMode: IDentityLiteSDK.IdCaptureOrientationMode
+    public var enableDynamicBothSideCapture: Swift.Bool
   }
 }
 public struct CustomerEnrollBiometricsRequest : Swift.Encodable {
@@ -1818,6 +1869,13 @@ extension IDentityLiteSDK.IDCapture {
     public var retryScreenRetryButtonBackgroundColor: UIKit.UIColor?
     public var retryScreenCancelButtonTextColor: UIKit.UIColor?
     public var retryScreenCancelButtonBackgroundColor: UIKit.UIColor?
+    public var nfcErrorScreenBackgroundColor: UIKit.UIColor?
+    public var nfcErrorScreenErrorTextColor: UIKit.UIColor?
+    public var nfcErrorScreenImageTintColor: UIKit.UIColor?
+    public var nfcErrorScreenRetryButtonTextColor: UIKit.UIColor?
+    public var nfcErrorScreenRetryButtonBackgroundColor: UIKit.UIColor?
+    public var nfcErrorScreenSkipButtonTextColor: UIKit.UIColor?
+    public var nfcErrorScreenSkipButtonBackgroundColor: UIKit.UIColor?
   }
 }
 public struct CardData : Swift.Codable {
@@ -2109,6 +2167,9 @@ extension IDentityLiteSDK.IDCapture {
     public var retryScreenLabelFont: UIKit.UIFont?
     public var retryScreenRetryButtonFont: UIKit.UIFont?
     public var retryScreenCancelButtonFont: UIKit.UIFont?
+    public var nfcErrorScreenErrorTextFont: UIKit.UIFont?
+    public var nfcErrorScreenRetryButtonTextFont: UIKit.UIFont?
+    public var nfcErrorScreenSkipButtonTextFont: UIKit.UIFont?
   }
 }
 extension IDentityLiteSDK.FingerPrintCapture {
@@ -2117,9 +2178,10 @@ extension IDentityLiteSDK.FingerPrintCapture {
 }
 public struct BiometricLiveCheckData : Swift.Encodable {
   public var selfie: Swift.String
+  public var nfcSelfie: Swift.String?
   public var fingerPrintData: IDentityLiteSDK.FingerPrintData?
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(selfie: Swift.String, fingerPrintData: IDentityLiteSDK.FingerPrintData? = nil)
+  public init(selfie: Swift.String, nfcSelfie: Swift.String? = nil, fingerPrintData: IDentityLiteSDK.FingerPrintData? = nil)
   #endif
   public func encode(to encoder: any Swift.Encoder) throws
 }
@@ -2410,9 +2472,9 @@ public struct CustomerPersonalDataResponse : Swift.Codable {
 public struct CustomerVerifyRequest : Swift.Encodable {
   public var customerData: IDentityLiteSDK.CustomerVerifyDataRequest
   public var additionalData: IDentityLiteSDK.AdditionalCustomerCommonData
-  public var employee: IDentityLiteSDK.EmployeeData?
+  public var companyData: IDentityLiteSDK.EmployeeData?
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(customerData: IDentityLiteSDK.CustomerVerifyDataRequest, additionalData: IDentityLiteSDK.AdditionalCustomerCommonData, employee: IDentityLiteSDK.EmployeeData? = nil)
+  public init(customerData: IDentityLiteSDK.CustomerVerifyDataRequest, additionalData: IDentityLiteSDK.AdditionalCustomerCommonData, companyData: IDentityLiteSDK.EmployeeData? = nil)
   #endif
   public func encode(to encoder: any Swift.Encoder) throws
 }
@@ -2578,13 +2640,14 @@ extension IDentityLiteSDK.VoiceCapture {
 }
 public struct BiometricEnrollData : Swift.Encodable {
   public var selfie: Swift.String
+  public var nfcSelfie: Swift.String?
   public var fingerPrintData: IDentityLiteSDK.FingerPrintData?
   public var voiceData: Swift.String?
   public var videoData: Swift.String?
   public var voiceStartTime: Swift.Int?
   public var expectedAudioText: Swift.String?
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(selfie: Swift.String, fingerPrintData: IDentityLiteSDK.FingerPrintData? = nil, voiceData: Swift.String? = nil, videoData: Swift.String? = nil, voiceStartTime: Swift.Int? = nil, expectedAudioText: Swift.String? = nil)
+  public init(selfie: Swift.String, nfcSelfie: Swift.String? = nil, fingerPrintData: IDentityLiteSDK.FingerPrintData? = nil, voiceData: Swift.String? = nil, videoData: Swift.String? = nil, voiceStartTime: Swift.Int? = nil, expectedAudioText: Swift.String? = nil)
   #endif
   public func encode(to encoder: any Swift.Encoder) throws
 }
@@ -2668,6 +2731,8 @@ public enum EventName : Swift.String, Swift.Codable {
   case modelDownloadIdFocusEvent
   case modelDownloadClassificationEvent
   case modelDownloadFingerPrintEvent
+  case modelDownloadPaddleOCRDetectionEvent
+  case modelDownloadPaddleOCRRecognitionEvent
   case selfieCaptureEvent
   case idCaptureEvent
   case idToSelfieMatchingEvent
@@ -3063,6 +3128,7 @@ public struct GenericDataRequest : Swift.Encodable {
 }
 public struct GenericCustomerData : Swift.Encodable {
   public var selfie: Swift.String?
+  public var nfcSelfie: Swift.String?
   public var idImageFront: Swift.String?
   public var idImageBack: Swift.String?
   public var secondaryIdImageFront: Swift.String?
@@ -3077,7 +3143,7 @@ public struct GenericCustomerData : Swift.Encodable {
   public var metadata: IDentityLiteSDK.Metadata?
   public var ocrMetadata: Swift.String?
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(selfie: Swift.String? = nil, idImageFront: Swift.String? = nil, idImageBack: Swift.String? = nil, secondaryIdImageFront: Swift.String? = nil, secondaryIdImageBack: Swift.String? = nil, videoIdImageFront: Swift.String? = nil, videoIdImageBack: Swift.String? = nil, fingerPrintData: IDentityLiteSDK.FingerPrintData? = nil, voiceData: Swift.String? = nil, videoData: Swift.String? = nil, voiceStartTime: Swift.Int? = nil, expectedAudioText: Swift.String? = nil, metadata: IDentityLiteSDK.Metadata? = nil, ocrMetadata: Swift.String? = nil)
+  public init(selfie: Swift.String? = nil, nfcSelfie: Swift.String? = nil, idImageFront: Swift.String? = nil, idImageBack: Swift.String? = nil, secondaryIdImageFront: Swift.String? = nil, secondaryIdImageBack: Swift.String? = nil, videoIdImageFront: Swift.String? = nil, videoIdImageBack: Swift.String? = nil, fingerPrintData: IDentityLiteSDK.FingerPrintData? = nil, voiceData: Swift.String? = nil, videoData: Swift.String? = nil, voiceStartTime: Swift.Int? = nil, expectedAudioText: Swift.String? = nil, metadata: IDentityLiteSDK.Metadata? = nil, ocrMetadata: Swift.String? = nil)
   #endif
   public func encode(to encoder: any Swift.Encoder) throws
 }
@@ -3155,11 +3221,12 @@ public struct IneQRResponse : Swift.Codable {
 }
 public struct BiometricIdentifyData : Swift.Encodable {
   public var selfie: Swift.String
+  public var nfcSelfie: Swift.String?
   public var fingerPrintData: IDentityLiteSDK.FingerPrintData?
   public var voiceData: Swift.String?
   public var videoData: Swift.String?
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(selfie: Swift.String, fingerPrintData: IDentityLiteSDK.FingerPrintData? = nil, voiceData: Swift.String? = nil, videoData: Swift.String? = nil)
+  public init(selfie: Swift.String, nfcSelfie: Swift.String? = nil, fingerPrintData: IDentityLiteSDK.FingerPrintData? = nil, voiceData: Swift.String? = nil, videoData: Swift.String? = nil)
   #endif
   public func encode(to encoder: any Swift.Encoder) throws
 }
@@ -3285,6 +3352,7 @@ extension IDentityLiteSDK.IDCapture {
     public var flipToBack: Swift.String
     public var autofillPrompt: Swift.String
     public var documentDetectedHoldStill: Swift.String
+    public var idCardBackDetectedHoldStill: Swift.String
     public var previewScreenTitleIdFront: Swift.String
     public var previewScreenTitleIdBack: Swift.String
     public var previewScreenRetryBtnText: Swift.String
@@ -3292,10 +3360,13 @@ extension IDentityLiteSDK.IDCapture {
     public var retryScreenText: Swift.String
     public var retryButtonText: Swift.String
     public var cancelButtonText: Swift.String
-    public var passportNFCPrompt: Swift.String
-    public var passportReadingNFCDataText: Swift.String
-    public var passportReadingNFCDataSuccessText: Swift.String
+    public var nfcScreenScanInstructions: Swift.String
+    public var nfcScreenLoadingText: Swift.String
+    public var nfcScreenSuccessTitle: Swift.String
     public var faceDoesNotMatch: Swift.String
+    public var nfcErrorScreenErrorText: Swift.String
+    public var nfcErrorScreenRetryButtonText: Swift.String
+    public var nfcErrorScreenSkipButtonText: Swift.String
     public mutating func reset()
   }
 }
@@ -3320,6 +3391,8 @@ extension IDentityLiteSDK.IDCapture {
     public var previewScreenDoneButton: IDentityLiteSDK.IDCapture.ButtonBorderStyle?
     public var retryScreenRetryButton: IDentityLiteSDK.IDCapture.ButtonBorderStyle?
     public var retryScreenCancelButton: IDentityLiteSDK.IDCapture.ButtonBorderStyle?
+    public var nfcErrorScreenRetryButton: IDentityLiteSDK.IDCapture.ButtonBorderStyle?
+    public var nfcErrorScreenSkipButton: IDentityLiteSDK.IDCapture.ButtonBorderStyle?
   }
 }
 public struct TrainingModelDetails : Swift.Codable {
@@ -3386,13 +3459,14 @@ public enum Language : Swift.String {
   }
 }
 public struct BiometricDataValidateId : Swift.Encodable {
+  public var nfcSelfie: Swift.String?
   public var fingerPrintData: IDentityLiteSDK.FingerPrintData?
   public var voiceData: Swift.String?
   public var videoData: Swift.String?
   public var voiceStartTime: Swift.Int?
   public var expectedAudioText: Swift.String?
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(fingerPrintData: IDentityLiteSDK.FingerPrintData? = nil, voiceData: Swift.String? = nil, videoData: Swift.String? = nil, voiceStartTime: Swift.Int? = nil, expectedAudioText: Swift.String? = nil)
+  public init(nfcSelfie: Swift.String? = nil, fingerPrintData: IDentityLiteSDK.FingerPrintData? = nil, voiceData: Swift.String? = nil, videoData: Swift.String? = nil, voiceStartTime: Swift.Int? = nil, expectedAudioText: Swift.String? = nil)
   #endif
   public func encode(to encoder: any Swift.Encoder) throws
 }
@@ -4003,6 +4077,7 @@ public struct PersonalCustomerAutofillResponseData : Swift.Codable {
   public var addressLine2Doc: Swift.String?
   public var dateOfBirthDoc: Swift.String?
   public var eyeColor: Swift.String?
+  public var hairColor: Swift.String?
   public var height: Swift.String?
   public var weight: Swift.String?
   public var parish: Swift.String?
@@ -4028,6 +4103,7 @@ extension IDentityLiteSDK.IDCapture {
     public var backSilhouetteImage: UIKit.UIImage?
     public var bottomInfoImage: UIKit.UIImage?
     public var retryScreenImage: UIKit.UIImage?
+    public var nfcErrorScreenImage: UIKit.UIImage?
   }
 }
 public class QKMRZParser {
@@ -4130,13 +4206,14 @@ extension QuartzCore.CALayer {
 }
 public struct BiometricValidateIdFaceMatchData : Swift.Encodable {
   public var selfie: Swift.String
+  public var nfcSelfie: Swift.String?
   public var fingerPrintData: IDentityLiteSDK.FingerPrintData?
   public var voiceData: Swift.String?
   public var videoData: Swift.String?
   public var voiceStartTime: Swift.Int?
   public var expectedAudioText: Swift.String?
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(selfie: Swift.String, fingerPrintData: IDentityLiteSDK.FingerPrintData? = nil, voiceData: Swift.String? = nil, videoData: Swift.String? = nil, voiceStartTime: Swift.Int? = nil, expectedAudioText: Swift.String? = nil)
+  public init(selfie: Swift.String, nfcSelfie: Swift.String? = nil, fingerPrintData: IDentityLiteSDK.FingerPrintData? = nil, voiceData: Swift.String? = nil, videoData: Swift.String? = nil, voiceStartTime: Swift.Int? = nil, expectedAudioText: Swift.String? = nil)
   #endif
   public func encode(to encoder: any Swift.Encoder) throws
 }
@@ -4635,6 +4712,8 @@ public enum InitializationStage : Swift.String {
   case docDetectionTrainingModelLabel
   case fingerprintDetectionTrainingModelLabel
   case focusTrainingModelLabel
+  case paddleOCRDetectionTrainingModelLabel
+  case paddleOCRRecognitionTrainingModelLabel
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
   #endif
@@ -4791,6 +4870,11 @@ public struct CustomerAutofillIdDataRS : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+extension IDentityLiteSDK.DetectedData.DocumentSide : Swift.Equatable {}
+extension IDentityLiteSDK.DetectedData.DocumentSide : Swift.Hashable {}
+extension IDentityLiteSDK.CaptureBack : Swift.Equatable {}
+extension IDentityLiteSDK.CaptureBack : Swift.Hashable {}
+extension IDentityLiteSDK.CaptureBack : Swift.RawRepresentable {}
 extension IDentityLiteSDK.PersonalCustomerCommonRequestEnrollData.Gender : Swift.Equatable {}
 extension IDentityLiteSDK.PersonalCustomerCommonRequestEnrollData.Gender : Swift.Hashable {}
 extension IDentityLiteSDK.PersonalCustomerCommonRequestEnrollData.Gender : Swift.RawRepresentable {}
@@ -4934,11 +5018,6 @@ extension IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendSignatureFromIdI
 extension IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendDocumentIdInResponse : Swift.Equatable {}
 extension IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendDocumentIdInResponse : Swift.Hashable {}
 extension IDentityLiteSDK.AdditionalCustomerWFlagCommonData.SendDocumentIdInResponse : Swift.RawRepresentable {}
-extension IDentityLiteSDK.DetectedData.DocumentSide : Swift.Equatable {}
-extension IDentityLiteSDK.DetectedData.DocumentSide : Swift.Hashable {}
-extension IDentityLiteSDK.CaptureBack : Swift.Equatable {}
-extension IDentityLiteSDK.CaptureBack : Swift.Hashable {}
-extension IDentityLiteSDK.CaptureBack : Swift.RawRepresentable {}
 extension IDentityLiteSDK.AdditionalCustomerCommonData.PostDataAPIRequired : Swift.Equatable {}
 extension IDentityLiteSDK.AdditionalCustomerCommonData.PostDataAPIRequired : Swift.Hashable {}
 extension IDentityLiteSDK.AdditionalCustomerCommonData.PostDataAPIRequired : Swift.RawRepresentable {}
